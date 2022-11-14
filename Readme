@@ -1,0 +1,6 @@
+This Code contain a class Called Env
+The Env class has the following list of properties (initial_state "can be random", goal_state "default value" we  have complex set of reward so if the agent selected action move foward and the goal of the agent is to move foward then the agent got the positive reward associated with moving, likewise for turnRight and turnLeft ) for all those movement actions the Environment check the location of the agent if its in the boundories or not
+The Env has the dimension of the board as input and then uses those dimensions to define teh boundries of the board
+For finish the Environment check whether the agent has reaches the goal state or not, if reaches then gives him positive reward "goal reward"
+If the agent selected actions PickUp or Put then the environment will check if the agent hand is empty or not and then changes the state accordingly to the selected action
+before each action the environment checks
