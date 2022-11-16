@@ -31,6 +31,7 @@ class Env:
         self.markers_locations = markers_locations
         self.false_pick_reward = false_pick_reward
         
+        
     def check_if_hit_wall(self):
         if self.state  in self.boundries:
             self.is_alive = False
