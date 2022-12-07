@@ -31,6 +31,8 @@ class GridWorld(object):
 
     def isTerminalState(self, state):
         return state in self.stateSpacePlus and state not in self.stateSpace
+        #the differnece betweent the stateSpacePlus and the stateSpace are the terminalstate
+
 
     def addMagicSquares(self, magicSquares):
         self.magicSquares = magicSquares
@@ -39,7 +41,9 @@ class GridWorld(object):
         for square in self.magicSquares:
             x = square // self.m
             #we need to know what position we are in
+            #the x will be the floor of the current squre/rows
             y = square % self.n
+            #y is the modules of the columns
             self.grid[x][y] = i
             i += 1
             x = magicSquares[square] // self.m
@@ -54,10 +58,16 @@ class GridWorld(object):
 
     def setState(self, state):
         x, y = self.getAgentRowAndColumn()
+        #but here if the agent is top-left and moved left it get reward of -1 and still ther
+        #I want the agent to be dead
+    
         self.grid[x][y] = 0
+        #so assign empty-state to the agent old position
         self.agentPosition = state
+        #assign the agent new position to 1
         x, y = self.getAgentRowAndColumn()
         self.grid[x][y] = 1
+        #put the agent position as 1
 
     def offGridMove(self, newState, oldState):
         # if we move into a row not in the grid
