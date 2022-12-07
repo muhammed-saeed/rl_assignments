@@ -1,20 +1,30 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-#the concept of the state-space all states- the termnial state
-#
+# the concept of the state-space all states- excluding the termnial state
+# main loop with the agent in which we are using q_learning
 
 class GridWorld(object):
     def __init__(self, m, n, magicSquares):
         self.grid = np.zeros((m,n))
+        #the empty states are represented by one 
+        #the agent is representented by zero
         self.m = m
         self.n = n
         self.stateSpace = [i for i in range(self.m*self.n)]
+        #list comperhension for all states in the sytem
         self.stateSpace.remove(80)
+        #remove the terminal state from the list
         self.stateSpacePlus = [i for i in range(self.m*self.n)]
+        #define the next statespace
         self.actionSpace = {'U': -self.m, 'D': self.m,
                             'L': -1, 'R': 1}
+        #moving up will reduce the agent position one row so m
+        #movnig down will advance the agent position one rown so m states
         self.possibleActions = ['U', 'D', 'L', 'R']
+        #group of possible actions
+
+
         # dict with magic squares and resulting squares
         self.addMagicSquares(magicSquares)
         self.agentPosition = 0
@@ -25,8 +35,10 @@ class GridWorld(object):
     def addMagicSquares(self, magicSquares):
         self.magicSquares = magicSquares
         i = 2
+        #the representation of the magic square in the grid world to be 2
         for square in self.magicSquares:
             x = square // self.m
+            #we need to know what position we are in
             y = square % self.n
             self.grid[x][y] = i
             i += 1
