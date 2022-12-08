@@ -164,11 +164,11 @@ if __name__ == '__main__':
             #so if the agent is starting with zero, but then the agent go reward -1 which is significanly
             #worse than 0 then the agent think about doing more exploration.
 
-    numGames = 50000
+    numGames = 10
     totalRewards = np.zeros(numGames)
     env.render()
     for i in range(numGames):
-        if i % 5000 == 0:
+        if i % 2 == 0:
             print('starting game ', i)
         done = False
         epRewards = 0

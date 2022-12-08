@@ -5,8 +5,10 @@ import matplotlib.pyplot as plt
 # main loop with the agent in which we are using q_learning
 
 class GridWorld(object):
-    def __init__(self, m, n, magicSquares, markers_locations, wall_locations, terminal_state):
+    def __init__(self, m, n, init_state, orientation, markers_locations, wall_locations, terminal_state):
         self.grid = np.zeros((m,n))
+        self.grid[init_state] = 1
+        #the location of the agent to be 1
         self.gridRows = m
         self.gridCols = n
         #the empty states are represented by one 
@@ -16,64 +18,75 @@ class GridWorld(object):
         self.stateSpace = [i for i in range(self.m*self.n)]
         #list comperhension for all states in the sytem
         
+
+
+        
         self.stateSpacePlus = [i for i in range(self.m*self.n)]
         #define the next statespace
-        self.agentOrientation = "south"
-        # self.actionSpace = {'m': -self.m, 'r': self.m,
-        #                     'l': -1, 'p': 1, 'f': 0}
+        self.agentOrientation = orientation
+
+
+        self.initial_wall_locations = list(wall_locations)
+        self.initiial_markers_locations = list(markers_locations)
+        self.init_orientation = orientation
+        self.orientation = orientation
+        self.init_state = init_state
 
         #moving up will reduce the agent position one row so m
         #movnig down will advance the agent position one rown so m states
         self.agentisAlive =  True
         self.isHandEmpty = True
-        self.markers_locations = markers_locations
-        self.wallLocations = wall_locations
+    
+        self.markers_locations = list(markers_locations)
+        self.wallLocations = list(wall_locations)
         for wall in self.wallLocations:
-            self.stateSpace.remove(80)
+            self.stateSpace.remove(wall[0]*self.n + wall[1])
         #remove the terminal state from the list
-        self.terminalStates = terminal_state
-        self.possibleActions = ['m', 'D', 'L', 'R','f']
-        #group of possible actions
+        self.terminalStates = terminal_state #[[x,y],"orientation", [[markers1],[marker2]]]
 
-
-        # dict with magic squares and resulting squares
-        # self.addMagicSquares(magicSquares)
-        self.agentPosition = 0
-
+        #
+        self.possibleActions = ['m', 'l', 'r', 'f','pick','put']
+       
+        self.agentPosition = self.n*init_state[0] + init_state[1]
+        self.init_position = self.agentPosition
+        self.crashReward = -1000
+        self.reward = -1
      
     def actionSpace(self,action):
             #the move action
             if action == 'm':
                 if self.orientation == "north":
-                    return -self.m
+                    return -self.m, self.reward
                 elif self.orientation == "south":
-                    return +self.m
+                    return +self.m, self.reward
                 elif self.orientation == "west":
-                    return -1
+                    return -1, self.reward
                 elif self.orientation == "east":
-                    return 1
+                    return 1, self.reward
 
             #the left action
             elif action == "l":
                 if self.orientation == "south":
                     self.orientation = "east"
-                elif self.orienation == "north":
+                elif self.orientation == "north":
                     self.orientation = "west"
                 elif self.orientation == "east":
                     self.orientation = "north"
-                elif self.orinetation == "west":
+                elif self.orientation == "west":
                     self.orientation = "south"
+                return 0, self.reward
             
             #the right action
             elif action == "r":
                 if self.orientation == "south":
                     self.orientation = "west"
-                elif self.orienation == "north":
+                elif self.orientation == "north":
                     self.orientation = "east"
                 elif self.orientation == "east":
                     self.orientation = "south"
-                elif self.orinetation == "west":
+                elif self.orientation == "west":
                     self.orientation = "north"
+                return 0, self.reward
 
             #the pickup action
             elif action == "pick":
@@ -84,30 +97,36 @@ class GridWorld(object):
                         
                         # we want to remove this marker, then we count the number of states we have in the system
                         marker_state = x*self.gridRows + y
-                        markers_states = [x*self.gridRows + y for [x,y] in self.markers_locations]
+                        markers_states = [x*self.gridRows + y for x,y in self.markers_locations]
                         index_ = markers_states.index(marker_state)
                         self.markers_locations.pop(index_)
 
-                        return self.reward
+                        return 0, self.reward
                 else: 
                     self.agentisAlive = False
-                    return self.agentisAlive 
+                    return 0, self.crashReward 
                     #if the agent crashes then the reward has to be high negatve value
                 
             elif action == "put":
                 if not self.isHandEmpty:
                     x,y = self.getAgentRowAndColumn()
 
-                    self.markers_locations.append([x,y])
+                    self.markers_locations.append((x,y))
+                    return 0, self.reward
+                else:
+                    self.agentisAlive = False
+                    return 0, self.crashReward
 
 
             
             elif action == "f":
-                if self.state  in self.goal_states:
+                if self.isTerminalState():
                     #how to define that the agent_is in the goal state anyways?!
-                    self.isAlive = False
-                    return 0 #give the agent large reward "0" while negative else of reaching the final state
-
+                    self.agentisAlive = True
+                    return 0, 0 #give the agent large reward "0" while negative else of reaching the final state
+                else:
+                    self.agentisAlive = False
+                    return 0, self.crashReward
                 
             
 
@@ -115,37 +134,27 @@ class GridWorld(object):
 
     
     def state_is_marker(self):
-        if np.array(self.getAgentRowAndColumn()) in self.markers_locations:
+        if (self.getAgentRowAndColumn()) in self.markers_locations:
             return True
 
-    def isTerminalState(self, state):
+    def isTerminalState(self):
         # return state in self.stateSpacePlus and state not in self.stateSpace
-        if self.getAgentRowAndColumn 
-        #the differnece betweent the stateSpacePlus and the stateSpace are the terminalstate
+        goal_state = self.terminalStates[0]
+        goal_orientation = self.terminalStates[1]
+        goal_markers = self.terminalStates[2]
+        return self.getAgentXY(self.agentPosition ) == goal_state and self.orientation == goal_orientation and set(self.markers_locations) == set(goal_markers)
 
-
-    def addMagicSquares(self, magicSquares):
-        self.magicSquares = magicSquares
-        i = 2
-        #the representation of the magic square in the grid world to be 2
-        for square in self.magicSquares:
-            x = square // self.m
-            #we need to know what position we are in
-            #the x will be the floor of the current squre/rows
-            y = square % self.n
-            #y is the modules of the columns
-            self.grid[x][y] = i
-            i += 1
-            x = magicSquares[square] // self.m
-            y = magicSquares[square] % self.n
-            self.grid[x][y] = i
-            i += 1
-
+    
     def getAgentRowAndColumn(self):
         x = self.agentPosition // self.m
         y = self.agentPosition % self.n
         return x, y
 
+
+    def getAgentXY(self, state):
+        x = state // self.m
+        y = state % self.n
+        return x, y
     def setState(self, state):
         x, y = self.getAgentRowAndColumn()
         #but here if the agent is top-left and moved left it get reward of -1 and still ther
@@ -159,62 +168,80 @@ class GridWorld(object):
         self.grid[x][y] = 1
         #put the agent position as 1
 
-    def offGridMove(self, newState, oldState):
+    def offGridMove(self, changeState):
         # if we move into a row not in the grid
-        if newState not in self.stateSpacePlus:
+        
+        x,y = self.getAgentRowAndColumn()
+        if self.orientation == "north" and x ==0:
             #if the new state is not in the grid world then we are moving out of the grid
             return True
         # if we're trying to wrap around to next row
-        elif oldState % self.m == 0 and newState  % self.m == self.m - 1:
-            #if you are in the bottom one and you want to reduce it so reach in the top row
+        if self.orientation == "south" and x==self.m-1:
+            #if the new state is not in the grid world then we are moving out of the grid
             return True
-        elif oldState % self.m == self.m - 1 and newState % self.m == 0:
+        
+        if self.orientation == "east" and y==self.n-1:
+            #if the new state is not in the grid world then we are moving out of the grid
             return True
-        else:
-            return False
+        
+        if self.orientation == "west" and y==0:
+            #if the new state is not in the grid world then we are moving out of the grid
+            return True
+
+        ### walls
+        newState = self.agentPosition + changeState
+        x,y = self.getAgentXY(newState)
+        return (x,y) in self.wallLocations
+        
 
     def step(self, action):
         agentX, agentY = self.getAgentRowAndColumn()
-        resultingState = self.agentPosition + self.actionSpace[action]
-        #the actionSpace return the change in the state that induced when perfomring the specific action
-
-        if resultingState in self.magicSquares.keys():
-            resultingState = magicSquares[resultingState]
-
-        reward = -1 if not self.isTerminalState(resultingState) else 0
-        if not self.offGridMove(resultingState, self.agentPosition):
-            self.setState(resultingState)
-            #open-ai gym return the new-state, the reward, the game is over, more information
-            return resultingState, reward, \
-                   self.isTerminalState(resultingState), None
+        stateChange, REWARD = self.actionSpace(action)
+        offGridBool= self.offGridMove(stateChange)
+        if  offGridBool:
+            self.agentisAlive = False
+            return self.agentPosition, self.crashReward, True, None
+            #since the agent already is outside the grid and died
         else:
-            return self.agentPosition, reward, \
-                   self.isTerminalState(self.agentPosition), None
+            self.agentPosition += stateChange
+            resultingState = self.agentPosition
+            self.setState(resultingState)
+
+            done = REWARD==0 or not self.agentisAlive
+            return resultingState, REWARD, done, None
+            #the only scenario in which rewards is zero is when the agent finish using finish.
+
+    
+
 
     def reset(self):
-        self.agentPosition = 0
+        self.agentPosition = self.init_position
+        self.agentisAlive = True
         self.grid = np.zeros((self.m,self.n))
-        self.addMagicSquares(self.magicSquares)
+        self.markers_locations = self.initiial_markers_locations
+        self.wallLocations = self.initial_wall_locations
+        self.orientation = self.init_orientation
+        self.grid = np.zeros((self.m,self.n))
+        self.grid[self.init_state] = 1
         return self.agentPosition
 
     def render(self):
         print('------------------------------------------')
-        for row in self.grid:
-            for col in row:
-                if col == 0:
-                    print('-', end='\t')
-                elif col == 1:
+        for row in range(self.m):
+            for col in range(self.n):
+                if self.grid[row][col] == 0:
+                    if (row,col) in self.wallLocations: 
+                        print("W", end="\t")
+                    elif (row,col) in self.markers_locations:
+                        print("M",end="\t")
+                    else:
+                        
+
+                        print('-', end='\t')
+                else:
                     #col=1 then this mean we have an-agent there and then print X
                     print('X', end='\t')
-                elif col == 2:
-                    #if the column is 2 then this is onw of of our magic squares entrace
-                    print('Ain', end='\t')
-                elif col == 3:
-                    print('Aout', end='\t')
-                elif col == 4:
-                    print('Bin', end='\t')
-                elif col == 5:
-                    print('Bout', end='\t')
+                
             print('\n')
             #after each line we want to print a new line
         print('------------------------------------------')
@@ -232,10 +259,10 @@ def maxAction(Q, state, actions):
 
 if __name__ == '__main__':
     # map magic squares to their connecting square
-    magicSquares = {18: 54, 63: 14}
+    # magicSquares = {18: 54, 63: 14}
     #the first magic square is at position 18 and takes the agent to position54
     #the second magic square is at position 63 and takes the agent into position 14
-    env = GridWorld(9, 9, magicSquares)
+    env = GridWorld(9, 9,(6,1),"east",[(5,4),(3,2)], [(4,4),(3,3)],((8,8),'south',[(3,2)]))
     # model hyperparameters
     ALPHA = 0.1
     #learning rate
@@ -246,6 +273,7 @@ if __name__ == '__main__':
 
 
     Q = {}
+    action_seq = []
     for state in env.stateSpacePlus:
         #for all possible states in the system make the action value function zero
         for action in env.possibleActions:
@@ -254,11 +282,12 @@ if __name__ == '__main__':
             #so if the agent is starting with zero, but then the agent go reward -1 which is significanly
             #worse than 0 then the agent think about doing more exploration.
 
-    numGames = 50000
+    numGames = 5_000
     totalRewards = np.zeros(numGames)
     env.render()
     for i in range(numGames):
-        if i % 5000 == 0:
+        eps_actions = []
+        if i % 100 == 0:
             print('starting game ', i)
         done = False
         epRewards = 0
@@ -269,6 +298,11 @@ if __name__ == '__main__':
             action = maxAction(Q,observation, env.possibleActions) if rand < (1-EPS) \
                                                     else env.actionSpaceSample()
             observation_, reward, done, info = env.step(action)
+            
+            eps_actions.append(action)
+            if done and reward ==0:
+                action_seq.append(eps_actions)
+                print(eps_actions)
             #take the action from the maxAction
             epRewards += reward
 
