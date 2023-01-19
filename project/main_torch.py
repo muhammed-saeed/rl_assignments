@@ -17,7 +17,7 @@ for i in range(1000):
     score = 0
     while not done:
         act = agent.choose_action(obs)
-        new_state, reward, done, info = env.step(act)
+        new_state, reward, done, truncated,info = env.step(act)
         agent.remember(obs, act, reward, new_state, int(done))
         agent.learn()
         score += reward

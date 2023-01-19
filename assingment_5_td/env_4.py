@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 # main loop with the agent in which we are using q_learning
 
 class GridWorld(object):
-    def __init__(self, m, n, init_state, orientation, markers_locations, wall_locations, terminal_state):
+    def __init__(self, m, n, init_state, orientation, markers_locations, wall_locations, terminal_state, possible_actions):
         self.grid = np.zeros((m,n))
         self.grid[init_state] = 1
         #the location of the agent to be 1
@@ -45,7 +45,7 @@ class GridWorld(object):
         self.terminalStates = terminal_state #[[x,y],"orientation", [[markers1],[marker2]]]
 
         #
-        self.possibleActions = ['m', 'l', 'r', 'f','pick','put']
+        self.possibleActions = possible_actions
        
         self.agentPosition = self.n*init_state[0] + init_state[1]
         self.init_position = self.agentPosition
@@ -262,7 +262,11 @@ if __name__ == '__main__':
     # magicSquares = {18: 54, 63: 14}
     #the first magic square is at position 18 and takes the agent to position54
     #the second magic square is at position 63 and takes the agent into position 14
-    env = GridWorld(9, 9,(6,1),"east",[(5,4),(3,2)], [(4,4),(3,3)],((8,8),'south',[(3,2)]))
+
+    # m, n, init_state, orientation, markers_locations, wall_locations, terminal_state, possible_actions):
+    #terminal_state #[[x,y],"orientation", [[markers1],[marker2]]]
+    env = GridWorld(6, 6,(3,1),"west",[(6,0),(2,1)], [(3,2),(4,3)],((6,2),'east',[(2,1)]), ['m', 'l', 'r', 'f','pick','put'])
+    env = GridWorld(4,4, (1,1), "west",[None],[(1,2),(2,3)],[(3,2),"east",[None]],['m', 'l', 'r', 'f'])
     # model hyperparameters
     ALPHA = 0.1
     #learning rate
@@ -274,6 +278,7 @@ if __name__ == '__main__':
 
     Q = {}
     action_seq = []
+    counter = []
     for state in env.stateSpacePlus:
         #for all possible states in the system make the action value function zero
         for action in env.possibleActions:
@@ -282,7 +287,7 @@ if __name__ == '__main__':
             #so if the agent is starting with zero, but then the agent go reward -1 which is significanly
             #worse than 0 then the agent think about doing more exploration.
 
-    numGames = 5_000
+    numGames = 10_000
     totalRewards = np.zeros(numGames)
     env.render()
     for i in range(numGames):
@@ -302,6 +307,7 @@ if __name__ == '__main__':
             eps_actions.append(action)
             if done and reward ==0:
                 action_seq.append(eps_actions)
+                counter.append(i)
                 print(eps_actions)
             #take the action from the maxAction
             epRewards += reward
@@ -317,6 +323,10 @@ if __name__ == '__main__':
         else:
             EPS = 0
         totalRewards[i] = epRewards
-
+    with open("/home/muhammed-saeed/Documents/rl_assignments/assingment_4/results.txt","w") as fb:
+        for number, solution in enumerate(action_seq):
+            fb.write(f"The solution occured at {counter[number]} episode \n")
+            fb.write(" ".join(solution))
+            fb.write('\n-------------- -------------- ---------- -------- \n')
     plt.plot(totalRewards)
     plt.show()

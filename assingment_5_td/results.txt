@@ -1,0 +1,9 @@
+The solution occured at 1174 episode 
+l r l r m l m m l m m f
+-------------- -------------- ---------- -------- 
+The solution occured at 2238 episode 
+l l l r r r l l r m r r l l r r l r l l m l m f
+-------------- -------------- ---------- -------- 
+The solution occured at 2809 episode 
+l l r r l m m l m f
+-------------- -------------- ---------- -------- 

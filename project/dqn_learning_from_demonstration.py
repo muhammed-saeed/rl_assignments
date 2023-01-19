@@ -12,10 +12,12 @@ env = gym.make("CartPole-v0")
 demonstration_data = []
 state = env.reset()
 done = False
+num_episodes = 10000
+epsilon = 0.2
 while not done:
     action = env.action_space.sample() # randomly choose an action
     # print(env.step(action))
-    next_state, reward, done, _ = env.step(action)
+    next_state, reward, done,_ = env.step(action)
 
     demonstration_data.append((state, action, reward))
     state = next_state
