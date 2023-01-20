@@ -57,7 +57,7 @@ if __name__ == '__main__':
     print(f"{initial_settings[0]} \n\n {initial_settings[1]}")
     env = GridWorld(*initial_settings[0])
     #the * to seperate the elements of the array
-    env = GridWorld(4,4, (1,1), "west",[],[(1,2),(2,3)],[(3,2),"east",[]],['m', 'l', 'r', 'f'])
+    env = GridWorld(4,4, (1,1), "west",[],[(1,2),(2,3)],[(3,2),"east",[]],['m', 'l', 'r', 'f', "put", "pick"])
     # model hyperparameters
     ALPHA = 0.1
     #learning rate
