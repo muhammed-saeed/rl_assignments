@@ -206,7 +206,7 @@ class GridWorld(object):
             self.agentPosition += stateChange
             resultingState = self.agentPosition
             self.setState(resultingState)
-
+            resultingState = self.get_state()
             done = REWARD==0 or not self.agentisAlive
             return resultingState, REWARD, done, None
             #the only scenario in which rewards is zero is when the agent finish using finish.
@@ -223,7 +223,8 @@ class GridWorld(object):
         self.orientation = self.init_orientation
         self.grid = np.zeros((self.m,self.n))
         self.grid[self.init_state] = 1
-        return self.agentPosition
+        # return self.agentPosition
+        return self.get_state()
 
     def render(self):
         print('------------------------------------------')
@@ -245,7 +246,35 @@ class GridWorld(object):
             print('\n')
             #after each line we want to print a new line
         print('------------------------------------------')
+        
+    
 
+    def get_state(self):
+        #this function returns the grid itsself and binary representation
+        # 0 indicates that the cell is clear
+        # 1 indicates that the cell is wall
+        # 2 indicates the cell contains a marker
+        # 
+        map = np.zeros((self.m, self.n))
+        for i,j in self.wallLocations:
+            map[i][j] += 1
+            #if the locatin is wall then add 1
+        for i,j in self.markers_locations:
+            map[i][j] += 2
+            #if marker then add 2 
+        direction = ["north", "south", "east", "west"].index(self.orientation)
+        direction = 2**(direction + 2)
+        #using index from the orientation
+        # north:4, south: 8, east: 16, west: 32
+        
+        i,j = self.getAgentRowAndColumn()
+        # print(self.agentPosition, i, j, self.orientation)
+        map[i][j] += direction
+        
+        return map
+        
+            
+            
     def actionSpaceSample(self):
         #return just a random choice of list of possible options in the system
         return np.random.choice(self.possibleActions)

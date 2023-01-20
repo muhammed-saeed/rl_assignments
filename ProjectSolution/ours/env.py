@@ -250,13 +250,23 @@ class GridWorld(object):
     
 
     def get_state(self):
+        #this function returns the grid itsself and binary representation
+        # 0 indicates that the cell is clear
+        # 1 indicates that the cell is wall
+        # 2 indicates the cell contains a marker
+        # 
         map = np.zeros((self.m, self.n))
         for i,j in self.wallLocations:
             map[i][j] += 1
+            #if the locatin is wall then add 1
         for i,j in self.markers_locations:
             map[i][j] += 2
+            #if marker then add 2 
         direction = ["north", "south", "east", "west"].index(self.orientation)
         direction = 2**(direction + 2)
+        #using index from the orientation
+        # north:4, south: 8, east: 16, west: 32
+        
         i,j = self.getAgentRowAndColumn()
         # print(self.agentPosition, i, j, self.orientation)
         map[i][j] += direction
