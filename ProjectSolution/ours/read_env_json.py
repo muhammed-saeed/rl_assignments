@@ -1,25 +1,12 @@
-import argparse
-import json
 import os
+import json
 
-parser = argparse.ArgumentParser(description='Reads environment json file.')
-parser.add_argument('mode', type=str, help='train, val, or test')
-parser.add_argument('--train-folder', type=str, help='path to the folder containing env json files')
-parser.add_argument('--val-folder', type=str, help='path to the folder containing env json files')
-parser.add_argument('--train-solution', type=str, help='path to the solution containing env json files')
-parser.add_argument('--val-solution', type=str, help='path to the solution containing env json files')
-parser.add_argument('--test-folder', type=str, help='path to the folder containing env json files')
-
-args = parser.parse_args()
-
-mode = args.mode
-train_path = args.train_folder
-train_target_path = args.train_solution
-val_path = args.val_folder
-val_target_path = args.val_solution
-
-
-if (mode):
+mode = "train"
+train_path = "/home/muhammed-saeed/Documents/rl_assignments/train"
+train_target_path = "/home/muhammed-saeed/Documents/rl_assignments/trainSolution"
+# val_path = args.val_folder
+# val_target_path = args.val_solution
+def read_env_sol_json (mode,train_path,train_target_path):
     if(train_path and train_target_path):
         json_files = [i for i in os.listdir(train_path) if i.endswith("json")]
         json_target_files = [i for i in os.listdir(train_target_path) if i.endswith("json")]
@@ -52,7 +39,7 @@ if (mode):
                 walls_tuple = [tuple(sublist) for sublist in walls]
                 init_markers_tuple = [tuple(sublist) for sublist in init_markers]
                 final_markers_tuple = [tuple(sublist) for sublist in final_markers]
-                print(rows ,
+                return (rows ,
                 cols ,
                 agent_pos ,
                 agent_dir ,

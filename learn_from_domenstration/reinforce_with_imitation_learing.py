@@ -20,8 +20,8 @@ class Policy(nn.Module):
         return x
 
 # Collect expert demonstrations
-# env = gym.make('CartPole-v0')
-env  = gym.make('Gridworld-v0')
+env = gym.make('CartPole-v0')
+# env  = gym.make('Gridworld-v0')
 expert_data = []
 for _ in range(100):
     obs = env.reset()
