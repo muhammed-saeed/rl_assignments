@@ -1,6 +1,6 @@
 import sys
 import os 
-import torch
+# import torch
 import random
 import numpy as np
 import matplotlib as plt
@@ -8,7 +8,7 @@ from env import GridWorld
 from collections import deque
 from read_env_json import read_env_sol_json
 
-from dqnAgent import model
+# from dqnAgent import model
 
 import copy
 
@@ -18,34 +18,36 @@ l3 = 100
 l4 = 4
 
 
-model = torch.nn.Sequential(
-    torch.nn.Linear(l1, l2),
-    torch.nn.ReLU(),
-    torch.nn.Linear(l2, l3),
-    torch.nn.ReLU(),
-    torch.nn.Linear(l3,l4)
-)
+# model = torch.nn.Sequential(
+#     torch.nn.Linear(l1, l2),
+#     torch.nn.ReLU(),
+#     torch.nn.Linear(l2, l3),
+#     torch.nn.ReLU(),
+#     torch.nn.Linear(l3,l4)
+# )
 
-model2 = copy.deepcopy(model) #A
-model2.load_state_dict(model.state_dict()) #B
+# model2 = copy.deepcopy(model) #A
+# model2.load_state_dict(model.state_dict()) #B
 
-loss_fn = torch.nn.MSELoss()
-learning_rate = 1e-3
-optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
+# loss_fn = torch.nn.MSELoss()
+# learning_rate = 1e-3
+# optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
 
 gamma = 0.9
 epsilon = 0.3
 
 
 mode = "train"
-train_path = "/home/muhammed-saeed/Documents/rl_assignments/train"
-train_target_path = "/home/muhammed-saeed/Documents/rl_assignments/trainSolution"
+train_path = "/home/ahmed/Dev/rl_assignments/train"
+train_target_path = "/home/ahmed/Dev/rl_assignments/trainSolution"
 # m, n, init_state, orientation, markers_locations, wall_locations, terminal_state, possible_actions):
 #terminal_state #[[x,y],"orientation", [[markers1],[marker2]]]
 actions = ['m', 'l', 'r', 'f','pick','put']
-initial_settings = read_env_sol_json(mode, train_path, train_target_path)
-print(f"{initial_settings[0]} \n\n {initial_settings[1]}")
-env = GridWorld(*initial_settings[0])
+memory = read_env_sol_json(mode, train_path, train_target_path)
+print(memory[0])
+# memory = get_memory(mode, train_path, train_target_path)
+# print(f"{initial_settings[0]} \n\n {initial_settings[1]}")
+# env = GridWorld(*initial_settings[0])
 epochs = 100
 losses = []
 mem_size = 1000 #A
