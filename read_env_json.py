@@ -35,6 +35,7 @@ val_target_path = args.val_solution
 
 memory = []
 
+#modify the code therefore the agent is able to interact
 
 if (mode):
     if (train_path and train_target_path):
