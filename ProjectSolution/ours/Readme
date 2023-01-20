@@ -1,0 +1,15 @@
+The env_4.py is the environment file
+it composes both the environment and the Q_learning alogrithm
+The code is modified from "machine Learning tutorial with Phill"
+
+The ENV_CLASS has the following :    env = GridWorld(row, columns, tuple(initial_state_x, initial_state_y),
+ str("agent_orientation"),List(tuples(markers_locations)],List(tuples(wall_locations)],
+ [tuple(agent_final_location_x,agent_final_location_y),str(agent_final_orientation),List[tuple(final_markers_locations)],LIST[possible_actions])
+
+
+Task_2 env is 
+env = GridWorld(4,4, (1,1), "west",[None],[(1,2),(2,3)],[(3,2),"east",[None]],['m', 'l', 'r', 'f'])
+    
+Task_1 env is 
+env = GridWorld(6, 6,(3,1),"west",[(6,0),(2,1)], [(3,2),(4,3)],((6,2),'east',[(2,1)]), ['m', 'l', 'r', 'f','pick','put'])
+
