@@ -94,7 +94,7 @@ if __name__ == '__main__':
             action = maxAction(Q,observation, env.possibleActions) if rand < (1-EPS) \
                                                     else env.actionSpaceSample()
             observation_, reward, done, info = env.step(action)
-            
+            print(f"reward is {reward}")
             eps_actions.append(action)
             if done and reward ==0:
                 action_seq.append(eps_actions)

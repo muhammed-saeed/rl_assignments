@@ -4,11 +4,45 @@ import sys
 import os
 from env import GridWorld
 from read_env_json import read_env_sol_json
+import base64
+from collections import defaultdict
+
+symbols_b64 = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-_'
+
+def def_value():
+    return 0
+
+def v2r(n, base=symbols_b64): # value to representation
+    """
+    Convert a positive integer to its string representation in a custom base.
+    
+    :param n: the numeric value to be represented by the custom base
+    :param base: the custom base defined as a string of characters, used as symbols of the base
+    :returns: the string representation of natural number n in the custom base
+    """
+    if n == 0: return base[0]
+    b = len(base)
+    digits = ''
+    while n > 0:
+        digits = base[n % b] + digits
+        n  = n // b
+    return digits
+
+def stringify_state(state):
+    # print(state)
+    str_state = ""
+    for i in np.ravel(state):
+        n = int(i)
+        rep = v2r(n)
+        # print(n, rep)
+        str_state += rep
+    return str_state
 
 def maxAction(Q, state, actions):
     #this belongs to the agent
     #the agent estimates of the present value for each state, action pair
-    values = np.array([Q[state,a] for a in actions])
+    state_str = stringify_state(state)
+    values = np.array([Q[state_str,a] for a in actions])
     action = np.argmax(values)
     return actions[action]
 
@@ -23,7 +57,7 @@ if __name__ == '__main__':
     print(f"{initial_settings[0]} \n\n {initial_settings[1]}")
     env = GridWorld(*initial_settings[0])
     #the * to seperate the elements of the array
-    env = GridWorld(4,4, (1,1), "west",[],[(1,2),(2,3)],[(3,2),"east",[]],['m', 'l', 'r', 'f'])
+    # env = GridWorld(4,4, (1,1), "west",[],[(1,2),(2,3)],[(3,2),"east",[]],['m', 'l', 'r', 'f', "put", "pick"])
     # model hyperparameters
     ALPHA = 0.1
     #learning rate
@@ -33,7 +67,7 @@ if __name__ == '__main__':
     #epsilon-greedy action selection "start random and then ends with selecting the best state-action pairs"
 
 
-    Q = {}
+    Q = defaultdict(def_value)
     action_seq = []
     counter = []
     for state in env.stateSpacePlus:
@@ -70,8 +104,11 @@ if __name__ == '__main__':
             epRewards += reward
 
             action_ = maxAction(Q, observation_, env.possibleActions)
-            Q[observation,action] = Q[observation,action] + ALPHA*(reward + \
-                        GAMMA*Q[observation_,action_] - Q[observation,action])
+            # print(observation)
+            obs_str = stringify_state(observation)
+            obs_str_ = stringify_state(observation_)
+            Q[obs_str,action] = Q[obs_str,action] + ALPHA*(reward + \
+                        GAMMA*Q[obs_str_,action_] - Q[obs_str,action])
             #calculation the max_action for the new_state, this where the alpha comes in to modify the values
             #
             observation = observation_
