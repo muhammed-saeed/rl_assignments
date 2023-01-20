@@ -39,7 +39,7 @@ def read_env_sol_json (mode,train_path,train_target_path):
                 walls_tuple = [tuple(sublist) for sublist in walls]
                 init_markers_tuple = [tuple(sublist) for sublist in init_markers]
                 final_markers_tuple = [tuple(sublist) for sublist in final_markers]
-                return (rows ,
+                enviromentDetails =  (rows ,
                 cols ,
                 agent_pos ,
                 agent_dir ,
@@ -49,7 +49,9 @@ def read_env_sol_json (mode,train_path,train_target_path):
                 agent_final_dir ,
                 final_markers_tuple ,
                 ],
-                ['m', 'l', 'r', 'f']
+                ['m', 'l', 'r', 'f','pick','put']
                 )
+                bestActionSeq = train_seq["sequence"]
+                return (enviromentDetails, bestActionSeq)
                 print()
                 print(train_seq["sequence"])

@@ -20,10 +20,10 @@ if __name__ == '__main__':
     #terminal_state #[[x,y],"orientation", [[markers1],[marker2]]]
     actions = ['m', 'l', 'r', 'f','pick','put']
     initial_settings = read_env_sol_json(mode, train_path, train_target_path)
-    print(initial_settings)
-    env = GridWorld(*initial_settings)
+    print(f"{initial_settings[0]} \n\n {initial_settings[1]}")
+    env = GridWorld(*initial_settings[0])
     #the * to seperate the elements of the array
-    env = GridWorld(4,4, (1,1), "west",[None],[(1,2),(2,3)],[(3,2),"east",[None]],['m', 'l', 'r', 'f'])
+    env = GridWorld(4,4, (1,1), "west",[],[(1,2),(2,3)],[(3,2),"east",[]],['m', 'l', 'r', 'f'])
     # model hyperparameters
     ALPHA = 0.1
     #learning rate
