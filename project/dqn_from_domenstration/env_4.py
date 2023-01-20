@@ -250,12 +250,7 @@ class GridWorld(object):
         #return just a random choice of list of possible options in the system
         return np.random.choice(self.possibleActions)
 
-def maxAction(Q, state, actions):
-    #this belongs to the agent
-    #the agent estimates of the present value for each state, action pair
-    values = np.array([Q[state,a] for a in actions])
-    action = np.argmax(values)
-    return actions[action]
+
 
 # if __name__ == '__main__':
 #     # map magic squares to their connecting square

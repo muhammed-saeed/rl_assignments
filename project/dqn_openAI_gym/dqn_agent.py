@@ -12,6 +12,7 @@ class DQN_Agent:
         self.target_net = copy.deepcopy(self.q_net)
         self.q_net.cuda()
         self.target_net.cuda()
+        
         self.loss_fn = torch.nn.MSELoss()
         self.optimizer = torch.optim.Adam(self.q_net.parameters(), lr=lr)
 
