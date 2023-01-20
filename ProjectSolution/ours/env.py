@@ -258,7 +258,7 @@ class GridWorld(object):
         direction = ["north", "south", "east", "west"].index(self.orientation)
         direction = 2**(direction + 2)
         i,j = self.getAgentRowAndColumn()
-        print(self.agentPosition, i, j, self.orientation)
+        # print(self.agentPosition, i, j, self.orientation)
         map[i][j] += direction
         
         return map
