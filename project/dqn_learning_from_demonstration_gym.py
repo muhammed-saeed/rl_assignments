@@ -53,8 +53,12 @@ replay_buffer = deque(maxlen=1000)
 for state, action, reward in demonstration_data:
     state = torch.tensor(state, dtype=torch.float32)
     q_values = model(state)
-    q_values[action] = reward + gamma * torch.max(q_values)
+    action = torch.tensor(action, dtype=torch.long)
+    action = action.view(-1,1)
+    q_values = q_values.gather(1, action)
+    q_values = reward + gamma * torch.max(q_values)
     replay_buffer.append((state, q_values))
+
 
 # Train the DQN using the replay buffer
 for episode in range(num_episodes):
