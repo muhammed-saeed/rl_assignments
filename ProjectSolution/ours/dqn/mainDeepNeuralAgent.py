@@ -48,6 +48,9 @@ print(memory[0])
 # memory = get_memory(mode, train_path, train_target_path)
 # print(f"{initial_settings[0]} \n\n {initial_settings[1]}")
 # env = GridWorld(*initial_settings[0])
+
+### up until here is working
+
 epochs = 100
 losses = []
 mem_size = 1000 #A
