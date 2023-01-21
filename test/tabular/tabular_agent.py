@@ -3,6 +3,7 @@ import numpy as np
 import sys
 import os
 from env import GridWorld
+from read_env_json import read_env_sol_json
 import base64
 from collections import defaultdict
 

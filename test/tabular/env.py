@@ -110,8 +110,11 @@ class GridWorld(object):
             elif action == "put":
                 if not self.isHandEmpty:
                     x,y = self.getAgentRowAndColumn()
-
-                    self.markers_locations.append((x,y))
+                    # print(f"({x},{y})")
+                    # print(self.markers_locations)
+                    if (x,y) not in self.markers_locations:
+                        # print("yeah already in the markers")
+                        self.markers_locations.append((x,y))
                     return 0, self.reward
                 else:
                     self.agentisAlive = False
