@@ -27,10 +27,12 @@ class ActorCritic(nn.Module): #B
         c = F.relu(self.l3(y.detach()))
         critic = torch.tanh(self.critic_lin1(c)) #D
         return actor, critic #E
+env = GridWorld(4,4, (1,1), "west",[],[(1,2),(2,3)],[(3,2),"east",[]],['m', 'l', 'r', 'f', "put", "pick"])
 
 
 def worker(t, worker_model, counter, params):
-    worker_env = gym.make("CartPole-v1")
+    # worker_env = gym.make("CartPole-v1")
+    worker_env = env
     worker_env.reset()
     worker_opt = optim.Adam(lr=1e-4,params=worker_model.parameters()) #A
     worker_opt.zero_grad()
@@ -103,7 +105,7 @@ for p in processes: #G
     
 print(counter.value,processes[1].exitcode) #H
 
-env = gym.make("CartPole-v1")
+# env = gym.make("CartPole-v1")
 env.reset()
 
 for i in range(100):
