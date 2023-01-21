@@ -38,8 +38,8 @@ epsilon = 0.3
 
 
 mode = "train"
-train_path = "/home/muhammed-saeed/Documents/rl_assignments/train"
-train_target_path = "/home/muhammed-saeed/Documents/rl_assignments/trainSolution"
+train_path = "/home/muhammed-saeed/Documents/rl_assignments/project/datasets/data/train/task"
+train_target_path = "/home/muhammed-saeed/Documents/rl_assignments/project/datasets/data/train/seq"
 # m, n, init_state, orientation, markers_locations, wall_locations, terminal_state, possible_actions):
 #terminal_state #[[x,y],"orientation", [[markers1],[marker2]]]
 actions = ['m', 'l', 'r', 'f','pick','put']
