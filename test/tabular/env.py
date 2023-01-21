@@ -35,7 +35,7 @@ class GridWorld(object):
         #moving up will reduce the agent position one row so m
         #movnig down will advance the agent position one rown so m states
         self.agentisAlive =  True
-        self.isHandEmpty = True
+        self.isHandEmpty = False
     
         self.markers_locations = list(markers_locations)
         self.wallLocations = list(wall_locations)
@@ -108,14 +108,14 @@ class GridWorld(object):
                     #if the agent crashes then the reward has to be high negatve value
                 
             elif action == "put":
-                # if not self.isHandEmpty:
+                if not self.isHandEmpty:
                     x,y = self.getAgentRowAndColumn()
 
                     self.markers_locations.append((x,y))
                     return 0, self.reward
-                # else:
-                #     self.agentisAlive = False
-                #     return 0, self.crashReward
+                else:
+                    self.agentisAlive = False
+                    return 0, self.crashReward
 
 
             

@@ -1,9 +1,8 @@
-import matplotlib as plt
+import matplotlib.pyplot as plt
 import numpy as np
 import sys
 import os
 from env import GridWorld
-from read_env_json import read_env_sol_json
 import base64
 from collections import defaultdict
 
@@ -48,14 +47,15 @@ def maxAction(Q, state, actions):
 
 if __name__ == '__main__':
     mode = "train"
-    train_path = "/home/muhammed-saeed/Documents/rl_assignments/train"
-    train_target_path = "/home/muhammed-saeed/Documents/rl_assignments/trainSolution"
+    train_path = "/home/muhammed-saeed/Documents/rl_assignments/test/task/"
+    train_target_path = "/home/muhammed-saeed/Documents/rl_assignments/test/solution/"
     # m, n, init_state, orientation, markers_locations, wall_locations, terminal_state, possible_actions):
     #terminal_state #[[x,y],"orientation", [[markers1],[marker2]]]
     actions = ['m', 'l', 'r', 'f','pick','put']
-    initial_settings = read_env_sol_json(mode, "/home/muhammed-saeed/Documents/rl_assignments/train/6_task.json", train_target_path)
-    print(f"{initial_settings[0]} \n\n {initial_settings[1]}")
-    env = GridWorld(*initial_settings[0])
+    initial_settings = read_env_sol_json(mode, train_path, train_target_path)
+    print(f"initial settings are {initial_settings}")
+    # print(f"{initial_settings[0]} \n\n {initial_settings[1]}")
+    # env = GridWorld(*initial_settings[0])
     #the * to seperate the elements of the array
     env = GridWorld(4,4, (1,1), "west",[],[(1,2),(2,3)],[(3,2),"east",[]],['m', 'l', 'r', 'f', "put", "pick"])
     # model hyperparameters
@@ -78,7 +78,7 @@ if __name__ == '__main__':
             #so if the agent is starting with zero, but then the agent go reward -1 which is significanly
             #worse than 0 then the agent think about doing more exploration.
 
-    numGames = 10_000
+    numGames = 100_000
     totalRewards = np.zeros(numGames)
     env.render()
     for i in range(numGames):
@@ -94,12 +94,12 @@ if __name__ == '__main__':
             action = maxAction(Q,observation, env.possibleActions) if rand < (1-EPS) \
                                                     else env.actionSpaceSample()
             observation_, reward, done, info = env.step(action)
-            # print(f"reward is {reward}")
+            
             eps_actions.append(action)
             if done and reward ==0:
                 action_seq.append(eps_actions)
                 counter.append(i)
-                # print(eps_actions)
+                print(eps_actions)
             #take the action from the maxAction
             epRewards += reward
 

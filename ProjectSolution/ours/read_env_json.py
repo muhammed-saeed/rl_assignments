@@ -1,9 +1,9 @@
 import os
 import json
 
-mode = "train"
-train_path = "/home/muhammed-saeed/Documents/rl_assignments/train"
-train_target_path = "/home/muhammed-saeed/Documents/rl_assignments/trainSolution"
+# mode = "train"
+# train_path = "/home/muhammed-saeed/Documents/rl_assignments/train"
+# train_target_path = "/home/muhammed-saeed/Documents/rl_assignments/trainSolution"
 # val_path = args.val_folder
 # val_target_path = args.val_solution
 def read_env_sol_json (mode,train_path,train_target_path):
@@ -51,7 +51,8 @@ def read_env_sol_json (mode,train_path,train_target_path):
                 ],
                 ['m', 'l', 'r', 'f','pick','put']
                 )
-                bestActionSeq = train_seq["sequence"]
-                return (enviromentDetails, bestActionSeq)
                 print()
                 print(train_seq["sequence"])
+                bestActionSeq = train_seq["sequence"]
+                return (enviromentDetails, bestActionSeq)
+                

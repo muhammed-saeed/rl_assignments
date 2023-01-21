@@ -59,8 +59,8 @@ def loss_fn(preds, r): #A
 
 
 mode = "train"
-train_path = "/home/muhammed-saeed/Documents/rl_assignments/train"
-train_target_path = "/home/muhammed-saeed/Documents/rl_assignments/trainSolution"
+train_path = "/home/muhammed-saeed/Documents/rl_assignments/test/task"
+train_target_path = "/home/muhammed-saeed/Documents/rl_assignments/test/solution"
 # m, n, init_state, orientation, markers_locations, wall_locations, terminal_state, possible_actions):
 #terminal_state #[[x,y],"orientation", [[markers1],[marker2]]]
 actions = ['m', 'l', 'r', 'f','pick','put']
@@ -94,7 +94,7 @@ for episode in range(MAX_EPISODES):
         # print(f"{action} and {reward}")
         # transitions.append((prev_state, action, t+1)) #G
         transitions.append((prev_state, action, reward)) #G
-        print(f"{prev_state} and {action} and {reward}")
+        print(f"{prev_state} and {actionString} and {reward}")
         if done: #H
             break
         if done and reward ==0:
