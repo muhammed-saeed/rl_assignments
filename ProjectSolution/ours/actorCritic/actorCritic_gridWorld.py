@@ -1,6 +1,7 @@
 import multiprocessing as mp
 import numpy as np
-
+from env import GridWorld
+from read_env_json import read_env_sol_json
 
 import torch
 from torch import nn
@@ -13,9 +14,9 @@ import torch.multiprocessing as mp #A
 class ActorCritic(nn.Module): #B
     def __init__(self):
         super(ActorCritic, self).__init__()
-        self.l1 = nn.Linear(4,25)
+        self.l1 = nn.Linear(16,25)
         self.l2 = nn.Linear(25,50)
-        self.actor_lin1 = nn.Linear(50,2)
+        self.actor_lin1 = nn.Linear(50,6)
         self.l3 = nn.Linear(50,25)
         self.critic_lin1 = nn.Linear(25,1)
     def forward(self,x):
