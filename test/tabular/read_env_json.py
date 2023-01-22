@@ -2,8 +2,8 @@ import os
 import json
 
 mode = "train"
-train_path = "/home/muhammed-saeed/Documents/rl_assignments/test/task"
-train_target_path = "/home/muhammed-saeed/Documents/rl_assignments/test/solution"
+train_path = "/home/ahmed/Dev/rl_assignments/test/task"
+train_target_path = "/home/ahmed/Dev/rl_assignments/test/solution"
 # val_path = args.val_folder
 # val_target_path = args.val_solution
 def read_env_sol_json (mode,train_path,train_target_path):

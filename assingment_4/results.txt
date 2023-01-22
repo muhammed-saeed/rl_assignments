@@ -1,0 +1,27 @@
+The solution occured at 781245 episode 
+m r m r pick r m l pick put put r pick m m l put put pick l r m put put pick m f
+-------------- -------------- ---------- -------- 
+The solution occured at 793195 episode 
+put l pick r l m m l l m r m l r r m l f
+-------------- -------------- ---------- -------- 
+The solution occured at 793627 episode 
+pick m l l m put r pick m l m put pick l l r put l r put pick r r m l put pick f
+-------------- -------------- ---------- -------- 
+The solution occured at 801228 episode 
+m l m m l pick m put l put pick put r put pick m f
+-------------- -------------- ---------- -------- 
+The solution occured at 805076 episode 
+l l l r r m r l m l l r put l put pick put l r r put pick m f
+-------------- -------------- ---------- -------- 
+The solution occured at 811352 episode 
+m r pick r r m l pick put put l put m put put r r l put pick put l m r r put pick m put pick m pick m l pick m l l r r m f
+-------------- -------------- ---------- -------- 
+The solution occured at 818305 episode 
+pick m l m pick l r m l pick put l put pick r m l r m put pick f
+-------------- -------------- ---------- -------- 
+The solution occured at 835806 episode 
+l m pick m l m f
+-------------- -------------- ---------- -------- 
+The solution occured at 836689 episode 
+l put pick m m r r r m f
+-------------- -------------- ---------- -------- 

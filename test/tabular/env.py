@@ -35,7 +35,7 @@ class GridWorld(object):
         #moving up will reduce the agent position one row so m
         #movnig down will advance the agent position one rown so m states
         self.agentisAlive =  True
-        self.isHandEmpty = False
+        # self.isHandEmpty = False
     
         self.markers_locations = list(markers_locations)
         self.wallLocations = list(wall_locations)
@@ -91,7 +91,7 @@ class GridWorld(object):
             #the pickup action
             elif action == "pick":
                 if self.state_is_marker():
-                        self.isHandEmpty = False
+                        # self.isHandEmpty = False
                         #take the marker from the box
                         x,y = self.getAgentRowAndColumn()
                         
@@ -108,7 +108,7 @@ class GridWorld(object):
                     #if the agent crashes then the reward has to be high negatve value
                 
             elif action == "put":
-                if not self.isHandEmpty:
+                # if not self.isHandEmpty:
                     x,y = self.getAgentRowAndColumn()
                     # print(f"({x},{y})")
                     # print(self.markers_locations)
@@ -116,9 +116,9 @@ class GridWorld(object):
                         # print("yeah already in the markers")
                         self.markers_locations.append((x,y))
                     return 0, self.reward
-                else:
-                    self.agentisAlive = False
-                    return 0, self.crashReward
+                # else:
+                #     self.agentisAlive = False
+                #     return 0, self.crashReward
 
 
             
@@ -258,12 +258,13 @@ class GridWorld(object):
         # 1 indicates that the cell is wall
         # 2 indicates the cell contains a marker
         # 
-        map = np.zeros((self.m, self.n))
+        map = np.zeros((2,self.m, self.n))
         for i,j in self.wallLocations:
-            map[i][j] += 1
+            map[0][i][j] += 1
+            map[1][i][j] += 1
             #if the locatin is wall then add 1
         for i,j in self.markers_locations:
-            map[i][j] += 2
+            map[0][i][j] += 2
             #if marker then add 2 
         direction = ["north", "south", "east", "west"].index(self.orientation)
         direction = 2**(direction + 2)
@@ -272,7 +273,17 @@ class GridWorld(object):
         
         i,j = self.getAgentRowAndColumn()
         # print(self.agentPosition, i, j, self.orientation)
-        map[i][j] += direction
+        map[0][i][j] += direction
+        
+        # final desired state, map[1]
+        
+        for i,j in self.terminalStates[2]:
+            map[1][i][j] += 2
+            
+        final_dir = ["north", "south", "east", "west"].index(self.terminalStates[1])
+        final_dir = 2**(final_dir + 2)
+        i,j = self.terminalStates[0]
+        map[1][i][j] += final_dir
         
         return map
         

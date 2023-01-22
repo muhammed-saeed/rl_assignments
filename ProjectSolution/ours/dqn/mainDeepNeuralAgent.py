@@ -72,33 +72,33 @@ h = 0
 sync_freq = 500 #A
 j=0
 for i in range(epochs):
-    env = GridWorld(*initial_settings[0])
-    state1_ = env.reset()
-    state1 = torch.from_numpy(state1_).float()
-    status = 1
-    mov = 0
-    while(status == 1): 
-        j+=1
-        mov += 1
-        qval = model(state1)
-        qval_ = qval.data.numpy()
-        if (random.random() < epsilon):
-            action_ = np.random.randint(0,4)
-        else:
-            action_ = np.argmax(qval_)
+    # env = GridWorld(*initial_settings[0])
+    # state1_ = env.reset()
+    # state1 = torch.from_numpy(state1_).float()
+    # status = 1
+    # mov = 0
+    # while(status == 1): 
+        # j+=1
+        # mov += 1
+        # qval = model(state1)
+        # qval_ = qval.data.numpy()
+        # if (random.random() < epsilon):
+        #     action_ = np.random.randint(0,4)
+        # else:
+        #     action_ = np.argmax(qval_)
         
-        action = action_set[action_]
-        game.makeMove(action)
-        state2_ = game.board.render_np().reshape(1,64) + np.random.rand(1,64)/100.0
-        state2 = torch.from_numpy(state2_).float()
-        reward = game.reward()
-        done = True if reward > 0 else False
-        exp =  (state1, action_, reward, state2, done)
-        replay.append(exp) #H
-        state1 = state2
+        # action = action_set[action_]
+        # game.makeMove(action)
+        # state2_ = game.board.render_np().reshape(1,64) + np.random.rand(1,64)/100.0
+        # state2 = torch.from_numpy(state2_).float()
+        # reward = game.reward()
+        # done = True if reward > 0 else False
+        # exp =  (state1, action_, reward, state2, done)
+        # replay.append(exp) #H
+        # state1 = state2
         
-        if len(replay) > batch_size:
-            minibatch = random.sample(replay, batch_size)
+        # if len(replay) > batch_size:
+            minibatch = random.sample(memory, batch_size)
             state1_batch = torch.cat([s1 for (s1,a,r,s2,d) in minibatch])
             action_batch = torch.Tensor([a for (s1,a,r,s2,d) in minibatch])
             reward_batch = torch.Tensor([r for (s1,a,r,s2,d) in minibatch])
@@ -118,11 +118,11 @@ for i in range(epochs):
             losses.append(loss.item())
             optimizer.step()
             
-            if j % sync_freq == 0: #C
-                model2.load_state_dict(model.state_dict())
-        if reward != -1 or mov > max_moves:
-            status = 0
-            mov = 0
+            # if j % sync_freq == 0: #C
+            #     model2.load_state_dict(model.state_dict())
+        # if reward != -1 or mov > max_moves:
+        #     status = 0
+        #     mov = 0
         
 losses = np.array(losses)
 

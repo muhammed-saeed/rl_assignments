@@ -4,10 +4,11 @@ import sys
 import os
 from env import GridWorld
 from read_env_json import read_env_sol_json
-import base64
 from collections import defaultdict
 
 symbols_b64 = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-_'
+
+path = "/home/ahmed/Dev/rl_assignments/"
 
 def def_value():
     return 0
@@ -48,8 +49,8 @@ def maxAction(Q, state, actions):
 
 if __name__ == '__main__':
     mode = "train"
-    train_path = "/home/muhammed-saeed/Documents/rl_assignments/test/task/"
-    train_target_path = "/home/muhammed-saeed/Documents/rl_assignments/test/solution/"
+    train_path = path+"test/task/"
+    train_target_path = path+"test/solution"
     # m, n, init_state, orientation, markers_locations, wall_locations, terminal_state, possible_actions):
     #terminal_state #[[x,y],"orientation", [[markers1],[marker2]]]
     actions = ['m', 'l', 'r', 'f','pick','put']
@@ -79,7 +80,7 @@ if __name__ == '__main__':
             #so if the agent is starting with zero, but then the agent go reward -1 which is significanly
             #worse than 0 then the agent think about doing more exploration.
 
-    numGames = 100_000
+    numGames = 1_000_000
     totalRewards = np.zeros(numGames)
     env.render()
     for i in range(numGames):
@@ -118,7 +119,7 @@ if __name__ == '__main__':
         else:
             EPS = 0
         totalRewards[i] = epRewards
-    with open("/home/muhammed-saeed/Documents/rl_assignments/assingment_4/results.txt","w") as fb:
+    with open(path+"assingment_4/results.txt","w") as fb:
         for number, solution in enumerate(action_seq):
             fb.write(f"The solution occured at {counter[number]} episode \n")
             fb.write(" ".join(solution))
