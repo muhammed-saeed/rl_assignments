@@ -89,4 +89,6 @@ def get_memory(mode="train", train_path="/home/CE/musaeed/rl_assignments/train",
                         #dead_win means if the game ended and agent_win
                         #dead_win= True means game end and agent wins
                         state = next_state
+                        #since all environments has different post-grid "terminal state"
+                        #we can then differenitate between the different terminal states
     return memory
