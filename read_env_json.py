@@ -105,7 +105,8 @@ if (mode):
                     state = next_state
 
 
-def get_memory(mode, train_path, train_target_path):    
+def get_memory(mode, train_path, train_target_path): 
+    memory = []   
     if (mode):
         if (train_path and train_target_path):
             json_files = [i for i in os.listdir(train_path) if i.endswith("json")]
@@ -172,6 +173,4 @@ def get_memory(mode, train_path, train_target_path):
                         next_state, reward, done, _ = env.step(i)
                         memory.append((state, i, next_state, reward))
                         state = next_state
-    print(memory)
-
-print(memory)
+    return memory

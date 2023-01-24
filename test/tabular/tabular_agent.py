@@ -8,7 +8,7 @@ from collections import defaultdict
 
 symbols_b64 = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-_'
 
-path = "/home/ahmed/Dev/rl_assignments/"
+path = "/home/muhammed-saeed/Documents/rl_assignments/"
 
 def def_value():
     return 0

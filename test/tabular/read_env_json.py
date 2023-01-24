@@ -57,4 +57,4 @@ def read_env_sol_json (mode,train_path,train_target_path):
                 return (enviromentDetails, bestActionSeq)
                 
 
-print(read_env_sol_json(mode,train_path, train_target_path))
+# print(read_env_sol_json(mode,train_path, train_target_path))
