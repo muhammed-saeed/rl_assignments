@@ -11,6 +11,8 @@ convert_moves_dict = {
     'putMarker': "put"
 }
 
+actions = ['m', 'l', 'r', 'f', "pick", "put"]
+
 def get_memory(mode="train", train_path="/home/CE/musaeed/rl_assignments/train", train_target_path="/home/CE/musaeed/rl_assignments/trainSolution"): 
     memory = []   
     if (mode):
@@ -81,6 +83,6 @@ def get_memory(mode="train", train_path="/home/CE/musaeed/rl_assignments/train",
                     for i in seq:
                         next_state, reward, done, _ = env.step(i)
                         dead_win = reward >-1
-                        memory.append((state, i, reward, next_state, 1., done, dead_win))
+                        memory.append((state, actions.index(i), reward, next_state, 1., done, dead_win))
                         state = next_state
     return memory

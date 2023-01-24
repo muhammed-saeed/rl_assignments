@@ -1,5 +1,5 @@
 import numpy as np
-import copy
+from copy import deepcopy
 import matplotlib.pyplot as plt
 
 # the concept of the state-space all states- excluding the termnial state
@@ -28,7 +28,7 @@ class GridWorld(object):
 
 
         self.initial_wall_locations = list(wall_locations)
-        self.initiial_markers_locations = list(markers_locations)
+        self.initiial_markers_locations = deepcopy(list(markers_locations))
         self.init_orientation = orientation
         self.orientation = orientation
         self.init_state = init_state
@@ -38,8 +38,8 @@ class GridWorld(object):
         self.agentisAlive =  True
         self.isHandEmpty = False
     
-        self.markers_locations = list(markers_locations)
-        self.wallLocations = list(wall_locations)
+        self.markers_locations = deepcopy(list(markers_locations))
+        self.wallLocations = deepcopy(list(wall_locations))
         for wall in self.wallLocations:
             self.stateSpace.remove(wall[0]*self.n + wall[1])
         #remove the terminal state from the list
@@ -222,8 +222,8 @@ class GridWorld(object):
         self.agentPosition = self.init_position
         self.agentisAlive = True
         self.grid = np.zeros((self.m,self.n))
-        self.markers_locations = copy.copy(self.initiial_markers_locations)
-        self.wallLocations = copy.copy(self.initial_wall_locations)
+        self.markers_locations = deepcopy(self.initiial_markers_locations)
+        self.wallLocations = deepcopy(self.initial_wall_locations)
         self.orientation = self.init_orientation
         self.grid = np.zeros((self.m,self.n))
         self.grid[self.init_state] = 1

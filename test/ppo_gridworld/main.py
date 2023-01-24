@@ -74,7 +74,9 @@ def evaluate_policy(env, model, render=False):
     return scores/turns
 
 def main():
+    print("__________________GETTING_MEMORY")
     memory = get_memory()
+    print("__________________GOT_MEMORY")
     print(memory[-1])
    
     env = GridWorld(4,4, (1,1), "west",[],[(1,2),(2,3)],[(3,2),"east",[]],['m', 'l', 'r', 'f', "put", "pick"])
@@ -128,10 +130,30 @@ def main():
         "adv_normalization":opt.adv_normalization,
         "entropy_coef_decay": opt.entropy_coef_decay,
     }
+    print("__________________INIT_MODEL")
 
     if not os.path.exists('model'): os.mkdir('model')
     model = PPO_discrete(**kwargs)
     if Loadmodel: model.load(ModelIdex)
+
+    print("__________________STARTING_TRAINING")
+
+    EPOCHS = 2000
+    total_steps = 0
+    for _ in range(EPOCHS):
+        print("EPOCH:{}".format(_+1))
+        print("__________________COPYING_MEMORY")
+        for i in memory:
+            model.put_data(i)
+        print("__________________COPIED_MEMORY")
+        total_steps += 1
+        a_loss, c_loss, entropy = model.train()
+        print(a_loss.detach().to("cpu") , c_loss.detach().to("cpu"), entropy.detach().to("cpu"))
+        # traj_lenth = 0
+        if write:
+            writer.add_scalar('a_loss', a_loss, global_step=total_steps)
+            writer.add_scalar('c_loss', c_loss, global_step=total_steps)
+            writer.add_scalar('entropy', entropy, global_step=total_steps)
 
 
     # traj_lenth = 0
@@ -185,8 +207,8 @@ def main():
     #         if total_steps % save_interval==0:
     #             model.save(total_steps)
 
-    # env.close()
-    # eval_env.close()
+    env.close()
+    eval_env.close()
 
 if __name__ == '__main__':
     main()
