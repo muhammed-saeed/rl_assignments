@@ -1,4 +1,4 @@
-import gym
+# import gym
 import torch
 import numpy as np
 from PPO import device, PPO_discrete
@@ -7,7 +7,8 @@ import os, shutil
 from datetime import datetime
 import argparse
 from env import GridWorld
-from read_env_json import read_env_sol_json
+# from read_env_json import read_env_sol_json
+from memory import get_memory
 
 
 def str2bool(v):
@@ -50,7 +51,7 @@ opt = parser.parse_args()
 print(opt)
 
 BrifEnvName = ['GridWorld', 'GridWorld']
-EnvIdex = 2
+EnvIdex = 0
 BrifEnvName[EnvIdex]
 
 
@@ -73,14 +74,17 @@ def evaluate_policy(env, model, render=False):
     return scores/turns
 
 def main():
+    memory = get_memory()
+    print(memory[-1])
    
     env = GridWorld(4,4, (1,1), "west",[],[(1,2),(2,3)],[(3,2),"east",[]],['m', 'l', 'r', 'f', "put", "pick"])
 
     eval_env =  GridWorld(4,4, (1,1), "west",[],[(1,2),(2,3)],[(3,2),"east",[]],['m', 'l', 'r', 'f', "put", "pick"])
 
-    state_dim = env.observation_space
-    action_dim = env.action_space
-    max_e_steps = env._max_episode_steps
+    # print(env.get_state().shape[0])
+    state_dim = env.get_state().shape[0]
+    action_dim = len(env.possibleActions)
+    max_e_steps = 2048
 
     write = opt.write
     if write:
@@ -100,15 +104,16 @@ def main():
 
     seed = opt.seed
     torch.manual_seed(seed)
-    env.seed(seed)
-    eval_env.seed(seed)
+    # env.seed(seed)
+    # eval_env.seed(seed)
     np.random.seed(seed)
 
     print('Env:',BrifEnvName[EnvIdex],'  state_dim:',state_dim,'  action_dim:',action_dim,'   Random Seed:',seed, '  max_e_steps:',max_e_steps)
     print('\n')
 
     kwargs = {
-        "env_with_Dead": env_with_Dead[EnvIdex],
+        # "env_with_Dead": env_with_Dead[EnvIdex],
+        "env_with_Dead": True,
         "state_dim": state_dim,
         "action_dim": action_dim,
         "gamma": opt.gamma,
@@ -129,59 +134,59 @@ def main():
     if Loadmodel: model.load(ModelIdex)
 
 
-    traj_lenth = 0
-    total_steps = 0
-    while total_steps < Max_train_steps:
-        s, done, steps, ep_r = env.reset(), False, 0, 0
+    # traj_lenth = 0
+    # total_steps = 0
+    # while total_steps < Max_train_steps:
+    #     s, done, steps, ep_r = env.reset(), False, 0, 0
 
-        '''Interact & trian'''
-        while not done:
-            traj_lenth += 1
-            steps += 1
-            if render:
-                # a, pi_a = model.select_action(torch.from_numpy(s).float().to(device))  #stochastic policy
-                a, pi_a = model.evaluate(torch.from_numpy(s).float().to(device))  #deterministic policy
-                env.render()
-            else:
-                a, pi_a = model.select_action(torch.from_numpy(s).float().to(device))
+    #     '''Interact & trian'''
+    #     while not done:
+    #         traj_lenth += 1
+    #         steps += 1
+    #         if render:
+    #             # a, pi_a = model.select_action(torch.from_numpy(s).float().to(device))  #stochastic policy
+    #             a, pi_a = model.evaluate(torch.from_numpy(s).float().to(device))  #deterministic policy
+    #             env.render()
+    #         else:
+    #             a, pi_a = model.select_action(torch.from_numpy(s).float().to(device))
 
-            s_prime, r, done, info = env.step(a)
+    #         s_prime, r, done, info = env.step(a)
 
-            if (done and steps != max_e_steps):
-                if EnvIdex == 1:
-                    if r <=-100: r = -30  #good for LunarLander
-                dw = True  #dw: dead and win
-            else:
-                dw = False
+    #         if (done and steps != max_e_steps):
+    #             if EnvIdex == 1:
+    #                 if r <=-100: r = -30  #good for LunarLander
+    #             dw = True  #dw: dead and win
+    #         else:
+    #             dw = False
 
-            model.put_data((s, a, r, s_prime, pi_a, done, dw))
-            s = s_prime
-            ep_r += r
+    #         model.put_data((s, a, r, s_prime, pi_a, done, dw))
+    #         s = s_prime
+    #         ep_r += r
 
-            '''update if its time'''
-            if not render:
-                if traj_lenth % T_horizon == 0:
-                    a_loss, c_loss, entropy = model.train()
-                    traj_lenth = 0
-                    if write:
-                        writer.add_scalar('a_loss', a_loss, global_step=total_steps)
-                        writer.add_scalar('c_loss', c_loss, global_step=total_steps)
-                        writer.add_scalar('entropy', entropy, global_step=total_steps)
+    #         '''update if its time'''
+    #         if not render:
+    #             if traj_lenth % T_horizon == 0:
+    #                 a_loss, c_loss, entropy = model.train()
+    #                 traj_lenth = 0
+    #                 if write:
+    #                     writer.add_scalar('a_loss', a_loss, global_step=total_steps)
+    #                     writer.add_scalar('c_loss', c_loss, global_step=total_steps)
+    #                     writer.add_scalar('entropy', entropy, global_step=total_steps)
 
-            '''record & log'''
-            if total_steps % eval_interval == 0:
-                score = evaluate_policy(eval_env, model, False)
-                if write:
-                    writer.add_scalar('ep_r', score, global_step=total_steps)
-                print('EnvName:',BrifEnvName[EnvIdex],'seed:',seed,'steps: {}k'.format(int(total_steps/1000)),'score:', score)
-            total_steps += 1
+    #         '''record & log'''
+    #         if total_steps % eval_interval == 0:
+    #             score = evaluate_policy(eval_env, model, False)
+    #             if write:
+    #                 writer.add_scalar('ep_r', score, global_step=total_steps)
+    #             print('EnvName:',BrifEnvName[EnvIdex],'seed:',seed,'steps: {}k'.format(int(total_steps/1000)),'score:', score)
+    #         total_steps += 1
 
-            '''save model'''
-            if total_steps % save_interval==0:
-                model.save(total_steps)
+    #         '''save model'''
+    #         if total_steps % save_interval==0:
+    #             model.save(total_steps)
 
-    env.close()
-    eval_env.close()
+    # env.close()
+    # eval_env.close()
 
 if __name__ == '__main__':
     main()
