@@ -28,7 +28,7 @@ class GridWorld(object):
 
 
         self.initial_wall_locations = list(wall_locations)
-        self.initiial_markers_locations = list(markers_locations)
+        self.initiial_markers_locations = copy.deepcopy(list(markers_locations))
         self.init_orientation = orientation
         self.orientation = orientation
         self.init_state = init_state
@@ -38,7 +38,7 @@ class GridWorld(object):
         self.agentisAlive =  True
         self.isHandEmpty = False
     
-        self.markers_locations = list(markers_locations)
+        self.markers_locations = copy.deepcopy(list(markers_locations))
         self.wallLocations = list(wall_locations)
         for wall in self.wallLocations:
             self.stateSpace.remove(wall[0]*self.n + wall[1])
@@ -222,7 +222,7 @@ class GridWorld(object):
         self.agentPosition = self.init_position
         self.agentisAlive = True
         self.grid = np.zeros((self.m,self.n))
-        self.markers_locations = copy.copy(self.initiial_markers_locations)
+        self.markers_locations = copy.deepcopy(self.initiial_markers_locations)
         self.wallLocations = copy.copy(self.initial_wall_locations)
         self.orientation = self.init_orientation
         self.grid = np.zeros((self.m,self.n))
