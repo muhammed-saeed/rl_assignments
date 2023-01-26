@@ -35,6 +35,8 @@ class Policy(nn.Module):
         self.affine2 = nn.Linear(128, 2)
 
         self.saved_log_probs = []
+        #this line store the actions selected by the agent
+        #
         self.rewards = []
 
     def forward(self, x):

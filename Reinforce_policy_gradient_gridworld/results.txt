@@ -1,0 +1,57 @@
+The solution occured at 93 episode 
+move putMarker move finish
+-------------- -------------- ---------- -------- 
+The solution occured at 858 episode 
+move left right putMarker move finish
+-------------- -------------- ---------- -------- 
+The solution occured at 883 episode 
+move putMarker move finish
+-------------- -------------- ---------- -------- 
+The solution occured at 1188 episode 
+move putMarker move finish
+-------------- -------------- ---------- -------- 
+The solution occured at 1777 episode 
+move putMarker move finish
+-------------- -------------- ---------- -------- 
+The solution occured at 1944 episode 
+move putMarker move finish
+-------------- -------------- ---------- -------- 
+The solution occured at 2093 episode 
+move putMarker move finish
+-------------- -------------- ---------- -------- 
+The solution occured at 2261 episode 
+move putMarker move finish
+-------------- -------------- ---------- -------- 
+The solution occured at 2524 episode 
+move putMarker move finish
+-------------- -------------- ---------- -------- 
+The solution occured at 2831 episode 
+move putMarker move finish
+-------------- -------------- ---------- -------- 
+The solution occured at 2993 episode 
+move putMarker move finish
+-------------- -------------- ---------- -------- 
+The solution occured at 3457 episode 
+move putMarker move left putMarker left right right pickMarker finish
+-------------- -------------- ---------- -------- 
+The solution occured at 3519 episode 
+move putMarker move finish
+-------------- -------------- ---------- -------- 
+The solution occured at 3867 episode 
+move putMarker move finish
+-------------- -------------- ---------- -------- 
+The solution occured at 4124 episode 
+move putMarker move finish
+-------------- -------------- ---------- -------- 
+The solution occured at 4565 episode 
+move putMarker move finish
+-------------- -------------- ---------- -------- 
+The solution occured at 4714 episode 
+move putMarker move finish
+-------------- -------------- ---------- -------- 
+The solution occured at 4794 episode 
+move putMarker move finish
+-------------- -------------- ---------- -------- 
+The solution occured at 4992 episode 
+move putMarker move finish
+-------------- -------------- ---------- -------- 

@@ -50,14 +50,16 @@ class GridWorld(object):
        
         self.agentPosition = self.n*init_state[0] + init_state[1]
         self.init_position = self.agentPosition
-        self.crashReward = -100
+        self.winReward = 10000
+        self.crashReward = -1000
         self.reward = -10
+        
         print("!!!!!ENV CHECK!!!!!")
         print(f"{self.m},{self.n}, ({self.init_state}), {self.orientation}, ({self.initiial_markers_locations}), ({self.initial_wall_locations}), (({self.terminalStates})")
         print("!!!!!ENV CHECK!!!!!")
     def actionSpace(self,action):
             #the move action
-            if action == 'm':
+            if action == 'move':
                 if self.orientation == "north":
                     return -self.m, self.reward
                 elif self.orientation == "south":
@@ -68,7 +70,7 @@ class GridWorld(object):
                     return 1, self.reward
 
             #the left action
-            elif action == "l":
+            elif action == "left":
                 if self.orientation == "south":
                     self.orientation = "east"
                 elif self.orientation == "north":
@@ -80,7 +82,7 @@ class GridWorld(object):
                 return 0, self.reward
             
             #the right action
-            elif action == "r":
+            elif action == "right":
                 if self.orientation == "south":
                     self.orientation = "west"
                 elif self.orientation == "north":
@@ -92,7 +94,7 @@ class GridWorld(object):
                 return 0, self.reward
 
             #the pickup action
-            elif action == "pick":
+            elif action == "pickMarker":
                 if self.state_is_marker():
                         # self.isHandEmpty = False
                         #take the marker from the box
@@ -110,26 +112,37 @@ class GridWorld(object):
                     return 0, self.crashReward 
                     #if the agent crashes then the reward has to be high negatve value
                 
-            elif action == "put":
+            elif action == "putMarker":
                 # if not self.isHandEmpty:
                     x,y = self.getAgentRowAndColumn()
-                    # print(f"({x},{y})")
-                    # print(self.markers_locations)
+                    print(f"({x},{y})")
+                    print(self.markers_locations)
+                    if (x,y) in self.markers_locations:
+                        self.agentisAlive = False
+                        return 0, self.crashReward
+                        #prevent the agent from put the marker in state that already has marker on it
                     if (x,y) not in self.markers_locations:
                         # print("yeah already in the markers")
                         self.markers_locations.append((x,y))
-                    return 0, self.reward
+                    isRewardDesign, rewardDesign = self.rewardDesign()
+                    if isRewardDesign:
+                        # print(f"reward Design {rewardDesign}")
+
+                        return 0,rewardDesign
+                    else:
+                        return 0, self.reward
                 # else:
                 #     self.agentisAlive = False
                 #     return 0, self.crashReward
+                    print(self.markers_locations)
 
 
             
-            elif action == "f":
+            elif action == "finish":
                 if self.isTerminalState():
                     #how to define that the agent_is in the goal state anyways?!
                     self.agentisAlive = True
-                    return 0, 100 #give the agent large reward "0" while negative else of reaching the final state
+                    return 0, self.winReward #give the agent large reward "0" while negative else of reaching the final state
                 else:
                     self.agentisAlive = False
                     return 0, self.crashReward
@@ -141,7 +154,7 @@ class GridWorld(object):
     
     def state_is_marker(self):
         if (self.getAgentRowAndColumn()) in self.markers_locations:
-            print(f"#################### \n Agent locaiton is {self.getAgentXY(self.agentPosition)} and markers {self.markers_locations}")
+            # print(f"#################### \n Agent locaiton is {self.getAgentXY(self.agentPosition)} and markers {self.markers_locations}")
             return True
         else:
             return False
@@ -203,10 +216,14 @@ class GridWorld(object):
         return (x,y) in self.wallLocations
         
 
+    def rewardDesign(self):
+        return set(self.markers_locations) == set(self.terminalStates[2]), 0
+            
+
     def step(self, action):
         agentX, agentY = self.getAgentRowAndColumn()
         stateChange, REWARD = self.actionSpace(action)
-        if action == "m":
+        if action == "move":
             offGridBool= self.offGridMove(stateChange)
             if  offGridBool:
                 self.agentisAlive = False
@@ -217,7 +234,7 @@ class GridWorld(object):
         resultingState = self.agentPosition
         self.setState(resultingState)
         resultingState = self.get_state()
-        done = REWARD==100 or not self.agentisAlive
+        done = REWARD==self.winReward or not self.agentisAlive
         return resultingState, REWARD, done, None
         #the only scenario in which rewards is zero is when the agent finish using finish.
 
@@ -244,7 +261,7 @@ class GridWorld(object):
                     if (row,col) in self.wallLocations: 
                         print("W", end="\t")
                     elif (row,col) in self.markers_locations:
-                        print("M",end="\t")
+                        print("move",end="\t")
                     else:
                         
 

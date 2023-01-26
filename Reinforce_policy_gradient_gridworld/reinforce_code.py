@@ -38,6 +38,7 @@ class Policy(nn.Module):
         self.rewards = []
 
     def forward(self, x):
+        x.requires_grads = True
         x = self.affine1(x)
         x = self.dropout(x)
         x = F.relu(x)
@@ -46,7 +47,7 @@ class Policy(nn.Module):
 
 
 policy = Policy()
-optimizer = optim.Adam(policy.parameters(), lr=1e-2)
+optimizer = optim.Adam(policy.parameters(), lr=1e-4)
 eps = np.finfo(np.float32).eps.item()
 
 
@@ -83,6 +84,7 @@ def main():
     for i_episode in count(1):
         state = env.reset()
         ep_reward = 0
+        # state.requires_grad = True
         for t in range(1, 10000):  # Don't infinite loop while learning
             action = select_action(state)
             state, reward, done, _ = env.step(action)
@@ -98,11 +100,11 @@ def main():
         if i_episode % args.log_interval == 0:
             print('Episode {}\tLast reward: {:.2f}\tAverage reward: {:.2f}'.format(
                   i_episode, ep_reward, running_reward))
-            torch.save(policy.state_dict(),"/home/CE/musaeed/rl_assignments/testst/models_gym/policy_model.pt")
+            torch.save(policy.state_dict(),"/home/muhammed-saeed/Documents/rl_assignments/Reinforce_policy_gradient_gridworld/gridworld/policy_model.pt")
         if running_reward > env.spec.reward_threshold:
             print("Solved! Running reward is now {} and "
                   "the last episode runs to {} time steps!".format(running_reward, t))
-            torch.save(policy.state_dict(),"/home/CE/musaeed/rl_assignments/testst/models_gym/policy_model_solved_task.pt")
+            torch.save(policy.state_dict(),"/home/muhammed-saeed/Documents/rl_assignments/Reinforce_policy_gradient_gridworld/gridworld/policy_model_solved_task.pt")
             break
 
 

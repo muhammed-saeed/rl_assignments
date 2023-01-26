@@ -34,7 +34,7 @@ train_path = "/home/muhammed-saeed/Desktop/testst/task/task"
 train_target_path = "/home/muhammed-saeed/Desktop/testst/task/solution"
 # m, n, init_state, orientation, markers_locations, wall_locations, terminal_state, possible_actions):
 # terminal_state #[[x,y],"orientation", [[markers1],[marker2]]]
-actions = ['m', 'l', 'r', 'f', 'pick', 'put']
+actions = ['move', 'left', 'right', 'finish', 'pickMarker', 'putMarker']
 initial_settings = read_env_sol_json(mode, train_path, train_target_path)
 print(f"{initial_settings[0]} \n\n") # best action seq {initial_settings[1]}")
 # print("#############################")
@@ -57,6 +57,8 @@ class Policy(nn.Module):
         self.rewards = []
 
     def forward(self, x):
+        x.requires_grads = True
+
         x = self.affine1(x)
         x = self.dropout(x)
         x = F.relu(x)
@@ -69,7 +71,7 @@ class Policy(nn.Module):
 
 
 policy = Policy()
-optimizer = optim.Adam(policy.parameters(), lr=1e-3)
+optimizer = optim.Adam(policy.parameters(), lr=1e-5)
 eps = np.finfo(np.float32).eps.item()
 # eps = 1e-3
 # eps = 1e-7
@@ -82,7 +84,6 @@ def select_action(state):
     # print(f"the probs are {probs} {probs.sum()}")
     m = Categorical(probs)
     action = m.sample()
-    m.log_prob(action)
     policy.saved_log_probs.append(m.log_prob(action))
     return action.item()
 
@@ -113,7 +114,7 @@ def finish_episode():
     del policy.saved_log_probs[:]
 
 
-horizon = 5
+horizon = 50
 
 def main():
     running_reward = 0
@@ -121,7 +122,7 @@ def main():
     eps_actions = []
     counter = []
     numEpisodes = 1_000_000
-    numEpisodes = 2_0
+    numEpisodes = 5_000
     for i_episode in range(numEpisodes):
         eps_actions = []
         state = env.reset()
@@ -137,15 +138,15 @@ def main():
             eps_actions.append(actionString)
 
             if not done and t+1 == horizon:
-                print('hi reasched here !!!!')
-                print(eps_actions)
+                # print('hi reasched here !!!!')
+                # print(eps_actions)
                 # reward = env.crashReward
                 done = True
 
             policy.rewards.append(reward)
             ep_reward += reward
             test_reward = reward
-            if done and reward ==100:
+            if done and reward ==env.winReward:
                 print("we are here")
                 action_seq.append(eps_actions)
                 counter.append(i_episode)
@@ -161,19 +162,26 @@ def main():
             #.format(      i_episode, test_reward, running_reward))
             torch.save(policy.state_dict(),"/home/muhammed-saeed/Desktop/testst/gridworld/policy_log_interval.pt")
         # if running_reward > env.spec.reward_threshold:
-        if reward >= 0:
+        if reward>=0 and reward <env.winReward:
+            print("reward design")
+        if reward >= env.winReward:
 
             print("Solved! Running reward is now {} and "
                   "the last episode runs to {} time steps!".format(running_reward, t))
             print(f"the action sequence is {eps_actions}")
             torch.save(policy.state_dict(),"/home/muhammed-saeed/Desktop/testst/gridworld/policy_solved_task.pt")
-            break
+            with open("/home/muhammed-saeed/Documents/rl_assignments/Reinforce_policy_gradient_gridworld/results.txt", "w") as fb:
+                for number, solution in enumerate(action_seq):
+                    fb.write(f"The solution occured at {counter[number]} episode \n")
+                    fb.write(" ".join(solution))
+                    fb.write('\n-------------- -------------- ---------- -------- \n')
+            # break
     
-    with open("/home/muhammed-saeed/Desktop/testst/results.txt", "w") as fb:
-        for number, solution in enumerate(action_seq):
-            fb.write(f"The solution occured at {counter[number]} episode \n")
-            fb.write(" ".join(solution))
-            fb.write('\n-------------- -------------- ---------- -------- \n')
+    # with open("/home/muhammed-saeed/Documents/rl_assignments/Reinforce_policy_gradient_gridworld/results.txt", "w") as fb:
+    #     for number, solution in enumerate(action_seq):
+    #         fb.write(f"The solution occured at {counter[number]} episode \n")
+    #         fb.write(" ".join(solution))
+    #         fb.write('\n-------------- -------------- ---------- -------- \n')
 
 if __name__ == '__main__':
     main()
