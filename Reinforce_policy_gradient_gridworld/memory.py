@@ -13,7 +13,7 @@ convert_moves_dict = {
 
 actions = ['m', 'l', 'r', 'f', "pick", "put"]
 
-def get_memory(mode="train", train_path="/home/CE/musaeed/rl_assignments/train", train_target_path="/home/CE/musaeed/rl_assignments/trainSolution"): 
+def get_memory(mode="train", train_path="/home/muhammed-saeed/Documents/rl_assignments/testst/train", train_target_path="/home/muhammed-saeed/Documents/rl_assignments/testst/trainSolution"): 
     memory = []   
     if (mode):
         if (train_path and train_target_path):

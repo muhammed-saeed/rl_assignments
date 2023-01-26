@@ -3,7 +3,7 @@ import gym
 import numpy as np
 import torch
 import matplotlib.pyplot as plt
-from env import GridWorld
+from Reinforce_policy_gradient_gridworld.env import GridWorld
 from read_env_json import read_env_sol_json
 
 
