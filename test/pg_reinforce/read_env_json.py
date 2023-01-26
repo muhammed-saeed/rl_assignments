@@ -23,7 +23,11 @@ def read_env_sol_json (mode,train_path,train_target_path):
                     train_data = json.load(f)
                 with open(target_path) as f:
                     train_seq = json.load(f)
+<<<<<<< HEAD
                 # print(train_data)
+=======
+                print(train_data)
+>>>>>>> refs/remotes/origin/main
                 # print(train_data)
                 rows = train_data["gridsz_num_rows"]
                 cols = train_data["gridsz_num_cols"]
@@ -52,9 +56,17 @@ def read_env_sol_json (mode,train_path,train_target_path):
                 ['m', 'l', 'r', 'f','pick','put']
                 )
                 print()
+<<<<<<< HEAD
                 # print(train_seq["sequence"])
+=======
+                print(train_seq["sequence"])
+>>>>>>> refs/remotes/origin/main
                 bestActionSeq = train_seq["sequence"]
                 return (enviromentDetails, bestActionSeq)
                 
 
+<<<<<<< HEAD
 # print(read_env_sol_json(mode,train_path, train_target_path))
+=======
+print(read_env_sol_json(mode,train_path, train_target_path))
+>>>>>>> refs/remotes/origin/main

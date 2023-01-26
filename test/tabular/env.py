@@ -50,7 +50,7 @@ class GridWorld(object):
        
         self.agentPosition = self.n*init_state[0] + init_state[1]
         self.init_position = self.agentPosition
-        self.crashReward = -1000
+        self.crashReward = -1
         self.reward = -1
      
     def actionSpace(self,action):
@@ -127,7 +127,7 @@ class GridWorld(object):
                 if self.isTerminalState():
                     #how to define that the agent_is in the goal state anyways?!
                     self.agentisAlive = True
-                    return 0, 0 #give the agent large reward "0" while negative else of reaching the final state
+                    return 0, 100 #give the agent large reward "0" while negative else of reaching the final state
                 else:
                     self.agentisAlive = False
                     return 0, self.crashReward
@@ -201,19 +201,20 @@ class GridWorld(object):
     def step(self, action):
         agentX, agentY = self.getAgentRowAndColumn()
         stateChange, REWARD = self.actionSpace(action)
-        offGridBool= self.offGridMove(stateChange)
-        if  offGridBool:
-            self.agentisAlive = False
-            return self.agentPosition, self.crashReward, True, None
-            #since the agent already is outside the grid and died
-        else:
-            self.agentPosition += stateChange
-            resultingState = self.agentPosition
-            self.setState(resultingState)
-            resultingState = self.get_state()
-            done = REWARD==0 or not self.agentisAlive
-            return resultingState, REWARD, done, None
-            #the only scenario in which rewards is zero is when the agent finish using finish.
+        if action == "m":
+            offGridBool= self.offGridMove(stateChange)
+            if  offGridBool:
+                self.agentisAlive = False
+                return self.agentPosition, self.crashReward, True, None
+                #since the agent already is outside the grid and died
+        # else:
+        self.agentPosition += stateChange
+        resultingState = self.agentPosition
+        self.setState(resultingState)
+        resultingState = self.get_state()
+        done = REWARD==100 or not self.agentisAlive
+        return resultingState, REWARD, done, None
+        #the only scenario in which rewards is zero is when the agent finish using finish.
 
     
 

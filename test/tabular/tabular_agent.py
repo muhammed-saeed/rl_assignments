@@ -8,7 +8,7 @@ from collections import defaultdict
 
 symbols_b64 = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-_'
 
-path = "/home/ahmed/Dev/rl_assignments/"
+path = "/home/muhammed-saeed/Documents/rl_assignments/"
 
 def def_value():
     return 0
@@ -98,7 +98,7 @@ if __name__ == '__main__':
             observation_, reward, done, info = env.step(action)
             
             eps_actions.append(action)
-            if done and reward ==0:
+            if done and reward ==100:
                 action_seq.append(eps_actions)
                 counter.append(i)
                 print(eps_actions)

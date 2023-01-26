@@ -1,5 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
+from copy import deepcopy
 
 # the concept of the state-space all states- excluding the termnial state
 # main loop with the agent in which we are using q_learning

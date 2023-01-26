@@ -11,6 +11,8 @@ convert_moves_dict = {
     'putMarker': "put"
 }
 
+actions = ['m', 'l', 'r', 'f', "pick", "put"]
+
 def get_memory(mode="train", train_path="/home/CE/musaeed/rl_assignments/train", train_target_path="/home/CE/musaeed/rl_assignments/trainSolution"): 
     memory = []   
     if (mode):
@@ -80,15 +82,7 @@ def get_memory(mode="train", train_path="/home/CE/musaeed/rl_assignments/train",
                     state = env.reset()
                     for i in seq:
                         next_state, reward, done, _ = env.step(i)
-                        #taking the action from the sequence and tell hte agnet to commit those action in real life
-                        #
                         dead_win = reward >-1
-                        memory.append((state, i, reward, next_state, 1., done, dead_win))
-                        #1. needed by the ppo when selecting determnistic action its value is 1
-                        #contains state,action, reward, next_state, 1, done, dead_win
-                        #dead_win means if the game ended and agent_win
-                        #dead_win= True means game end and agent wins
+                        memory.append((state, actions.index(i), reward, next_state, 1., done, dead_win))
                         state = next_state
-                        #since all environments has different post-grid "terminal state"
-                        #we can then differenitate between the different terminal states
     return memory

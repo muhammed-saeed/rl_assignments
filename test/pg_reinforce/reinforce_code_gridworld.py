@@ -112,6 +112,7 @@ def main():
             # if args.render:
             #     env.render()
             policy.rewards.append(reward)
+            ep_reward += reward
             
 
             eps_actions.append(actionString)
