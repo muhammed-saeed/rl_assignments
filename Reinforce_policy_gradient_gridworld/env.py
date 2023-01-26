@@ -54,9 +54,9 @@ class GridWorld(object):
         self.crashReward = -1000
         self.reward = -10
         
-        print("!!!!!ENV CHECK!!!!!")
-        print(f"{self.m},{self.n}, ({self.init_state}), {self.orientation}, ({self.initiial_markers_locations}), ({self.initial_wall_locations}), (({self.terminalStates})")
-        print("!!!!!ENV CHECK!!!!!")
+        # print  ("!!!!!ENV CHECK!!!!!")
+        # print  (f"{self.m},{self.n}, ({self.init_state}), {self.orientation}, ({self.initiial_markers_locations}), ({self.initial_wall_locations}), (({self.terminalStates})")
+        # print  ("!!!!!ENV CHECK!!!!!")
     def actionSpace(self,action):
             #the move action
             if action == 'move':
@@ -115,18 +115,18 @@ class GridWorld(object):
             elif action == "putMarker":
                 # if not self.isHandEmpty:
                     x,y = self.getAgentRowAndColumn()
-                    print(f"({x},{y})")
-                    print(self.markers_locations)
+                    # print (f"({x},{y})")
+                    # print (self.markers_locations)
                     if (x,y) in self.markers_locations:
                         self.agentisAlive = False
                         return 0, self.crashReward
                         #prevent the agent from put the marker in state that already has marker on it
                     if (x,y) not in self.markers_locations:
-                        # print("yeah already in the markers")
+                        # print  ("yeah already in the markers")
                         self.markers_locations.append((x,y))
                     isRewardDesign, rewardDesign = self.rewardDesign()
                     if isRewardDesign:
-                        # print(f"reward Design {rewardDesign}")
+                        # print  (f"reward Design {rewardDesign}")
 
                         return 0,rewardDesign
                     else:
@@ -134,7 +134,7 @@ class GridWorld(object):
                 # else:
                 #     self.agentisAlive = False
                 #     return 0, self.crashReward
-                    print(self.markers_locations)
+                    # print (self.markers_locations)
 
 
             
@@ -154,7 +154,7 @@ class GridWorld(object):
     
     def state_is_marker(self):
         if (self.getAgentRowAndColumn()) in self.markers_locations:
-            # print(f"#################### \n Agent locaiton is {self.getAgentXY(self.agentPosition)} and markers {self.markers_locations}")
+            # print  (f"#################### \n Agent locaiton is {self.getAgentXY(self.agentPosition)} and markers {self.markers_locations}")
             return True
         else:
             return False
@@ -254,25 +254,25 @@ class GridWorld(object):
         return self.get_state()
 
     def render(self):
-        print('------------------------------------------')
+        # print ('------------------------------------------')
         for row in range(self.m):
             for col in range(self.n):
                 if self.grid[row][col] == 0:
                     if (row,col) in self.wallLocations: 
-                        print("W", end="\t")
+                        print ("W", end="\t")
                     elif (row,col) in self.markers_locations:
-                        print("move",end="\t")
+                        print ("move",end="\t")
                     else:
                         
 
-                        print('-', end='\t')
+                        print ('-', end='\t')
                 else:
-                    #col=1 then this mean we have an-agent there and then print X
-                    print('X', end='\t')
+                    #col=1 then this mean we have an-agent there and then # print  X
+                    print ('X', end='\t')
                 
-            print('\n')
-            #after each line we want to print a new line
-        print('------------------------------------------')
+            print ('\n')
+            #after each line we want to # print  a new line
+        print ('------------------------------------------')
         
     
 
@@ -296,7 +296,7 @@ class GridWorld(object):
         # north:4, south: 8, east: 16, west: 32
         
         i,j = self.getAgentRowAndColumn()
-        # print(self.agentPosition, i, j, self.orientation)
+        # print  (self.agentPosition, i, j, self.orientation)
         map[0][i][j] += direction
         
         # final desired state, map[1]

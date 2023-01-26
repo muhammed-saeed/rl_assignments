@@ -3,22 +3,22 @@ import os
 from env import GridWorld
 
 convert_moves_dict = {
-    'move': "m",
-    'turnLeft': "l",
-    'turnRight': "r",
-    'pickMarker': "pick",
-    'finish': "f",
-    'putMarker': "put"
+    'move': "move",
+    'turnLeft': "left",
+    'turnRight': "right",
+    'pickMarker': "pickMarker",
+    'finish': "finish",
+    'putMarker': "putMarker"
 }
 
-actions = ['m', 'l', 'r', 'f', "pick", "put"]
+actions = ['move', 'left', 'right', 'finish', "pickMarker", "putMarker"]
 
-def get_memory(mode="train", train_path="/home/muhammed-saeed/Documents/rl_assignments/testst/train", train_target_path="/home/muhammed-saeed/Documents/rl_assignments/testst/trainSolution"): 
+def get_memory(mode="train", train_path="/home/muhammed-saeed/Documents/rl_assignments/train", train_target_path="/home/muhammed-saeed/Documents/rl_assignments/trainSolution"): 
     memory = []   
     if (mode):
         if (train_path and train_target_path):
             json_files = [i for i in os.listdir(train_path) if i.endswith("json")]
-            # print(json_files)
+            print(len(json_files))
             json_target_files = [i for i in os.listdir(
                 train_target_path) if i.endswith("json")]
             # print(json_files)
@@ -73,16 +73,21 @@ def get_memory(mode="train", train_path="/home/muhammed-saeed/Documents/rl_assig
                                     agent_final_dir,
                                     final_markers,
                                     ],
-                                    ['m', 'l', 'r', 'f', "pick", "put"]
+                                    ['move', 'left', 'right', 'finish', "pickMarker", "putMarker"]
                                     )
                     # print()
                     seq = [convert_moves_dict[i] for i in train_seq["sequence"]]
                     # print(train_seq["sequence"])
                     # print(seq)
                     state = env.reset()
+                    episode_memory = []
                     for i in seq:
                         next_state, reward, done, _ = env.step(i)
                         dead_win = reward >-1
-                        memory.append((state, actions.index(i), reward, next_state, 1., done, dead_win))
+                        # memory.append((state, actions.index(i), reward, next_state, 1., done, dead_win))
+                        episode_memory.append((state, actions.index(i), reward, next_state))
+
                         state = next_state
+                    memory.append(episode_memory)
+    print(len(memory))
     return memory
