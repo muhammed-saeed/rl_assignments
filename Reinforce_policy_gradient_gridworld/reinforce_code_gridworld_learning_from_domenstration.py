@@ -191,6 +191,8 @@ def mainLearnFromDomenstrations():
                     fb.write(" ".join(solution))
                     fb.write('\n-------------- -------------- ---------- -------- \n')
 
+    print("Saving the final weights after leanring from domenstraiton over the entire domenstrationData")
+    torch.save(policy.state_dict(),"/home/muhammed-saeed/Documents/rl_assignments/Reinforce_policy_gradient_gridworld/learnFromDomenstration/LFD_policy_network.pt")
 
 def main():
     print(len(memory))
