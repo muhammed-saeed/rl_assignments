@@ -117,21 +117,27 @@ def finish_episode():
 horizon = 50
 
 
+mode = "train"
 
+easy_tasks = "/home/muhammed-saeed/Documents/rl_assignments/project/datasets/data_easy/train/"
+easy_solution = "/home/muhammed-saeed/Documents/rl_assignments/project/datasets/data_easy/seq/"
 
-
-
+medium_tasks = "/home/muhammed-saeed/Documents/rl_assignments/project/datasets/data_medium/train/task/"
+medium_solutions = "/home/muhammed-saeed/Documents/rl_assignments/project/datasets/data_medium/train/seq/"
 
 
 
 
 memory = get_memory()
+easy_memory = get_memory(mode, easy_tasks, easy_solution)
 
+def curriculum_design():
+    print(len(easy_memory))
 
 
 def mainLearnFromDomenstrations():
-    print(len(memory))
-
+    print(len(easy_memory))
+    return
     running_reward = 0
     action_seq = []
     eps_actions = []

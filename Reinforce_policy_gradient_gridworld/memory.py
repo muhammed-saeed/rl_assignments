@@ -51,18 +51,7 @@ def get_memory(mode="train", train_path="/home/muhammed-saeed/Documents/rl_assig
                                     for [i, j] in train_data["pregrid_markers"]]
                     final_markers = [(i, j)
                                     for [i, j] in train_data["postgrid_markers"]]
-                    # print(rows,
-                    #     cols,
-                    #     agent_pos,
-                    #     agent_dir,
-                    #     init_markers,
-                    #     walls,
-                    #     [agent_final_pos,
-                    #     agent_final_dir,
-                    #     final_markers,
-                    #     ],
-                    #     ['m', 'l', 'r', 'f', "pick", "put"]
-                    #     )
+                    
                     env = GridWorld(rows,
                                     cols,
                                     agent_pos,
@@ -91,3 +80,6 @@ def get_memory(mode="train", train_path="/home/muhammed-saeed/Documents/rl_assig
                     memory.append(episode_memory)
     print(len(memory))
     return memory
+
+if __name__== '__main__':
+    get_memory()
