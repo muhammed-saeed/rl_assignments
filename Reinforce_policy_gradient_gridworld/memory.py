@@ -22,6 +22,8 @@ def get_memory(mode="train", train_path="/home/muhammed-saeed/Documents/rl_assig
             json_target_files = [i for i in os.listdir(
                 train_target_path) if i.endswith("json")]
             # print(json_files)
+            if len(json_files) == len(json_target_files):
+                print("we have same length of tasks and solutions")
             for file in json_files:
                 target_file = file.split("task")[0]+"seq.json"
                 if target_file in json_target_files:  # if train example has a solution json included
@@ -82,4 +84,5 @@ def get_memory(mode="train", train_path="/home/muhammed-saeed/Documents/rl_assig
     return memory
 
 if __name__== '__main__':
+    
     get_memory()

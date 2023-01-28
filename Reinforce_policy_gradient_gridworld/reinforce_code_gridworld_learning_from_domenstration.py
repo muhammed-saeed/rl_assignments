@@ -20,7 +20,7 @@ parser.add_argument('--seed', type=int, default=543, metavar='N',
                     help='random seed (default: 543)')
 parser.add_argument('--render', default=True, action='store_true',
                     help='render the environment')
-parser.add_argument('--log-interval', type=int, default=1, metavar='N',
+parser.add_argument('--log-interval', type=int, default=10, metavar='N',
                     help='interval between training status logs (default: 10)')
 args = parser.parse_args()
 
@@ -88,6 +88,17 @@ def select_action(state):
     return action.item()
 
 
+# def select_action_LFD(state):
+#     state = torch.from_numpy(state).float().unsqueeze(0)
+#     # print(state)
+#     probs = policy(state)
+#     # print(f"the probs are {probs} {probs.sum()}")
+#     m = Categorical(probs)
+#     action = m.sample()
+#     policy.saved_log_probs.append(m.log_prob(action))
+#     return action.item()
+
+
 def finish_episode():
     R = 0
     policy_loss = []
@@ -119,32 +130,35 @@ horizon = 50
 
 mode = "train"
 
-easy_tasks = "/home/muhammed-saeed/Documents/rl_assignments/project/datasets/data_easy/train/"
-easy_solution = "/home/muhammed-saeed/Documents/rl_assignments/project/datasets/data_easy/seq/"
+easy_tasks = "/home/muhammed-saeed/Documents/rl_assignments/project/datasets/data_easy/train/task"
+easy_solution = "/home/muhammed-saeed/Documents/rl_assignments/project/datasets/data_easy/train/seq/"
 
 medium_tasks = "/home/muhammed-saeed/Documents/rl_assignments/project/datasets/data_medium/train/task/"
 medium_solutions = "/home/muhammed-saeed/Documents/rl_assignments/project/datasets/data_medium/train/seq/"
 
 
-
+curriculum_design_easy = ""
 
 memory = get_memory()
 easy_memory = get_memory(mode, easy_tasks, easy_solution)
+
+curriculum_design_easy = "/home/muhammed-saeed/Documents/rl_assignments/Reinforce_policy_gradient_gridworld/curriclumDesignEasy/"
+curriculum_design_medium = "/home/muhammed-saeed/Documents/rl_assignments/Reinforce_policy_gradient_gridworld/curriclumDesignMedium/"
 
 def curriculum_design():
     print(len(easy_memory))
 
 
-def mainLearnFromDomenstrations():
-    print(len(easy_memory))
-    return
+def mainLearnFromDomenstrations(memory, learned_policy_path):
+    
+    # return
     running_reward = 0
     action_seq = []
     eps_actions = []
     counter = []
-    numEpisodes = len(memory)
-    # numEpisodes = 5_000
-    for i_episode, EPISODE in enumerate(numEpisodes):
+    numTasks = len(memory)
+    # numTasks = 5_000
+    for task, EPISODE in enumerate(numTasks):
         eps_actions = []
         state = env.reset()
         ep_reward = 0
@@ -158,19 +172,15 @@ def mainLearnFromDomenstrations():
             state, reward, done, _ = env.step(actionString)
             eps_actions.append(actionString)
 
-            # if not done and t+1 == horizon:
-            #     # print('hi reasched here !!!!')
-            #     # print(eps_actions)
-            #     # reward = env.crashReward
-            #     done = True
+            
 
-            policy.rewards.append(reward)
+            policy.rewards.append(episode[2])
             ep_reward += reward
             test_reward = reward
             if done and reward ==env.winReward:
                 print("we are here")
                 action_seq.append(eps_actions)
-                counter.append(i_episode)
+                counter.append(task)
                 print(f"the action sequence is {eps_actions}")
             if done:
                 break
@@ -178,11 +188,10 @@ def mainLearnFromDomenstrations():
 
         running_reward = 0.05 * ep_reward + (1 - 0.05) * running_reward
         finish_episode()
-        if i_episode % args.log_interval == 0:
-            print(f'Episode {i_episode}\tLast reward: {test_reward}\tAverage reward: {running_reward} \t Last action {last_action}') 
-            #.format(      i_episode, test_reward, running_reward))
-            torch.save(policy.state_dict(),"/home/muhammed-saeed/Desktop/testst/gridworld/policy_log_interval.pt")
-        # if running_reward > env.spec.reward_threshold:
+        if task % args.log_interval == 0:
+            print(f'Episode {task}\tLast reward: {test_reward}\tAverage reward: {running_reward} \t Last action {last_action}') 
+            #.format(      task, test_reward, running_reward))
+            torch.save(policy.state_dict(), learned_policy_path +"policy_log_interval.pt")
         if reward>=0 and reward <env.winReward:
             print("reward design")
         if reward >= env.winReward:
@@ -190,7 +199,7 @@ def mainLearnFromDomenstrations():
             print("Solved! Running reward is now {} and "
                   "the last episode runs to {} time steps!".format(running_reward, t))
             print(f"the action sequence is {eps_actions}")
-            torch.save(policy.state_dict(),"/home/muhammed-saeed/Desktop/testst/gridworld/policy_solved_task.pt")
+            torch.save(policy.state_dict(),learned_policy_path + "policy_solved_task.pt")
             with open("/home/muhammed-saeed/Documents/rl_assignments/Reinforce_policy_gradient_gridworld/results.txt", "w") as fb:
                 for number, solution in enumerate(action_seq):
                     fb.write(f"The solution occured at {counter[number]} episode \n")
@@ -198,7 +207,7 @@ def mainLearnFromDomenstrations():
                     fb.write('\n-------------- -------------- ---------- -------- \n')
 
     print("Saving the final weights after leanring from domenstraiton over the entire domenstrationData")
-    torch.save(policy.state_dict(),"/home/muhammed-saeed/Documents/rl_assignments/Reinforce_policy_gradient_gridworld/learnFromDomenstration/LFD_policy_network.pt")
+    torch.save(policy.state_dict(),learned_policy_path +"LFD_policy_network.pt")
 
 def main():
     print(len(memory))
