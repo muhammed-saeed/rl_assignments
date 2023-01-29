@@ -81,7 +81,7 @@ def select_action(state):
     state = torch.from_numpy(state).float().unsqueeze(0)
     # print(state)
     probs = policy(state)
-    # print(f"the probs are {probs} {probs.sum()}")
+    print(f"the probs are {probs} {probs.sum()}")
     m = Categorical(probs)
     action = m.sample()
     policy.saved_log_probs.append(m.log_prob(action))
@@ -111,7 +111,7 @@ def finish_episode():
     returns = torch.tensor(returns)
     # print("Return", returns, returns.mean(), returns.std(unbiased=False))
     returns = (returns - returns.mean()) / (returns.std(unbiased=False) + eps)
-    # print("Return", returns)
+    print("Return", returns)
     for log_prob, R in zip(policy.saved_log_probs, returns):
         # print("Reward", R)
         policy_loss.append(-log_prob * R)
@@ -140,23 +140,16 @@ medium_solutions = "/home/muhammed-saeed/Documents/rl_assignments/project/datase
 curriculum_design_easy = ""
 
 memory = get_memory()
-easy_memory = get_memory(mode, easy_tasks, easy_solution)
-
-curriculum_design_easy = "/home/muhammed-saeed/Documents/rl_assignments/Reinforce_policy_gradient_gridworld/curriclumDesignEasy/"
-curriculum_design_medium = "/home/muhammed-saeed/Documents/rl_assignments/Reinforce_policy_gradient_gridworld/curriclumDesignMedium/"
-
-def curriculum_design():
-    print(len(easy_memory))
 
 
-def mainLearnFromDomenstrations(memory, learned_policy_path):
+def mainLearnFromDomenstrations(memory=memory, learned_policy_path="/home/muhammed-saeed/Documents/rl_assignments/Reinforce_policy_gradient_gridworld/learnFromDomenstration/"):
     
     # return
     running_reward = 0
     action_seq = []
     eps_actions = []
     counter = []
-    numTasks = len(memory)
+    numTasks = memory
     # numTasks = 5_000
     for task, EPISODE in enumerate(numTasks):
         eps_actions = []
@@ -207,76 +200,6 @@ def mainLearnFromDomenstrations(memory, learned_policy_path):
                     fb.write('\n-------------- -------------- ---------- -------- \n')
 
     print("Saving the final weights after leanring from domenstraiton over the entire domenstrationData")
-    torch.save(policy.state_dict(),learned_policy_path +"LFD_policy_network.pt")
-
-def main():
-    print(len(memory))
-    
-    running_reward = 0
-    action_seq = []
-    eps_actions = []
-    counter = []
-    numEpisodes = 1_000_000
-    numEpisodes = 5_000
-    for i_episode in range(numEpisodes):
-        eps_actions = []
-        state = env.reset()
-        ep_reward = 0
-        test_reward = None
-        last_action = None
-        for t in range(horizon):  # Don't infinite loop while learning
-            action = select_action(state.flatten())
-            actionString = actions[action]
-            last_action = actionString
-            # print(actionString)
-            state, reward, done, _ = env.step(actionString)
-            eps_actions.append(actionString)
-
-            if not done and t+1 == horizon:
-                # print('hi reasched here !!!!')
-                # print(eps_actions)
-                # reward = env.crashReward
-                done = True
-
-            policy.rewards.append(reward)
-            ep_reward += reward
-            test_reward = reward
-            if done and reward ==env.winReward:
-                print("we are here")
-                action_seq.append(eps_actions)
-                counter.append(i_episode)
-                print(f"the action sequence is {eps_actions}")
-            if done:
-                break
-          
-
-        running_reward = 0.05 * ep_reward + (1 - 0.05) * running_reward
-        finish_episode()
-        if i_episode % args.log_interval == 0:
-            print(f'Episode {i_episode}\tLast reward: {test_reward}\tAverage reward: {running_reward} \t Last action {last_action}') 
-            #.format(      i_episode, test_reward, running_reward))
-            torch.save(policy.state_dict(),"/home/muhammed-saeed/Desktop/testst/gridworld/policy_log_interval.pt")
-        # if running_reward > env.spec.reward_threshold:
-        if reward>=0 and reward <env.winReward:
-            print("reward design")
-        if reward >= env.winReward:
-
-            print("Solved! Running reward is now {} and "
-                  "the last episode runs to {} time steps!".format(running_reward, t))
-            print(f"the action sequence is {eps_actions}")
-            torch.save(policy.state_dict(),"/home/muhammed-saeed/Desktop/testst/gridworld/policy_solved_task.pt")
-            with open("/home/muhammed-saeed/Documents/rl_assignments/Reinforce_policy_gradient_gridworld/results.txt", "w") as fb:
-                for number, solution in enumerate(action_seq):
-                    fb.write(f"The solution occured at {counter[number]} episode \n")
-                    fb.write(" ".join(solution))
-                    fb.write('\n-------------- -------------- ---------- -------- \n')
-            # break
-    
-    # with open("/home/muhammed-saeed/Documents/rl_assignments/Reinforce_policy_gradient_gridworld/results.txt", "w") as fb:
-    #     for number, solution in enumerate(action_seq):
-    #         fb.write(f"The solution occured at {counter[number]} episode \n")
-    #         fb.write(" ".join(solution))
-    #         fb.write('\n-------------- -------------- ---------- -------- \n')
 
 if __name__ == '__main__':
     # main()

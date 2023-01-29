@@ -1,0 +1,69 @@
+The solution occured at 448 episode 
+move left pickMarker finish
+-------------- -------------- ---------- -------- 
+The solution occured at 953 episode 
+move left pickMarker finish
+-------------- -------------- ---------- -------- 
+The solution occured at 1212 episode 
+move left pickMarker right left finish
+-------------- -------------- ---------- -------- 
+The solution occured at 1553 episode 
+move left pickMarker finish
+-------------- -------------- ---------- -------- 
+The solution occured at 2663 episode 
+move left pickMarker finish
+-------------- -------------- ---------- -------- 
+The solution occured at 2888 episode 
+move pickMarker left finish
+-------------- -------------- ---------- -------- 
+The solution occured at 2992 episode 
+putMarker pickMarker move pickMarker left left right finish
+-------------- -------------- ---------- -------- 
+The solution occured at 3526 episode 
+move left pickMarker finish
+-------------- -------------- ---------- -------- 
+The solution occured at 3622 episode 
+right left move left pickMarker finish
+-------------- -------------- ---------- -------- 
+The solution occured at 3807 episode 
+putMarker pickMarker move left pickMarker finish
+-------------- -------------- ---------- -------- 
+The solution occured at 4189 episode 
+move pickMarker left finish
+-------------- -------------- ---------- -------- 
+The solution occured at 4479 episode 
+move pickMarker left finish
+-------------- -------------- ---------- -------- 
+The solution occured at 4655 episode 
+move left pickMarker finish
+-------------- -------------- ---------- -------- 
+The solution occured at 4696 episode 
+move left pickMarker finish
+-------------- -------------- ---------- -------- 
+The solution occured at 4710 episode 
+move left pickMarker finish
+-------------- -------------- ---------- -------- 
+The solution occured at 4775 episode 
+move pickMarker putMarker right pickMarker left right putMarker pickMarker left left finish
+-------------- -------------- ---------- -------- 
+The solution occured at 4873 episode 
+move pickMarker left finish
+-------------- -------------- ---------- -------- 
+The solution occured at 5071 episode 
+move pickMarker left finish
+-------------- -------------- ---------- -------- 
+The solution occured at 5140 episode 
+move left pickMarker finish
+-------------- -------------- ---------- -------- 
+The solution occured at 5707 episode 
+move left pickMarker finish
+-------------- -------------- ---------- -------- 
+The solution occured at 6292 episode 
+move pickMarker left finish
+-------------- -------------- ---------- -------- 
+The solution occured at 6937 episode 
+move left pickMarker finish
+-------------- -------------- ---------- -------- 
+The solution occured at 7782 episode 
+move pickMarker left finish
+-------------- -------------- ---------- -------- 

@@ -8,7 +8,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
 from torch.distributions import Categorical
-
+from memory import get_memory
 ########
 from env import GridWorld
 from read_env_json import read_env_sol_json
@@ -20,8 +20,8 @@ parser.add_argument('--seed', type=int, default=543, metavar='N',
                     help='random seed (default: 543)')
 parser.add_argument('--render', default=True, action='store_true',
                     help='render the environment')
-parser.add_argument('--log-interval', type=int, default=100, metavar='N',
-                    help='interval between training status logs (default: 100)')
+parser.add_argument('--log-interval', type=int, default=10, metavar='N',
+                    help='interval between training status logs (default: 10)')
 args = parser.parse_args()
 
 
@@ -30,8 +30,8 @@ env = gym.make('CartPole-v1')
 torch.manual_seed(args.seed)
 
 mode = "train"
-train_path = "/home/muhammed-saeed/Documents/rl_assignments/Reinforce_policy_gradient_gridworld/task/task"
-train_target_path = "/home/muhammed-saeed/Documents/rl_assignments/Reinforce_policy_gradient_gridworld/task/solution"
+train_path = "/home/muhammed-saeed/Desktop/testst/task/task"
+train_target_path = "/home/muhammed-saeed/Desktop/testst/task/solution"
 # m, n, init_state, orientation, markers_locations, wall_locations, terminal_state, possible_actions):
 # terminal_state #[[x,y],"orientation", [[markers1],[marker2]]]
 actions = ['move', 'left', 'right', 'finish', 'pickMarker', 'putMarker']
@@ -57,7 +57,7 @@ class Policy(nn.Module):
         self.rewards = []
 
     def forward(self, x):
-        # x.requires_grads = True
+        x.requires_grads = True
 
         x = self.affine1(x)
         x = self.dropout(x)
@@ -88,6 +88,17 @@ def select_action(state):
     return action.item()
 
 
+# def select_action_LFD(state):
+#     state = torch.from_numpy(state).float().unsqueeze(0)
+#     # print(state)
+#     probs = policy(state)
+#     # print(f"the probs are {probs} {probs.sum()}")
+#     m = Categorical(probs)
+#     action = m.sample()
+#     policy.saved_log_probs.append(m.log_prob(action))
+#     return action.item()
+
+
 def finish_episode():
     R = 0
     policy_loss = []
@@ -114,15 +125,99 @@ def finish_episode():
     del policy.saved_log_probs[:]
 
 
-horizon = 100
+horizon = 50
+
+
+mode = "train"
+
+easy_tasks = "/home/muhammed-saeed/Documents/rl_assignments/project/datasets/data_easy/train/task"
+easy_solution = "/home/muhammed-saeed/Documents/rl_assignments/project/datasets/data_easy/train/seq/"
+
+medium_tasks = "/home/muhammed-saeed/Documents/rl_assignments/project/datasets/data_medium/train/task/"
+medium_solutions = "/home/muhammed-saeed/Documents/rl_assignments/project/datasets/data_medium/train/seq/"
+
+
+curriculum_design_easy = ""
+
+memory = get_memory()
+easy_memory = get_memory(mode, easy_tasks, easy_solution)
+
+curriculum_design_easy = "/home/muhammed-saeed/Documents/rl_assignments/Reinforce_policy_gradient_gridworld/curriclumDesignEasy/"
+curriculum_design_medium = "/home/muhammed-saeed/Documents/rl_assignments/Reinforce_policy_gradient_gridworld/curriclumDesignMedium/"
+
+def curriculum_design():
+    print(len(easy_memory))
+
+
+def mainLearnFromDomenstrations(memory, learned_policy_path):
+    
+    # return
+    running_reward = 0
+    action_seq = []
+    eps_actions = []
+    counter = []
+    numTasks = len(memory)
+    # numTasks = 5_000
+    for task, EPISODE in enumerate(numTasks):
+        eps_actions = []
+        state = env.reset()
+        ep_reward = 0
+        test_reward = None
+        last_action = None
+        for t,episode in enumerate(EPISODE):  # Don't infinite loop while learning
+            action = episode[1]
+            actionString = actions[action]
+            last_action = actionString
+            # print(actionString)
+            state, reward, done, _ = env.step(actionString)
+            eps_actions.append(actionString)
+
+            
+
+            policy.rewards.append(episode[2])
+            ep_reward += reward
+            test_reward = reward
+            if done and reward ==env.winReward:
+                print("we are here")
+                action_seq.append(eps_actions)
+                counter.append(task)
+                print(f"the action sequence is {eps_actions}")
+            if done:
+                break
+          
+
+        running_reward = 0.05 * ep_reward + (1 - 0.05) * running_reward
+        finish_episode()
+        if task % args.log_interval == 0:
+            print(f'Episode {task}\tLast reward: {test_reward}\tAverage reward: {running_reward} \t Last action {last_action}') 
+            #.format(      task, test_reward, running_reward))
+            torch.save(policy.state_dict(), learned_policy_path +"policy_log_interval.pt")
+        if reward>=0 and reward <env.winReward:
+            print("reward design")
+        if reward >= env.winReward:
+
+            print("Solved! Running reward is now {} and "
+                  "the last episode runs to {} time steps!".format(running_reward, t))
+            print(f"the action sequence is {eps_actions}")
+            torch.save(policy.state_dict(),learned_policy_path + "policy_solved_task.pt")
+            with open("/home/muhammed-saeed/Documents/rl_assignments/Reinforce_policy_gradient_gridworld/results.txt", "w") as fb:
+                for number, solution in enumerate(action_seq):
+                    fb.write(f"The solution occured at {counter[number]} episode \n")
+                    fb.write(" ".join(solution))
+                    fb.write('\n-------------- -------------- ---------- -------- \n')
+
+    print("Saving the final weights after leanring from domenstraiton over the entire domenstrationData")
+    torch.save(policy.state_dict(),learned_policy_path +"LFD_policy_network.pt")
 
 def main():
+    print(len(memory))
+    
     running_reward = 0
     action_seq = []
     eps_actions = []
     counter = []
     numEpisodes = 1_000_000
-    # numEpisodes = 5_000
+    numEpisodes = 5_000
     for i_episode in range(numEpisodes):
         eps_actions = []
         state = env.reset()
@@ -184,4 +279,5 @@ def main():
     #         fb.write('\n-------------- -------------- ---------- -------- \n')
 
 if __name__ == '__main__':
-    main()
+    # main()
+    mainLearnFromDomenstrations()
