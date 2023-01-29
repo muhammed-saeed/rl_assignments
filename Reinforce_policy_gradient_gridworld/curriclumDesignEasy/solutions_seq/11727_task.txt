@@ -1,8 +1,8 @@
-The solution occured at 448 episode 
-move left pickMarker finish
+The solution occured at 720 episode 
+move pickMarker left finish
 Optimum Solution is ['move', 'pickMarker', 'turnLeft', 'finish']
 -------------- -------------- ---------- -------- 
-The solution occured at 953 episode 
-move left pickMarker finish
+The solution occured at 746 episode 
+move pickMarker left finish
 Optimum Solution is ['move', 'pickMarker', 'turnLeft', 'finish']
 -------------- -------------- ---------- -------- 

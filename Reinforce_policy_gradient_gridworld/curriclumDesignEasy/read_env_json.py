@@ -13,9 +13,12 @@ def read_env_sol_json (mode,train_path,train_target_path):
         print(json_files)
         print(json_target_files)
         for counter, file in enumerate(json_files):
+            target_file = file.split("task")[0]+"seq.json"
+            if target_file in json_target_files: 
             # if file in json_target_files: # if train example has a solution json included
                 file_path = os.path.join(train_path, file)
-                target_path = os.path.join(train_target_path, json_target_files[counter])
+                # target_path = os.path.join(train_target_path, json_target_files[counter])
+                target_path = os.path.join(train_target_path, target_file)
                 train_data = None
                 train_seq = None
                 

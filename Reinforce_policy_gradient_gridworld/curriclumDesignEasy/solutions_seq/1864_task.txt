@@ -1,0 +1,156 @@
+The solution occured at 24 episode 
+move putMarker pickMarker finish
+Optimum Solution is ['move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 63 episode 
+move left right finish
+Optimum Solution is ['move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 115 episode 
+move finish
+Optimum Solution is ['move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 116 episode 
+move finish
+Optimum Solution is ['move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 137 episode 
+move finish
+Optimum Solution is ['move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 159 episode 
+move finish
+Optimum Solution is ['move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 165 episode 
+move finish
+Optimum Solution is ['move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 213 episode 
+move finish
+Optimum Solution is ['move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 220 episode 
+putMarker pickMarker move finish
+Optimum Solution is ['move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 253 episode 
+move finish
+Optimum Solution is ['move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 298 episode 
+move left right finish
+Optimum Solution is ['move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 325 episode 
+move finish
+Optimum Solution is ['move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 384 episode 
+move finish
+Optimum Solution is ['move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 408 episode 
+move finish
+Optimum Solution is ['move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 438 episode 
+move finish
+Optimum Solution is ['move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 446 episode 
+putMarker pickMarker move finish
+Optimum Solution is ['move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 449 episode 
+move finish
+Optimum Solution is ['move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 475 episode 
+move finish
+Optimum Solution is ['move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 489 episode 
+move finish
+Optimum Solution is ['move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 513 episode 
+move finish
+Optimum Solution is ['move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 518 episode 
+move finish
+Optimum Solution is ['move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 548 episode 
+move finish
+Optimum Solution is ['move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 589 episode 
+move finish
+Optimum Solution is ['move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 602 episode 
+move finish
+Optimum Solution is ['move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 618 episode 
+move left right finish
+Optimum Solution is ['move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 661 episode 
+move finish
+Optimum Solution is ['move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 667 episode 
+move finish
+Optimum Solution is ['move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 679 episode 
+move finish
+Optimum Solution is ['move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 722 episode 
+move finish
+Optimum Solution is ['move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 748 episode 
+move finish
+Optimum Solution is ['move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 754 episode 
+putMarker pickMarker move finish
+Optimum Solution is ['move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 763 episode 
+move finish
+Optimum Solution is ['move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 811 episode 
+move putMarker pickMarker finish
+Optimum Solution is ['move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 817 episode 
+move finish
+Optimum Solution is ['move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 856 episode 
+move finish
+Optimum Solution is ['move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 870 episode 
+move finish
+Optimum Solution is ['move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 875 episode 
+move finish
+Optimum Solution is ['move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 913 episode 
+move finish
+Optimum Solution is ['move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 960 episode 
+move finish
+Optimum Solution is ['move', 'finish']
+-------------- -------------- ---------- -------- 

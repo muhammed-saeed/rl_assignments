@@ -11,7 +11,8 @@ import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
 from torch.distributions import Categorical
-
+import matplotlib.pyplot as plt
+import pandas as pd
 ########
 from env import GridWorld
 from read_env_json import read_env_sol_json
@@ -119,21 +120,27 @@ horizon = 100
 task = "/home/muhammed-saeed/Documents/rl_assignments/project/datasets/data_medium/train/task"
 seq = "/home/muhammed-saeed/Documents/rl_assignments/project/datasets/data_medium/train/seq"
 
-tasks, solution, files = read_env_sol_json("train", task, seq)
-print(f"{len(tasks)} and {len(solution)}")
+tasks, optimumSolution, files = read_env_sol_json("train", task, seq)
+print(f"{len(tasks)} and {len(optimumSolution)}")
 
 
 
 def main():
     for count, task in enumerate(tasks):
-
+        returns = []
         env = GridWorld(*task)
+        print("#####################################")
+        print("#####################################")
+
+        print("#####################################")
+        print("#####################################")
+        print('New task')
         running_reward = 0
         action_seq = []
         eps_actions = []
         counter = []
         numEpisodes = 1_000_000
-        numEpisodes = 20_000
+        numEpisodes = 1_000
         for i_episode in range(numEpisodes):
             eps_actions = []
             state = env.reset()
@@ -185,14 +192,24 @@ def main():
                     for number, solution in enumerate(action_seq):
                         fb.write(f"The solution occured at {counter[number]} episode \n")
                         fb.write(" ".join(solution))
+                        fb.write('\n')
+                        fb.write(f'Optimum Solution is {optimumSolution[count]}')
                         fb.write('\n-------------- -------------- ---------- -------- \n')
                 # break
-        
-        # with open("/home/muhammed-saeed/Documents/rl_assignments/Reinforce_policy_gradient_gridworld/results.txt", "w") as fb:
-        #     for number, solution in enumerate(action_seq):
-        #         fb.write(f"The solution occured at {counter[number]} episode \n")
-        #         fb.write(" ".join(solution))
-        #         fb.write('\n-------------- -------------- ---------- -------- \n')
+            returns.append(ep_reward)
+        # plt.plot(returns)
+        n = 50
+        returns = pd.Series(returns)
+        rolling_mean = returns.rolling(window=n).mean()
+        plt.plot(rolling_mean, label='Rolling Mean (window size {})'.format(n))
 
+        # add labels and legend
+        plt.xlabel('Episode')
+        plt.ylabel('Return')
+        plt.legend()
+        plt.savefig(f'/home/muhammed-saeed/Documents/rl_assignments/Reinforce_policy_gradient_gridworld/curriclumDesignEasy/returns_plots/{files[count]}_returns.png')
+        plt.title(f'Environment {files[count]}')
+        plt.close()
+        
 if __name__ == '__main__':
     main()

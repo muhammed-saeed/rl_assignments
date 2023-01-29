@@ -1,0 +1,112 @@
+The solution occured at 6 episode 
+left right right left move finish
+Optimum Solution is ['move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 24 episode 
+move finish
+Optimum Solution is ['move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 50 episode 
+move finish
+Optimum Solution is ['move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 56 episode 
+left right putMarker pickMarker right left move right left right left finish
+Optimum Solution is ['move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 113 episode 
+move right left finish
+Optimum Solution is ['move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 120 episode 
+move finish
+Optimum Solution is ['move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 138 episode 
+move finish
+Optimum Solution is ['move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 240 episode 
+putMarker pickMarker move finish
+Optimum Solution is ['move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 316 episode 
+move finish
+Optimum Solution is ['move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 383 episode 
+move finish
+Optimum Solution is ['move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 413 episode 
+move finish
+Optimum Solution is ['move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 415 episode 
+move finish
+Optimum Solution is ['move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 442 episode 
+move finish
+Optimum Solution is ['move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 446 episode 
+move finish
+Optimum Solution is ['move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 571 episode 
+move finish
+Optimum Solution is ['move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 698 episode 
+move finish
+Optimum Solution is ['move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 742 episode 
+move finish
+Optimum Solution is ['move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 750 episode 
+move finish
+Optimum Solution is ['move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 752 episode 
+move left right finish
+Optimum Solution is ['move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 782 episode 
+putMarker pickMarker right left move finish
+Optimum Solution is ['move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 799 episode 
+right left move finish
+Optimum Solution is ['move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 821 episode 
+move finish
+Optimum Solution is ['move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 827 episode 
+move finish
+Optimum Solution is ['move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 878 episode 
+move right left finish
+Optimum Solution is ['move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 882 episode 
+move finish
+Optimum Solution is ['move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 946 episode 
+move finish
+Optimum Solution is ['move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 981 episode 
+move putMarker pickMarker finish
+Optimum Solution is ['move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 987 episode 
+move finish
+Optimum Solution is ['move', 'finish']
+-------------- -------------- ---------- -------- 
