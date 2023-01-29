@@ -79,6 +79,7 @@ eps = np.finfo(np.float32).eps.item()
 
 def select_action(state):
     state = torch.from_numpy(state).float().unsqueeze(0)
+    print(state.shape)
     # print(state)
     probs = policy(state)
     # print(f"the probs are {probs} {probs.sum()}")

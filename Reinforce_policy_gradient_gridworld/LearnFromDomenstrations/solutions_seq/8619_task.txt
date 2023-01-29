@@ -1,0 +1,24 @@
+The solution occured at 194 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 406 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 424 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 634 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 797 episode 
+move move right left finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 958 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 

@@ -1,0 +1,4 @@
+The solution occured at 4 episode 
+
+Optimum Solution is ['move', 'finish']
+-------------- -------------- ---------- -------- 

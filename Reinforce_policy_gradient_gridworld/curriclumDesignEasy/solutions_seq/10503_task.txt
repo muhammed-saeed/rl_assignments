@@ -1,0 +1,20 @@
+The solution occured at 3 episode 
+
+Optimum Solution is ['move', 'turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 4 episode 
+
+Optimum Solution is ['move', 'turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 7 episode 
+
+Optimum Solution is ['move', 'turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 8 episode 
+
+Optimum Solution is ['move', 'turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 8 episode 
+
+Optimum Solution is ['move', 'turnRight', 'finish']
+-------------- -------------- ---------- -------- 

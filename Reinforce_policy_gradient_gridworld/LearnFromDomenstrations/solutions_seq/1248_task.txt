@@ -1,0 +1,8 @@
+The solution occured at 743 episode 
+pickMarker right move finish
+Optimum Solution is ['turnRight', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 924 episode 
+right left pickMarker right move finish
+Optimum Solution is ['turnRight', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 

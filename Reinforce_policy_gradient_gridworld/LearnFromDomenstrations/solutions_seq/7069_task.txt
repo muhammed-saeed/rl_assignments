@@ -1,0 +1,8 @@
+The solution occured at 68 episode 
+right putMarker move finish
+Optimum Solution is ['turnRight', 'putMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 860 episode 
+putMarker right move finish
+Optimum Solution is ['turnRight', 'putMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
