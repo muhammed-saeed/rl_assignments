@@ -73,16 +73,19 @@ def get_memory(mode="train", train_path="/home/muhammed-saeed/Documents/rl_assig
                     state = env.reset()
                     episode_memory = []
                     for i in seq:
+                        task_mem =[]
                         next_state, reward, done, _ = env.step(i)
                         dead_win = reward >-1
                         # memory.append((state, actions.index(i), reward, next_state, 1., done, dead_win))
-                        episode_memory.append((state, actions.index(i), reward, next_state))
-
-                        state = next_state
-                    memory.append(episode_memory)
+                        # task_mem.append((state, actions.index(i), reward, next_state))
+                        memory.append((state,actions.index(i)))
+                    #     episode_memory.append(task_mem)
+                    #     state = next_state
+                    # memory.append(episode_memory)
+    print(memory[0])
     print(len(memory))
     return memory
 
-if __name__== '__main__':
+# if __name__== '__main__':
     
-    get_memory()
+#     get_memory()

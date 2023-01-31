@@ -1,8 +1,6 @@
 
 
 
-import argparse
-import gym
 import numpy as np
 from itertools import count
 from collections import deque
@@ -13,47 +11,44 @@ import torch.optim as optim
 from torch.distributions import Categorical
 import matplotlib.pyplot as plt
 import pandas as pd
-########
-from env import GridWorld
+
 from read_env_json import read_env_sol_json
 from memory import get_memory
 
-parser = argparse.ArgumentParser(description='PyTorch REINFORCE example')
-parser.add_argument('--gamma', type=float, default=0.99, metavar='G',
-                    help='discount factor (default: 0.99)')
-parser.add_argument('--seed', type=int, default=543, metavar='N',
-                    help='random seed (default: 543)')
-parser.add_argument('--render', default=True, action='store_true',
-                    help='render the environment')
-parser.add_argument('--log-interval', type=int, default=100, metavar='N',
-                    help='interval between training status logs (default: 100)')
-args = parser.parse_args()
 
 
-
-# print(task[0])
-# print(solution[0])
-
-torch.manual_seed(args.seed)
 
 mode = "train"
 train_path = "/home/muhammed-saeed/Documents/rl_assignments/Reinforce_policy_gradient_gridworld/task/task"
 train_target_path = "/home/muhammed-saeed/Documents/rl_assignments/Reinforce_policy_gradient_gridworld/task/solution"
-# m, n, init_state, orientation, markers_locations, wall_locations, terminal_state, possible_actions):
-# terminal_state #[[x,y],"orientation", [[markers1],[marker2]]]
 actions = ['move', 'left', 'right', 'finish', 'pickMarker', 'putMarker']
+
+import torch
+import torch.nn as nn
+# Define a function to get batches of data
+
+def get_batch(batch_size, data):
+    for i in range(0, len(data), batch_size):
+        yield data[i:i+batch_size]
+
+# Train the network using batches
 
 
 class Policy(nn.Module):
-    def __init__(self):
+    def __init__(self, input_size = 32, output_size = 6):
         super(Policy, self).__init__()
-        self.affine1 = nn.Linear(32, 128)
+        self.affine1 = nn.Linear(input_size, 128)
         self.dropout = nn.Dropout(p=0.3)
         self.affine2 = nn.Linear(128, 128)
         self.dropout = nn.Dropout(p=0.3)
-        self.affine3 = nn.Linear(128, 6)
+        self.affine3 = nn.Linear(128, output_size)
+
+        self.saved_log_probs = []
+        self.rewards = []
 
     def forward(self, x):
+        # x.requires_grads = True
+
         x = self.affine1(x)
         x = self.dropout(x)
         x = F.relu(x)
@@ -62,51 +57,69 @@ class Policy(nn.Module):
         x = F.relu(x)
 
         action_scores = self.affine3(x)
-        # action_scores = action_scores.unsqueeze(-1)
+        return F.softmax(action_scores, dim=1)
 
-        print(action_scores)
-        return F.log_softmax(action_scores, dim=1)
+state_size = 32
+numEpochs = 100
+batch_size = 32
+policy = Policy(input_size=state_size, output_size=6)
 
-policy = Policy()
-optimizer = optim.Adam(policy.parameters(), lr=1e-5)
-loss_fn = nn.CrossEntropyLoss()
+# Define loss function and optimizer
+criterion = nn.CrossEntropyLoss()
+optimizer = torch.optim.Adam(policy.parameters(), lr=0.001)
+training_data = get_memory()
 
+new_training_data = [row[:2] for row in training_data]
+print(new_training_data[0])
 
-    
-def select_action(state):
-    state = torch.from_numpy(state).float().unsqueeze(0)
-    # print(state)
-    probs = policy(state)
-    # print(f"the probs are {probs} {probs.sum()}")
-    m = Categorical(probs)
-    action = m.sample()
-    policy.saved_log_probs.append(m.log_prob(action))
-    return action.item()
+losses = []
 
-horizon = 100
-task = "/home/muhammed-saeed/Documents/rl_assignments/project/datasets/data_medium/train/task"
-seq = "/home/muhammed-saeed/Documents/rl_assignments/project/datasets/data_medium/train/seq"
+def get_batch(batch_size, data):
+    for i in range(0, len(data), batch_size):
+        yield data[i:i+batch_size]
 
-tasks, optimumSolution, files = read_env_sol_json("train", task, seq)
-print(f"{len(tasks)} and {len(optimumSolution)}")
-memory = get_memory("train", task, seq)
+batch = get_batch(batch_size, new_training_data)
+print(batch)
+# inputs, labels = zip(*batch)
+print(new_training_data[0][0].flatten())
 
-
-def main():
-    
-    numTasks = len(memory)  # number of tasks in the memory
-    for task in range(numTasks):
-        for episode in memory[task]:
-            state = episode[0]  # get the state from the memory
-            action = episode[1]  # get the action from the memory
-            agent_action = select_action(state)
-            # state = torch.from_numpy(state).float()
-            optimizer.zero_grad()
-            log_probs = policy(state.flatten())  # pass the state through the policy network
-            loss = loss_fn(log_probs, torch.tensor([action]))  # compute the loss
-            loss.backward()  # backpropagate the gradients
-            optimizer.step()  # update the policy network's parameters
-
+for epoch in range(numEpochs):
+    for inputs, labels in training_data:
+        # loss = 0
+        inputs = torch.from_numpy(inputs).float()
+        labels = torch.LongTensor([labels])
         
-if __name__ == '__main__':
-    main()
+        #note [labels] since the output is a tensor
+        optimizer.zero_grad()
+        outputs = policy(inputs.flatten().unsqueeze(0))
+        print(f"Selected action {outputs} and target {labels}")
+        loss = criterion(outputs, labels)
+        # print(f"We are working on Epoch {epoch} and loss is {loss}")
+
+        losses.append(loss)
+        loss.backward()
+        optimizer.step()
+
+
+
+# # Train the network
+# for epoch in range(numEpochs):
+#     for batch in get_batch(batch_size, new_training_data):
+#         inputs, labels = zip(*batch)
+#         print(len(inputs))
+#         inputs = [torch.tensor(i) for i in inputs]
+
+#         inputs = torch.stack(inputs)
+#         labels = torch.tensor(labels)
+#         optimizer.zero_grad()
+#         outputs = policy(inputs)
+#         loss = criterion(outputs, labels)
+#         losses.append(loss.item())
+#         loss.backward()
+#         optimizer.step()
+
+# # Plot the loss over time
+# plt.plot(losses)
+# plt.xlabel("Training iteration")
+# plt.ylabel("Loss")
+# plt.show()
