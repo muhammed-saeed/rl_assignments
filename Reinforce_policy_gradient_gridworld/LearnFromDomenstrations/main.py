@@ -117,7 +117,7 @@ def finish_episode():
 horizon = 100
 task = "/home/muhammed-saeed/Documents/rl_assignments/project/datasets/data_medium/train/task"
 seq = "/home/muhammed-saeed/Documents/rl_assignments/project/datasets/data_medium/train/seq"
-
+unsolvedEnvs = "/home/muhammed-saeed/Documents/rl_assignments/Reinforce_policy_gradient_gridworld/LearnFromDomenstrations/unsolvedEnvs/"
 tasks, optimumSolution, files = read_env_sol_json("train", task, seq)
 print(f"{len(tasks)} and {len(optimumSolution)}")
 
@@ -139,6 +139,7 @@ def main():
         counter = []
         numEpisodes = 1_000_000
         numEpisodes = 1_000
+        isSolved=False
         for i_episode in range(numEpisodes):
             eps_actions = []
             state = env.reset()
@@ -163,6 +164,7 @@ def main():
                 ep_reward += reward
                 test_reward = reward
                 if done and reward ==env.winReward:
+                    isSolved = True
                     print("we are here")
                     action_seq.append(eps_actions)
                     counter.append(i_episode)
@@ -176,7 +178,7 @@ def main():
             if i_episode % args.log_interval == 0:
                 print(f'Episode {i_episode}\tLast reward: {test_reward}\tAverage reward: {running_reward} \t Last action {last_action}') 
                 #.format(      i_episode, test_reward, running_reward))
-                torch.save(policy.state_dict(),"/home/muhammed-saeed/Documents/rl_assignments/Reinforce_policy_gradient_gridworld/curriclumDesignEasy/checkpoints/policy_log_interval.pt")
+                torch.save(policy.state_dict(),"/home/muhammed-saeed/Documents/rl_assignments/Reinforce_policy_gradient_gridworld/LearnFromDomenstrations/checkpoints/policy_log_interval.pt")
             # if running_reward > env.spec.reward_threshold:
             if reward>=0 and reward <env.winReward:
                 print("reward design")
@@ -185,8 +187,8 @@ def main():
                 print("Solved! Running reward is now {} and "
                     "the last episode runs to {} time steps!".format(running_reward, t))
                 print(f"the action sequence is {eps_actions}")
-                torch.save(policy.state_dict(),"/home/muhammed-saeed/Documents/rl_assignments/Reinforce_policy_gradient_gridworld/curriclumDesignEasy/checkpoints/policy_solved_task.pt")
-                with open("/home/muhammed-saeed/Documents/rl_assignments/Reinforce_policy_gradient_gridworld/curriclumDesignEasy/solutions_seq/"+files[count]+".txt", "w") as fb:
+                torch.save(policy.state_dict(),"/home/muhammed-saeed/Documents/rl_assignments/Reinforce_policy_gradient_gridworld/LearnFromDomenstrations/checkpoints/policy_solved_task.pt")
+                with open("/home/muhammed-saeed/Documents/rl_assignments/Reinforce_policy_gradient_gridworld/LearnFromDomenstrations/solutions_seq/"+files[count]+".txt", "w") as fb:
                     for number, solution in enumerate(action_seq):
                         fb.write(f"The solution occured at {counter[number]} episode \n")
                         fb.write(" ".join(solution))
@@ -196,6 +198,11 @@ def main():
                 # break
             returns.append(ep_reward)
         # plt.plot(returns)
+        
+        if not isSolved:
+            print(f"task {task} is unslved and !")
+            with open(unsolvedEnvs+str(count)+".txt", "w") as fb:
+                fb.write(str(task))
         n = 50
         returns = pd.Series(returns)
         rolling_mean = returns.rolling(window=n).mean()
@@ -205,7 +212,7 @@ def main():
         plt.xlabel('Episode')
         plt.ylabel('Return')
         plt.legend()
-        plt.savefig(f'/home/muhammed-saeed/Documents/rl_assignments/Reinforce_policy_gradient_gridworld/curriclumDesignEasy/returns_plots/{files[count]}_returns.png')
+        plt.savefig(f'/home/muhammed-saeed/Documents/rl_assignments/Reinforce_policy_gradient_gridworld/LearnFromDomenstrations/returns_plots/{files[count]}_returns.png')
         plt.title(f'Environment {files[count]}')
         plt.close()
         

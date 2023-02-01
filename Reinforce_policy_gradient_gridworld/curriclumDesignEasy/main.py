@@ -13,6 +13,7 @@ import torch.optim as optim
 from torch.distributions import Categorical
 import matplotlib.pyplot as plt
 import pandas as pd
+import random
 ########
 from env import GridWorld
 from read_env_json import read_env_sol_json
@@ -24,7 +25,7 @@ parser.add_argument('--seed', type=int, default=543, metavar='N',
                     help='random seed (default: 543)')
 parser.add_argument('--render', default=True, action='store_true',
                     help='render the environment')
-parser.add_argument('--log-interval', type=int, default=100, metavar='N',
+parser.add_argument('--log-interval', type=int, default=1000, metavar='N',
                     help='interval between training status logs (default: 100)')
 args = parser.parse_args()
 
@@ -36,8 +37,8 @@ args = parser.parse_args()
 torch.manual_seed(args.seed)
 
 mode = "train"
-train_path = "/home/muhammed-saeed/Documents/rl_assignments/Reinforce_policy_gradient_gridworld/task/task"
-train_target_path = "/home/muhammed-saeed/Documents/rl_assignments/Reinforce_policy_gradient_gridworld/task/solution"
+train_path = "/home/muhammed-saeed/rl_assignments/project/datasets/data_easy/train/task/task"
+train_target_path = "/home/muhammed-saeed/rl_assignments/project/datasets/data_easy/train/task/solution"
 # m, n, init_state, orientation, markers_locations, wall_locations, terminal_state, possible_actions):
 # terminal_state #[[x,y],"orientation", [[markers1],[marker2]]]
 actions = ['move', 'left', 'right', 'finish', 'pickMarker', 'putMarker']
@@ -116,31 +117,44 @@ def finish_episode():
 
 
 
-horizon = 100
-task = "/home/muhammed-saeed/Documents/rl_assignments/project/datasets/data_medium/train/task"
-seq = "/home/muhammed-saeed/Documents/rl_assignments/project/datasets/data_medium/train/seq"
+horizon = 50
+task = "/home/muhammed-saeed/Documents/rl_assignments/project/datasets/data_easy/train/task"
+seq = "/home/muhammed-saeed/Documents/rl_assignments/project/datasets/data_easy/train/seq"
 
 tasks, optimumSolution, files = read_env_sol_json("train", task, seq)
-print(f"{len(tasks)} and {len(optimumSolution)}")
+# print(f"{len(tasks)} and {len(optimumSolution)}")
 
+data = list(zip(tasks, optimumSolution, files))
+random.shuffle(data)
+tasks, optimumSolution, files = zip(*data)
 
-
+unsolved_tasks = []
+unsolved_env = []
 def main():
     for count, task in enumerate(tasks):
+        solved = False
+        
+        print(f"we are working on task number {count}")
         returns = []
         env = GridWorld(*task)
-        print("#####################################")
-        print("#####################################")
+        # print("#####################################")
+        # print("#####################################")
 
-        print("#####################################")
-        print("#####################################")
-        print('New task')
+        # print("#####################################")
+        # print("#####################################")
+        # print('New task')
         running_reward = 0
         action_seq = []
         eps_actions = []
         counter = []
         numEpisodes = 1_000_000
-        numEpisodes = 1_000
+        walls = task[5]
+        print(walls)
+        if len(walls)>3:
+
+            numEpisodes = 10_000
+        else: 
+            numEpisodes = 2_000
         for i_episode in range(numEpisodes):
             eps_actions = []
             state = env.reset()
@@ -165,10 +179,10 @@ def main():
                 ep_reward += reward
                 test_reward = reward
                 if done and reward ==env.winReward:
-                    print("we are here")
+                    # print("we are here")
                     action_seq.append(eps_actions)
                     counter.append(i_episode)
-                    print(f"the action sequence is {eps_actions}")
+                    # print(f"the action sequence is {eps_actions}")
                 if done:
                     break
             
@@ -176,19 +190,20 @@ def main():
             running_reward = 0.05 * ep_reward + (1 - 0.05) * running_reward
             finish_episode()
             if i_episode % args.log_interval == 0:
-                print(f'Episode {i_episode}\tLast reward: {test_reward}\tAverage reward: {running_reward} \t Last action {last_action}') 
+                # print(f'Episode {i_episode}\tLast reward: {test_reward}\tAverage reward: {running_reward} \t Last action {last_action}') 
                 #.format(      i_episode, test_reward, running_reward))
-                torch.save(policy.state_dict(),"/home/muhammed-saeed/Documents/rl_assignments/Reinforce_policy_gradient_gridworld/curriclumDesignEasy/checkpoints/policy_log_interval.pt")
+                torch.save(policy.state_dict(),"/home/muhammed-saeed/Reinforce_policy_gradient_gridworld/curriclumDeisngTryToTackleIssue/easy/checkpoints/policy_log_interval.pt")
             # if running_reward > env.spec.reward_threshold:
             if reward>=0 and reward <env.winReward:
                 print("reward design")
+                
             if reward >= env.winReward:
-
-                print("Solved! Running reward is now {} and "
-                    "the last episode runs to {} time steps!".format(running_reward, t))
-                print(f"the action sequence is {eps_actions}")
-                torch.save(policy.state_dict(),"/home/muhammed-saeed/Documents/rl_assignments/Reinforce_policy_gradient_gridworld/curriclumDesignEasy/checkpoints/policy_solved_task.pt")
-                with open("/home/muhammed-saeed/Documents/rl_assignments/Reinforce_policy_gradient_gridworld/curriclumDesignEasy/solutions_seq/"+files[count]+".txt", "w") as fb:
+                solved = True
+                # print("Solved! Running reward is now {} and "
+                #     "the last episode runs to {} time steps!".format(running_reward, t))
+                # print(f"the action sequence is {eps_actions}")
+                torch.save(policy.state_dict(),"/home/muhammed-saeed/Reinforce_policy_gradient_gridworld/curriclumDeisngTryToTackleIssue/easy/checkpoints/policy_solved_task.pt")
+                with open("/home/muhammed-saeed/Reinforce_policy_gradient_gridworld/curriclumDeisngTryToTackleIssue/easy/solutions_seq/"+files[count]+".txt", "w") as fb:
                     for number, solution in enumerate(action_seq):
                         fb.write(f"The solution occured at {counter[number]} episode \n")
                         fb.write(" ".join(solution))
@@ -197,6 +212,17 @@ def main():
                         fb.write('\n-------------- -------------- ---------- -------- \n')
                 # break
             returns.append(ep_reward)
+
+        if  not solved:
+            print(f"task {files[count]} is unsolved")
+            with open(f"/home/muhammed-saeed/Reinforce_policy_gradient_gridworld/curriclumDeisngTryToTackleIssue/easy/unsolved_tasks/{files[count]}_task.txt","w") as fb:
+                    fb.write(f"uncolved tasks is {files[count]}_task")
+                    fb.write("\n")
+                    fb.write(f"Optimum Action Seq is {optimumSolution[count]}")
+            unsolved_env.append(task)
+            with open(f"/home/muhammed-saeed/Reinforce_policy_gradient_gridworld/curriclumDeisngTryToTackleIssue/easy/unsolveEnvs/{files[count]}_task.txt","w") as fb:
+                fb.write(str(task))
+            
         # plt.plot(returns)
         n = 50
         returns = pd.Series(returns)
@@ -207,7 +233,7 @@ def main():
         plt.xlabel('Episode')
         plt.ylabel('Return')
         plt.legend()
-        plt.savefig(f'/home/muhammed-saeed/Documents/rl_assignments/Reinforce_policy_gradient_gridworld/curriclumDesignEasy/returns_plots/{files[count]}_returns.png')
+        plt.savefig(f'/home/muhammed-saeed/Reinforce_policy_gradient_gridworld/curriclumDeisngTryToTackleIssue/easy/returns_plots/{files[count]}_returns.png')
         plt.title(f'Environment {files[count]}')
         plt.close()
         

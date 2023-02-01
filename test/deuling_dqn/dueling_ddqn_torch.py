@@ -85,6 +85,8 @@ class Agent():
         self.action_space = [i for i in range(self.n_actions)]
         self.learn_step_counter = 0
 
+        #
+
         self.memory = ReplayBuffer(mem_size, input_dims, n_actions)
 
         self.q_eval = DuelingDeepQNetwork(self.lr, self.n_actions,

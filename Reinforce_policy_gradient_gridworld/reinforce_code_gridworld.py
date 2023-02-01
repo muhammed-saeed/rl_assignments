@@ -42,16 +42,16 @@ print(f"{initial_settings[0]} \n\n") # best action seq {initial_settings[1]}")
 # print(len(a))
 # print(initial_settings[0])
 env = GridWorld(*initial_settings[0])
-
+env = GridWorld(4, 4, (0, 1), 'east', [], [(0, 2), (1, 0), (1, 2), (1, 3), (2, 1), (2, 2), (3, 0), (3, 1), (3, 3)], [(1, 1), 'south', [(0, 1)]], ['m', 'l', 'r', 'f', 'pick', 'put'])
 
 class Policy(nn.Module):
     def __init__(self):
         super(Policy, self).__init__()
-        self.affine1 = nn.Linear(32, 128)
-        self.dropout = nn.Dropout(p=0.3)
-        self.affine2 = nn.Linear(128, 128)
-        self.dropout = nn.Dropout(p=0.3)
-        self.affine3 = nn.Linear(128, 6)
+        self.affine1 = nn.Linear(32, 512)
+        self.dropout = nn.Dropout(p=0.5)
+        self.affine2 = nn.Linear(512, 512)
+        self.dropout = nn.Dropout(p=0.5)
+        self.affine3 = nn.Linear(512, 6)
 
         self.saved_log_probs = []
         self.rewards = []
@@ -79,7 +79,7 @@ eps = np.finfo(np.float32).eps.item()
 
 def select_action(state):
     state = torch.from_numpy(state).float().unsqueeze(0)
-    print(state.shape)
+    # print(state.shape)
     # print(state)
     probs = policy(state)
     # print(f"the probs are {probs} {probs.sum()}")

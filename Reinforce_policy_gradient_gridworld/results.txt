@@ -1,9 +1,9 @@
-The solution occured at 7454 episode 
-right move right putMarker left move move finish
+The solution occured at 153 episode 
+putMarker right move finish
 -------------- -------------- ---------- -------- 
-The solution occured at 11989 episode 
-right move putMarker move right right right right move right right right right finish
+The solution occured at 175 episode 
+putMarker right move finish
 -------------- -------------- ---------- -------- 
-The solution occured at 14542 episode 
-right right right right right move right right right right right right right right right right right right right right right right right right right right right right right right putMarker right left right right right right right right right right right right right right right right right right move right right right right move finish
+The solution occured at 1471 episode 
+putMarker pickMarker putMarker right move finish
 -------------- -------------- ---------- -------- 

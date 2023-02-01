@@ -1,0 +1,24 @@
+The solution occured at 3 episode 
+left putMarker move finish
+Optimum Solution is ['turnLeft', 'putMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 271 episode 
+putMarker left move finish
+Optimum Solution is ['turnLeft', 'putMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 310 episode 
+putMarker left move finish
+Optimum Solution is ['turnLeft', 'putMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 406 episode 
+left putMarker move finish
+Optimum Solution is ['turnLeft', 'putMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 539 episode 
+putMarker left move finish
+Optimum Solution is ['turnLeft', 'putMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 872 episode 
+left putMarker move finish
+Optimum Solution is ['turnLeft', 'putMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 

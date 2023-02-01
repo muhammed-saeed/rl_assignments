@@ -1,0 +1,96 @@
+The solution occured at 21 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 60 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 109 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 144 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 257 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 263 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 281 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 307 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 315 episode 
+putMarker pickMarker right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 434 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 494 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 516 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 538 episode 
+putMarker pickMarker putMarker right pickMarker finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 590 episode 
+putMarker right pickMarker finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 611 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 621 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 741 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 746 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 757 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 758 episode 
+right putMarker pickMarker finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 772 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 789 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 807 episode 
+putMarker pickMarker putMarker pickMarker putMarker right pickMarker putMarker pickMarker finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 877 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 

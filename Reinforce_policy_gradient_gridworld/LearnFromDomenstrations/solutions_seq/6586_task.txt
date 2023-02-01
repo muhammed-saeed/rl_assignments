@@ -1,0 +1,68 @@
+The solution occured at 82 episode 
+left finish
+Optimum Solution is ['turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 98 episode 
+left finish
+Optimum Solution is ['turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 129 episode 
+putMarker left pickMarker finish
+Optimum Solution is ['turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 236 episode 
+left finish
+Optimum Solution is ['turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 261 episode 
+left finish
+Optimum Solution is ['turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 278 episode 
+left finish
+Optimum Solution is ['turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 311 episode 
+left finish
+Optimum Solution is ['turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 482 episode 
+left finish
+Optimum Solution is ['turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 561 episode 
+left finish
+Optimum Solution is ['turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 598 episode 
+left finish
+Optimum Solution is ['turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 600 episode 
+left finish
+Optimum Solution is ['turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 708 episode 
+left putMarker right left pickMarker finish
+Optimum Solution is ['turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 709 episode 
+left finish
+Optimum Solution is ['turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 759 episode 
+putMarker pickMarker left finish
+Optimum Solution is ['turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 803 episode 
+left finish
+Optimum Solution is ['turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 828 episode 
+left right left finish
+Optimum Solution is ['turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 981 episode 
+left left right finish
+Optimum Solution is ['turnLeft', 'finish']
+-------------- -------------- ---------- -------- 

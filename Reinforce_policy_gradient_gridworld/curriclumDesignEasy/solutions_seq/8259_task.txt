@@ -90,15 +90,3 @@ The solution occured at 815 episode
 move finish
 Optimum Solution is ['move', 'finish']
 -------------- -------------- ---------- -------- 
-The solution occured at 830 episode 
-move finish
-Optimum Solution is ['move', 'finish']
--------------- -------------- ---------- -------- 
-The solution occured at 840 episode 
-move finish
-Optimum Solution is ['move', 'finish']
--------------- -------------- ---------- -------- 
-The solution occured at 863 episode 
-move finish
-Optimum Solution is ['move', 'finish']
--------------- -------------- ---------- -------- 

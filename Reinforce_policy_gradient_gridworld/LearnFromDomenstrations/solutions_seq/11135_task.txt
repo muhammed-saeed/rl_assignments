@@ -1,0 +1,4 @@
+The solution occured at 361 episode 
+left finish
+Optimum Solution is ['turnLeft', 'finish']
+-------------- -------------- ---------- -------- 

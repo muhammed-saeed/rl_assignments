@@ -1,6 +1,5 @@
 
 
-
 import numpy as np
 from itertools import count
 from collections import deque
@@ -15,7 +14,9 @@ import pandas as pd
 from read_env_json import read_env_sol_json
 from memory import get_memory
 
+import numpy as np
 
+device = torch.device("cuda:2" if torch.cuda.is_available() else "cpu")
 
 
 mode = "train"
@@ -23,9 +24,8 @@ train_path = "/home/muhammed-saeed/Documents/rl_assignments/Reinforce_policy_gra
 train_target_path = "/home/muhammed-saeed/Documents/rl_assignments/Reinforce_policy_gradient_gridworld/task/solution"
 actions = ['move', 'left', 'right', 'finish', 'pickMarker', 'putMarker']
 
-import torch
-import torch.nn as nn
 # Define a function to get batches of data
+
 
 def get_batch(batch_size, data):
     for i in range(0, len(data), batch_size):
@@ -35,12 +35,12 @@ def get_batch(batch_size, data):
 
 
 class Policy(nn.Module):
-    def __init__(self, input_size = 32, output_size = 6):
+    def __init__(self, input_size=32, output_size=6):
         super(Policy, self).__init__()
         self.affine1 = nn.Linear(input_size, 128)
-        self.dropout = nn.Dropout(p=0.3)
+        self.dropout = nn.Dropout(p=0.6)
         self.affine2 = nn.Linear(128, 128)
-        self.dropout = nn.Dropout(p=0.3)
+        self.dropout = nn.Dropout(p=0.6)
         self.affine3 = nn.Linear(128, output_size)
 
         self.saved_log_probs = []
@@ -48,7 +48,7 @@ class Policy(nn.Module):
 
     def forward(self, x):
         # x.requires_grads = True
-
+        # x.requires_grad = True
         x = self.affine1(x)
         x = self.dropout(x)
         x = F.relu(x)
@@ -59,9 +59,10 @@ class Policy(nn.Module):
         action_scores = self.affine3(x)
         return F.softmax(action_scores, dim=1)
 
+
 state_size = 32
 numEpochs = 100
-batch_size = 32
+batch_size = 25
 policy = Policy(input_size=state_size, output_size=6)
 
 # Define loss function and optimizer
@@ -74,52 +75,57 @@ print(new_training_data[0])
 
 losses = []
 
+
 def get_batch(batch_size, data):
     for i in range(0, len(data), batch_size):
         yield data[i:i+batch_size]
 
+
 batch = get_batch(batch_size, new_training_data)
 print(batch)
-# inputs, labels = zip(*batch)
 print(new_training_data[0][0].flatten())
 
-for epoch in range(numEpochs):
-    for inputs, labels in training_data:
+for epoch in range(5):
+    loss_sum = 0
+    i = 0
+    for inputs, labelss in (training_data[:50]):
+        i += 1
         # loss = 0
         inputs = torch.from_numpy(inputs).float()
-        labels = torch.LongTensor([labels])
-        
-        #note [labels] since the output is a tensor
+        # print(labelss)
+        labels = np.zeros(6)
+        labels[int(labelss)] = 1
+        # labels = one_hot(6, labelss)
+        labels = torch.from_numpy(labels)
+
+        # note [labels] since the output is a tensor
         optimizer.zero_grad()
         outputs = policy(inputs.flatten().unsqueeze(0))
-        print(f"Selected action {outputs} and target {labels}")
-        loss = criterion(outputs, labels)
+        action =torch.argmax(outputs)
+        # print(f"prdicted action {action} selected actions {labelss}")
+        # print(f"Selected action {outputs} and target {labels.reshape(1,-1)}")
+        loss = criterion(outputs, labels.reshape(1,-1))
         # print(f"We are working on Epoch {epoch} and loss is {loss}")
+        loss_sum += loss
+        losses.append(loss.detach().numpy())
+        if (i)%batch_size ==0:
+            print(f"loss is {loss_sum}")
+            
+            loss.backward()
+            optimizer.step()
 
-        losses.append(loss)
-        loss.backward()
-        optimizer.step()
+torch.save(policy.state_dict(
+), "/home/muhammed-saeed/Documents/rl_assignments/Reinforce_policy_gradient_gridworld/LearnFromDomenstrations/checkpoints/policy.pt")
 
 
+# Plot the loss over time
+n = 50
+returns = pd.Series(losses)
+rolling_mean = returns.rolling(window=n).mean()
+plt.plot(rolling_mean, label='Rolling Mean (window size {})'.format(n))
 
-# # Train the network
-# for epoch in range(numEpochs):
-#     for batch in get_batch(batch_size, new_training_data):
-#         inputs, labels = zip(*batch)
-#         print(len(inputs))
-#         inputs = [torch.tensor(i) for i in inputs]
+plt.plot(losses)
+plt.xlabel("Training iteration")
+plt.ylabel("Loss")
 
-#         inputs = torch.stack(inputs)
-#         labels = torch.tensor(labels)
-#         optimizer.zero_grad()
-#         outputs = policy(inputs)
-#         loss = criterion(outputs, labels)
-#         losses.append(loss.item())
-#         loss.backward()
-#         optimizer.step()
-
-# # Plot the loss over time
-# plt.plot(losses)
-# plt.xlabel("Training iteration")
-# plt.ylabel("Loss")
-# plt.show()
+plt.show()
