@@ -1,0 +1,4 @@
+The solution occured at 2917 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 

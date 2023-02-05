@@ -1,0 +1,1244 @@
+The solution occured at 122 episode 
+left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left right left left left left left left left left left left left left left left left left left left left left left left left left left left left putMarker left left left left left left left left left left left left left left left left left left left left left left left left left left left left left pickMarker left left left left left left left left left left left left left left left left left left left left left left putMarker left left left left left left left left left left left left left left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 232 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 256 episode 
+left left left left left left left putMarker left left left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 259 episode 
+left left left left left left right left left left left left left left left left left left left left left left left left left left putMarker left left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 260 episode 
+left left left left left putMarker left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 264 episode 
+left left right left right left right left right left right left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 265 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 267 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 271 episode 
+left left right left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 272 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 276 episode 
+putMarker left left left left left left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 279 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 299 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 332 episode 
+putMarker left left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 347 episode 
+left left left left left left left left left left left putMarker left left left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 395 episode 
+left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 441 episode 
+left left left left left left left left putMarker left left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 501 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 511 episode 
+putMarker left left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 529 episode 
+putMarker left left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 555 episode 
+left putMarker left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 580 episode 
+left putMarker left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 599 episode 
+left putMarker left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 634 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 647 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 692 episode 
+left left right left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 707 episode 
+putMarker left left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 736 episode 
+putMarker left left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 785 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 796 episode 
+left putMarker right left left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 799 episode 
+left left left left left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 826 episode 
+left left left left left left left left left left left left left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 868 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 908 episode 
+left putMarker left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 936 episode 
+left left left left left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1053 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1110 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1118 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1136 episode 
+left putMarker left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1179 episode 
+left left left left putMarker left left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1180 episode 
+left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1202 episode 
+left putMarker left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1286 episode 
+left putMarker left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1310 episode 
+left putMarker left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1323 episode 
+left left left left left left left left left left left left left left left left left putMarker left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1465 episode 
+putMarker left left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1492 episode 
+putMarker left left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1564 episode 
+putMarker left left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1616 episode 
+left left left left left left left left left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1635 episode 
+putMarker left left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1692 episode 
+left left left left left left left left left left left left left left left left left putMarker left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1724 episode 
+left left left left left left left left left left left left left putMarker left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1725 episode 
+left left left left left left right left right left right left right left left left left left left left left left left left left left left putMarker left left left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1726 episode 
+left left left left left left right left right left right left right left right left left left left left left left left left left left left left left left left left left left left left left left left left right left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1785 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1811 episode 
+left putMarker left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1831 episode 
+putMarker left left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1834 episode 
+putMarker left left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1892 episode 
+left putMarker left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1905 episode 
+left left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left left left left left left left left left left left putMarker left left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1958 episode 
+left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1959 episode 
+left left left left left left left left left left left left left left right left right left right left right left right putMarker left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1986 episode 
+putMarker left left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2021 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2023 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2033 episode 
+left left right left right left right left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2035 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2037 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2038 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2039 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2040 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2041 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2052 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2053 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2056 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2069 episode 
+left putMarker left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2087 episode 
+putMarker left left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2102 episode 
+putMarker left left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2171 episode 
+left putMarker left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2202 episode 
+putMarker left left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2215 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2216 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2217 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2218 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2229 episode 
+left putMarker left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2249 episode 
+putMarker left left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2262 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2273 episode 
+putMarker left left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2280 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2283 episode 
+left putMarker left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2284 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2293 episode 
+left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2294 episode 
+left left left left left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2295 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2354 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2355 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2356 episode 
+left left left left left left left left left left left left putMarker left left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2360 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2361 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2362 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2377 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2378 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2379 episode 
+left left left left left left left left left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2396 episode 
+putMarker left left left left left left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2416 episode 
+left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2420 episode 
+left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2421 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2422 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2423 episode 
+left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2427 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2428 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2429 episode 
+left left right left left right putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2430 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2431 episode 
+left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2457 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2458 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2459 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2481 episode 
+left left left left left left left left left left left left left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2482 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2484 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2486 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2487 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2488 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2489 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2520 episode 
+left putMarker left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2521 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2538 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2539 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2545 episode 
+left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2546 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2555 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2556 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2569 episode 
+left left right left left left left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2570 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2624 episode 
+left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2625 episode 
+left left left left left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2627 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2640 episode 
+left left left left left left left left left left left left left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2648 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2649 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2650 episode 
+left left left left left left left left left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2651 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2657 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2713 episode 
+left left left left left left left left left left left left left left left left left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2714 episode 
+left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2715 episode 
+left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2718 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2722 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2723 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2725 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2734 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2735 episode 
+left left left left left left left left left left left left left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2737 episode 
+left left left left left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2738 episode 
+left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2740 episode 
+left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2741 episode 
+left left left left left left left left left left right left left left left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2743 episode 
+left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2744 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2745 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2754 episode 
+left left left left left left left left left left left left left left left left left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2755 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2761 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2779 episode 
+left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2780 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2815 episode 
+left left left left left left left left left putMarker left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2816 episode 
+left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2817 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2819 episode 
+left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2829 episode 
+putMarker left left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2832 episode 
+left left left left left left left left left left left left left left left left left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2833 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2835 episode 
+left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2837 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2848 episode 
+left left left left putMarker left left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2854 episode 
+left putMarker left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2869 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2870 episode 
+left left left left left left left left right left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2871 episode 
+left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2872 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2875 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2887 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2890 episode 
+left left left left left left left left left left left left putMarker left left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2906 episode 
+left left left left left putMarker left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2924 episode 
+left left left left left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2925 episode 
+left left left left left left left left left left putMarker pickMarker putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2926 episode 
+left left left left left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2929 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2941 episode 
+left left left left left putMarker left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2946 episode 
+putMarker left left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2948 episode 
+left left left left left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2949 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2966 episode 
+left left left left left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2982 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3016 episode 
+left putMarker left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3031 episode 
+left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3032 episode 
+left left left left left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3034 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3036 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3038 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3039 episode 
+left left left left left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3040 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3041 episode 
+left left left left left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3072 episode 
+left left left left left putMarker left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3087 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3088 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3120 episode 
+left putMarker left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3122 episode 
+right left left putMarker left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3140 episode 
+left putMarker left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3142 episode 
+left putMarker left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3181 episode 
+left putMarker left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3182 episode 
+left left left left left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3183 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3184 episode 
+left left left left left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3185 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3186 episode 
+left left left left left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3213 episode 
+left left left left left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3214 episode 
+left left left left left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3222 episode 
+left left left left left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3223 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3236 episode 
+left left left left left left left left left left left left left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3240 episode 
+left right left left left left left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3248 episode 
+left left left left left left left left left left left left left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3249 episode 
+left left putMarker left left left left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3250 episode 
+left left left left left left left left left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3262 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3266 episode 
+left left left left left left left left left left right left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3270 episode 
+left left left left left right left left left left left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3272 episode 
+left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3274 episode 
+left left left left left left left left left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3275 episode 
+left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3276 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3278 episode 
+left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3279 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3285 episode 
+left putMarker left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3287 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3289 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3329 episode 
+left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3330 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3337 episode 
+putMarker left left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3345 episode 
+left putMarker left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3361 episode 
+left putMarker left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3365 episode 
+left left left left left left left left left left left left putMarker left left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3366 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3386 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3391 episode 
+left putMarker left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3397 episode 
+putMarker left left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3416 episode 
+left putMarker left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3426 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3460 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3464 episode 
+putMarker left left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3493 episode 
+left left left left left left left left left left left left left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3494 episode 
+left left left left left left left right left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3500 episode 
+left left left left left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3504 episode 
+left putMarker left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3506 episode 
+left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3508 episode 
+left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3509 episode 
+left left left left left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3528 episode 
+left right left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3547 episode 
+left left left left left left left putMarker left left left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3557 episode 
+left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3562 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3563 episode 
+left left left left left left left left left left left left left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3564 episode 
+left left left left left left left left right left left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3567 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3571 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3572 episode 
+left left left left left left left left left left left left left left left left left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3610 episode 
+left putMarker left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3642 episode 
+putMarker left left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3660 episode 
+left putMarker left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3687 episode 
+left putMarker left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3688 episode 
+putMarker left left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3697 episode 
+left right left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3699 episode 
+putMarker left left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3701 episode 
+left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3702 episode 
+left left left left left left left left left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3706 episode 
+left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3707 episode 
+left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3708 episode 
+left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3713 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3744 episode 
+left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3745 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3747 episode 
+left left left left left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3748 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3749 episode 
+left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3750 episode 
+left left left left left left left left left left putMarker pickMarker putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3754 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3759 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3760 episode 
+putMarker left left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3774 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3802 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3817 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3825 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3860 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3861 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3863 episode 
+left left left left left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3869 episode 
+putMarker left left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3870 episode 
+left left left left left left left left putMarker left left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3871 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3877 episode 
+putMarker left left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3885 episode 
+left putMarker left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3886 episode 
+left left left left left left left left putMarker left left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3887 episode 
+left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3930 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3934 episode 
+putMarker left left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3941 episode 
+left putMarker left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3948 episode 
+left left left left left left left left left left left left left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3949 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3950 episode 
+left left left left left left left left left left left left left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3957 episode 
+left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3991 episode 
+left left left left left left left left left left left left left left left left left left left left left left left left left left putMarker finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3993 episode 
+left left left left left putMarker left left left left left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 

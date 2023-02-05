@@ -1,0 +1,52 @@
+The solution occured at 2665 episode 
+right move finish
+Optimum Solution is ['turnRight', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2711 episode 
+right move finish
+Optimum Solution is ['turnRight', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2848 episode 
+right move finish
+Optimum Solution is ['turnRight', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2855 episode 
+right move finish
+Optimum Solution is ['turnRight', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2890 episode 
+right move finish
+Optimum Solution is ['turnRight', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3176 episode 
+right move finish
+Optimum Solution is ['turnRight', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3192 episode 
+right move finish
+Optimum Solution is ['turnRight', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3220 episode 
+right move finish
+Optimum Solution is ['turnRight', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3236 episode 
+right move finish
+Optimum Solution is ['turnRight', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3696 episode 
+right move finish
+Optimum Solution is ['turnRight', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3701 episode 
+right move finish
+Optimum Solution is ['turnRight', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3724 episode 
+right move finish
+Optimum Solution is ['turnRight', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3970 episode 
+right move finish
+Optimum Solution is ['turnRight', 'move', 'finish']
+-------------- -------------- ---------- -------- 

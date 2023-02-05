@@ -1,0 +1,16 @@
+The solution occured at 470 episode 
+pickMarker left left finish
+Optimum Solution is ['turnRight', 'pickMarker', 'turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 530 episode 
+pickMarker left left finish
+Optimum Solution is ['turnRight', 'pickMarker', 'turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 801 episode 
+pickMarker left left finish
+Optimum Solution is ['turnRight', 'pickMarker', 'turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 936 episode 
+pickMarker left left finish
+Optimum Solution is ['turnRight', 'pickMarker', 'turnRight', 'finish']
+-------------- -------------- ---------- -------- 

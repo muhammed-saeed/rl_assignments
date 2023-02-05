@@ -1,0 +1,32 @@
+The solution occured at 1018 episode 
+right right right right right right right right right right right right right right right right right right right right move right right right right left right right right right right right right right right right right right right right right right right right right right right right right right putMarker right right right right right right right right right right right right right move right right right right right right right right right right right right right right right right right right right right right right right right right right right right finish
+Optimum Solution is ['move', 'putMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1313 episode 
+move putMarker right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right left right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right left right right right right right right right right right right right right right right move finish
+Optimum Solution is ['move', 'putMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1446 episode 
+move putMarker right right right right right right pickMarker right right putMarker right right right right right right right right right right right right right right right right right right right right right right right right move finish
+Optimum Solution is ['move', 'putMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1553 episode 
+move putMarker right right right right right right right right right right right right right right right right right right right right pickMarker putMarker right right right right right right right right right right right right right right right right move finish
+Optimum Solution is ['move', 'putMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1664 episode 
+move putMarker move finish
+Optimum Solution is ['move', 'putMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1808 episode 
+move left right putMarker move finish
+Optimum Solution is ['move', 'putMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1813 episode 
+move putMarker right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right left right move finish
+Optimum Solution is ['move', 'putMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1815 episode 
+move putMarker right right right right right right right right right right right right right right right right right right right right left right left right left right right right right right pickMarker putMarker right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right move finish
+Optimum Solution is ['move', 'putMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 

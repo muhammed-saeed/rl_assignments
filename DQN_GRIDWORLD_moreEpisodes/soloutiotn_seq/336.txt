@@ -1,0 +1,20 @@
+The solution occured at 3744 episode 
+right right right putMarker right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right move finish
+Optimum Solution is ['turnLeft', 'putMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3813 episode 
+right right right right right right right right right right right right right right right right right right right right right right right right right right putMarker right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right move finish
+Optimum Solution is ['turnLeft', 'putMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3835 episode 
+right right right right right right right right right right right right right right right right right right right right right putMarker right right move finish
+Optimum Solution is ['turnLeft', 'putMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3846 episode 
+left right right right right right right right right right right right right right right right right right right right right right right putMarker right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right move finish
+Optimum Solution is ['turnLeft', 'putMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3962 episode 
+right right right right right right right right right right right right right right right right right right right right right right right right right left right right right right right right right right right right putMarker right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right move finish
+Optimum Solution is ['turnLeft', 'putMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 

@@ -1,0 +1,56 @@
+The solution occured at 64 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 93 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 119 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 300 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 429 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 460 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 637 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 644 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 754 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 756 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 901 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 967 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1049 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1063 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 

@@ -1,0 +1,44 @@
+The solution occured at 58 episode 
+putMarker right move finish
+Optimum Solution is ['turnRight', 'putMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 99 episode 
+putMarker right move finish
+Optimum Solution is ['turnRight', 'putMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 623 episode 
+right putMarker move finish
+Optimum Solution is ['turnRight', 'putMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 736 episode 
+putMarker right move finish
+Optimum Solution is ['turnRight', 'putMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 913 episode 
+putMarker right move finish
+Optimum Solution is ['turnRight', 'putMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1171 episode 
+putMarker right move finish
+Optimum Solution is ['turnRight', 'putMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1532 episode 
+putMarker right move finish
+Optimum Solution is ['turnRight', 'putMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1585 episode 
+putMarker right move finish
+Optimum Solution is ['turnRight', 'putMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1686 episode 
+putMarker left left left move finish
+Optimum Solution is ['turnRight', 'putMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3689 episode 
+putMarker right move finish
+Optimum Solution is ['turnRight', 'putMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3968 episode 
+putMarker right move finish
+Optimum Solution is ['turnRight', 'putMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 

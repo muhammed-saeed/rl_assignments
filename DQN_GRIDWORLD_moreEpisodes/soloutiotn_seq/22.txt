@@ -1,0 +1,4 @@
+The solution occured at 2145 episode 
+move pickMarker move finish
+Optimum Solution is ['move', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 

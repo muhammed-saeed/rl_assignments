@@ -1,0 +1,408 @@
+The solution occured at 539 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 590 episode 
+left right left right left left right right left right left right left right left right left right left right left left right right left right left right move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 598 episode 
+left right left right left right left right left right left right left right left right left right left right left right left right left right right right right right right right right right left right left right left left right right left right left right left right left right left right left right left right left right left right left right left right putMarker right right pickMarker right right move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 599 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 600 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 601 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 602 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 603 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 604 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 771 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 831 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 834 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1056 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1062 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1299 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1387 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1546 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1619 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1620 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1621 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1778 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1783 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1834 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1871 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1872 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1873 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1874 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1875 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2368 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2467 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2527 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2528 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2529 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2530 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2531 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2562 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2563 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2564 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2565 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2566 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2567 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2568 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2569 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2570 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2571 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2572 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2574 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2575 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2576 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2577 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2578 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2579 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2580 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2581 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2582 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2583 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2584 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2585 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2586 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3177 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3455 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3456 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3457 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3458 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3459 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3460 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3461 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3462 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3463 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3464 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3465 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3466 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3658 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3685 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3770 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3840 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3841 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3843 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3844 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3845 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3846 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3847 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3848 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3865 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3866 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3872 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3873 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3875 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3876 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3879 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3880 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3881 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3882 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3883 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3884 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3885 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3886 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3888 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3889 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3890 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3891 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3908 episode 
+move move finish
+Optimum Solution is ['move', 'move', 'finish']
+-------------- -------------- ---------- -------- 

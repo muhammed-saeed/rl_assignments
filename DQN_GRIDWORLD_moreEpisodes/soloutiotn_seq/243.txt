@@ -1,0 +1,4 @@
+The solution occured at 178 episode 
+move right finish
+Optimum Solution is ['move', 'turnRight', 'finish']
+-------------- -------------- ---------- -------- 

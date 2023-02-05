@@ -1,0 +1,4 @@
+The solution occured at 815 episode 
+move right pickMarker finish
+Optimum Solution is ['move', 'pickMarker', 'turnRight', 'finish']
+-------------- -------------- ---------- -------- 

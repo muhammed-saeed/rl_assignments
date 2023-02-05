@@ -1,0 +1,584 @@
+The solution occured at 11 episode 
+left pickMarker move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 46 episode 
+right right pickMarker right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 106 episode 
+right right right right right right right right right right right right right right pickMarker right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 108 episode 
+right right right right right right right right right right right right right right pickMarker right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 115 episode 
+right right right left right right right right right right right right right right right right right right right right right right right right right pickMarker move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 128 episode 
+left pickMarker move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 137 episode 
+right right right right right right right right right right right right pickMarker right right right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 141 episode 
+right right right right right right right right right right right pickMarker move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 142 episode 
+right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right pickMarker right right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 144 episode 
+right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right pickMarker right right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 150 episode 
+right right right right right right right right right pickMarker right right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 161 episode 
+right right pickMarker right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 168 episode 
+right right right right right right right right right right right right pickMarker right right right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 183 episode 
+right right right right right right right right right right right right right right right right right right right right right right right pickMarker move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 198 episode 
+right right right right right right pickMarker right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 199 episode 
+pickMarker right right right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 202 episode 
+right right right right right right right right right right right right right right right right right right right right right right right right right right pickMarker right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 206 episode 
+right right right right right right right right right right right right right right right right right right pickMarker right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 221 episode 
+right pickMarker right right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 465 episode 
+right right pickMarker right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 479 episode 
+right right right pickMarker move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 659 episode 
+right right right left right left right left right left right left right left right left right left right left right left right left right left pickMarker right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 665 episode 
+right right right left right left right pickMarker move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 682 episode 
+right right pickMarker right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 698 episode 
+right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right left right left right left pickMarker right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 707 episode 
+right right right right right right right right right right right pickMarker move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 711 episode 
+right right right right right right right right right right pickMarker right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 712 episode 
+right right right pickMarker move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 713 episode 
+right right left right right right right right right right right right right right right right pickMarker right left right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 714 episode 
+right right right right right right right right pickMarker right right right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 715 episode 
+right right right right right right right right right right right right right right right right right right right right right right right right right right pickMarker right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 716 episode 
+right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right pickMarker right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 718 episode 
+right right pickMarker right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 723 episode 
+right right right right right right right right right right right right right right right right pickMarker right right right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 726 episode 
+right right right right right pickMarker right right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 734 episode 
+right right right right right right right right right right right right right right pickMarker right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 738 episode 
+right right right right right right right pickMarker move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 745 episode 
+right right right right right right right right right right right right right right right right right right right right right right right right right right pickMarker right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 748 episode 
+right right right right right right left right right right right right right right right right pickMarker right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 750 episode 
+right right right right right right right right right right right right right right right right right right right right right right right right right right right pickMarker move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 787 episode 
+right pickMarker right right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 913 episode 
+right right right pickMarker move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1020 episode 
+right pickMarker right right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1055 episode 
+pickMarker right right right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1106 episode 
+right right pickMarker right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1205 episode 
+right right pickMarker right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1375 episode 
+right right pickMarker right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1421 episode 
+right right right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right pickMarker move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1425 episode 
+right right right left right left right pickMarker move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1428 episode 
+right right right pickMarker move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1430 episode 
+right right right left right left right left right left pickMarker right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1465 episode 
+right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right pickMarker right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1476 episode 
+pickMarker right right right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1478 episode 
+right right right right right right right right right right right right right right right right right right right right pickMarker right right right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1482 episode 
+right right right right right right right right right right right right right right right right right right right right right right right right right right pickMarker right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1564 episode 
+right right right right right right right right pickMarker right right right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1570 episode 
+right right pickMarker right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1577 episode 
+right right right right right right right right right right right right right right right right right right right right right right right right right right right right right pickMarker right right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1583 episode 
+right right right right right right right right right right right right right right right right right right right right right right right right right right right pickMarker move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1592 episode 
+right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right pickMarker right right right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1595 episode 
+right right right right pickMarker right right right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1596 episode 
+right right right right right right right right right right pickMarker right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1602 episode 
+right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right pickMarker right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1603 episode 
+right right right right right right right right right pickMarker right right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1610 episode 
+right right right right right right right right right right left right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right pickMarker right right right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1612 episode 
+right right right right right right right right right right right right right right right right right right right right pickMarker right right right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1614 episode 
+right right right right pickMarker right right right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1616 episode 
+right right right right right right right right right right right right right pickMarker right right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1617 episode 
+right right right pickMarker move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1621 episode 
+right right right right right right pickMarker right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1626 episode 
+right right right right right right right right right right right right right right right right right right pickMarker right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1627 episode 
+right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right left right right right right right right right right right right right right right right right right right right right right left right right right right right right right right right right right left right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right pickMarker right right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1629 episode 
+right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right pickMarker right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1637 episode 
+right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right pickMarker move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1645 episode 
+right right right right right right right right right right right right right right right right left right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right pickMarker right right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1646 episode 
+right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right pickMarker right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1650 episode 
+right right right right right right right right right right right right right right pickMarker right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1661 episode 
+right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right pickMarker right right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1719 episode 
+right right right pickMarker move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1777 episode 
+left pickMarker move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1827 episode 
+pickMarker right right right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1882 episode 
+right right right pickMarker move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1905 episode 
+right right right pickMarker move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1967 episode 
+right right right pickMarker move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2063 episode 
+right right pickMarker right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2112 episode 
+right left pickMarker right left right left left move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2134 episode 
+right left right left right left right left right left right pickMarker left right left right left right left right left right left right left left move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2192 episode 
+right left right left right left right left right pickMarker left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left left move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2205 episode 
+right left right left right left right left right left right left right left right left right left right left right left right left right right pickMarker right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2229 episode 
+right left right left right left right left right left right left right left right left right left right left right left right pickMarker left right left right left right left right left right left right right right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2259 episode 
+right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right pickMarker left left move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2276 episode 
+right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right pickMarker left left move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2282 episode 
+right left right left right left right left pickMarker left move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2286 episode 
+right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right pickMarker left left move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2296 episode 
+right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left pickMarker left move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2307 episode 
+right left right left right pickMarker left left move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2308 episode 
+right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left pickMarker left move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2325 episode 
+right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right pickMarker left left move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2326 episode 
+right left right left right left right left right left right left right left right left right left right left right left right pickMarker left left move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2334 episode 
+right left right left right left right left right left right left right left right left right left right left right left right left right pickMarker left left move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2335 episode 
+right left right left right left right left right left pickMarker left move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2341 episode 
+right left right left right left right left right pickMarker left left move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2346 episode 
+right pickMarker left putMarker right left right left right left right left right left right left pickMarker right left right left right left right left right left right left left move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2348 episode 
+right left right left right left right pickMarker left left move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2355 episode 
+right left right left right left right left right left pickMarker left move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2357 episode 
+right left right left right left right left right pickMarker left left move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2361 episode 
+right pickMarker left left move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2392 episode 
+right left right left right pickMarker left right left right left right left right left right left right left right left right left left move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2430 episode 
+right left right left right left pickMarker right left right left right left left move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2434 episode 
+right left pickMarker right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right right right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2446 episode 
+right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right pickMarker left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left left move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2448 episode 
+right left right left right right right left right left right left right left right left right left right left pickMarker right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2456 episode 
+right left right left right left right left right pickMarker left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left left move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2468 episode 
+right left right left right left right left pickMarker right left right left right left right left right left right left right left right left right left right left right left right left right left right left right right right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2939 episode 
+left pickMarker move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3146 episode 
+left left right left right left right left right left right left right left right left right left right left right left pickMarker right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3150 episode 
+left pickMarker move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3152 episode 
+left left right pickMarker move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3153 episode 
+left left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right pickMarker move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3163 episode 
+left left right pickMarker move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3172 episode 
+left left right left left left left left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right pickMarker move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3173 episode 
+left left right left right left right left right left right left right left right left right left right left right left right left right left right left right left pickMarker right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3174 episode 
+left left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left pickMarker right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3182 episode 
+pickMarker left move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3183 episode 
+left left right pickMarker move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3190 episode 
+left left right left right left right left pickMarker right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3194 episode 
+left left right left right left right left pickMarker right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3196 episode 
+left left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left pickMarker right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3198 episode 
+left left right left right left right pickMarker move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3209 episode 
+left left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right right left left right left right left right left right pickMarker move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3212 episode 
+left left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right right left left right left right left right left right left right left right left right left right left left left left left right left right left right left right left right left right left right left pickMarker right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3226 episode 
+left left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left pickMarker right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3231 episode 
+left left right left right left right left right left right left right left right left right pickMarker move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3232 episode 
+left left right left right left right left right left right left right left pickMarker right move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3238 episode 
+left left right left right left right pickMarker move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3251 episode 
+right left right left right left right left right left right left right left right pickMarker left left move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3348 episode 
+pickMarker left move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3443 episode 
+left pickMarker move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3677 episode 
+pickMarker left move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3681 episode 
+left pickMarker move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3700 episode 
+left pickMarker move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3739 episode 
+left pickMarker move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3757 episode 
+pickMarker left move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3920 episode 
+pickMarker left move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3928 episode 
+pickMarker left move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3943 episode 
+left pickMarker move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 

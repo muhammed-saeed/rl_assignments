@@ -1,0 +1,4 @@
+The solution occured at 2237 episode 
+left left left pickMarker right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left move finish
+Optimum Solution is ['turnRight', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 

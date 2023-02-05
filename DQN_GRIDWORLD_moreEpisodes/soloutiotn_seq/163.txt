@@ -1,0 +1,128 @@
+The solution occured at 579 episode 
+left right left right left right left right left right left right left right left right left right left right left right move left left left left left left left left left left left left left left left left left left left finish
+Optimum Solution is ['move', 'turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1048 episode 
+move left left left left left left left left left left left left left left left finish
+Optimum Solution is ['move', 'turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2398 episode 
+left right left right move left left left right left right left right left right left right left right left right left finish
+Optimum Solution is ['move', 'turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2451 episode 
+move left right left right left left left right left right left right left right left right left right left right left right left right left right left right left right left right left right left left left left left right left right left right move right right move left left left right left right left right left right left right left right left right left finish
+Optimum Solution is ['move', 'turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2458 episode 
+move left left right left left finish
+Optimum Solution is ['move', 'turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2459 episode 
+move left left left finish
+Optimum Solution is ['move', 'turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2467 episode 
+move left right left right left left left finish
+Optimum Solution is ['move', 'turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2498 episode 
+move left right left right left right left right right finish
+Optimum Solution is ['move', 'turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2504 episode 
+move left right left right left right left left left finish
+Optimum Solution is ['move', 'turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2652 episode 
+right right right right right right right right right right right right right right right right right right right right right right right right right right right right left right left right left right right right right right right right right right move left left left finish
+Optimum Solution is ['move', 'turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2792 episode 
+left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right move left left left finish
+Optimum Solution is ['move', 'turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2948 episode 
+left right left right left right left right left right left right left right left right left right left right left right left right left right move move left left left right left right left right left right left right left right left right left right left right left left left left left right left right left right left left left left left right left right left right left right left right left right left right left right left right left right left right left right left left left left left right left right left right left right left right left right left right left right left right left right move left finish
+Optimum Solution is ['move', 'turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2971 episode 
+move move left left left right left right left right left right left right left left left left left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left left left left left right left right left right left right left right left right left right left right left right left left left left left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right move left finish
+Optimum Solution is ['move', 'turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3165 episode 
+move move left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right right right left right left right left right move left finish
+Optimum Solution is ['move', 'turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3230 episode 
+move left right right finish
+Optimum Solution is ['move', 'turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3323 episode 
+move left left left finish
+Optimum Solution is ['move', 'turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3414 episode 
+move right finish
+Optimum Solution is ['move', 'turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3420 episode 
+move right finish
+Optimum Solution is ['move', 'turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3443 episode 
+move left left left finish
+Optimum Solution is ['move', 'turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3569 episode 
+move right finish
+Optimum Solution is ['move', 'turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3603 episode 
+move right finish
+Optimum Solution is ['move', 'turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3615 episode 
+move right finish
+Optimum Solution is ['move', 'turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3713 episode 
+move left left left finish
+Optimum Solution is ['move', 'turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3724 episode 
+move left left left finish
+Optimum Solution is ['move', 'turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3816 episode 
+move left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right right finish
+Optimum Solution is ['move', 'turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3849 episode 
+move left left left finish
+Optimum Solution is ['move', 'turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3868 episode 
+move left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right right finish
+Optimum Solution is ['move', 'turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3881 episode 
+move left right left right left right left right left right left right left right right finish
+Optimum Solution is ['move', 'turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3923 episode 
+move left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left putMarker right left right left right left right left right left right left right left right left right left right left right left right left right left pickMarker right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left left left finish
+Optimum Solution is ['move', 'turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3970 episode 
+move left right right finish
+Optimum Solution is ['move', 'turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3972 episode 
+move right finish
+Optimum Solution is ['move', 'turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3975 episode 
+move right finish
+Optimum Solution is ['move', 'turnRight', 'finish']
+-------------- -------------- ---------- -------- 

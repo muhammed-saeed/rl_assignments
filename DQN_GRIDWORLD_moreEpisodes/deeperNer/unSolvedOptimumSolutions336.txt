@@ -1,0 +1,1 @@
+['turnLeft', 'putMarker', 'move', 'finish']

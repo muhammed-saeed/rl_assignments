@@ -1,0 +1,8 @@
+The solution occured at 2140 episode 
+right putMarker move putMarker pickMarker putMarker pickMarker putMarker pickMarker putMarker pickMarker putMarker pickMarker putMarker pickMarker putMarker pickMarker putMarker pickMarker putMarker pickMarker putMarker pickMarker putMarker pickMarker putMarker pickMarker putMarker pickMarker putMarker pickMarker putMarker pickMarker putMarker pickMarker putMarker pickMarker putMarker pickMarker putMarker pickMarker putMarker pickMarker putMarker pickMarker putMarker pickMarker putMarker pickMarker putMarker pickMarker putMarker pickMarker putMarker pickMarker putMarker pickMarker putMarker pickMarker putMarker pickMarker putMarker pickMarker putMarker pickMarker putMarker pickMarker putMarker pickMarker putMarker pickMarker finish
+Optimum Solution is ['turnRight', 'putMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2878 episode 
+right putMarker move putMarker pickMarker putMarker pickMarker putMarker pickMarker putMarker pickMarker finish
+Optimum Solution is ['turnRight', 'putMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 

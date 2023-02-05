@@ -1,0 +1,8 @@
+The solution occured at 1645 episode 
+left left left right left right left right left left move left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left pickMarker left left left left left left left left left left left left left left left left left left left left left left left left left left left left right left left left left left left left left left left left left left left left left left left left left left left left left left left left left move finish
+Optimum Solution is ['move', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2063 episode 
+right right right right right right right right right right right right move left right left right left pickMarker right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right move finish
+Optimum Solution is ['move', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 

@@ -1,0 +1,12 @@
+The solution occured at 9 episode 
+right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right pickMarker right right right right right right right right right right right right right right right right left right right right right right right right right right right right right right right right right right right right right right right right right right right right finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 524 episode 
+right right right right right right left right right right right right left right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right pickMarker right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 542 episode 
+right right right right right pickMarker right right right right right right right right right finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 

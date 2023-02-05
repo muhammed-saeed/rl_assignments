@@ -1,0 +1,12 @@
+The solution occured at 140 episode 
+left left left left putMarker left left left move left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left move left left move left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left finish
+Optimum Solution is ['turnRight', 'putMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 257 episode 
+left left left left left left left putMarker move left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left finish
+Optimum Solution is ['turnRight', 'putMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 433 episode 
+left left left putMarker move left left left left left left left left left left left left left left right left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left finish
+Optimum Solution is ['turnRight', 'putMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 

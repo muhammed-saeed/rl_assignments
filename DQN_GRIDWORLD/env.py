@@ -50,10 +50,14 @@ class GridWorld(object):
        
         self.agentPosition = self.n*init_state[0] + init_state[1]
         self.init_position = self.agentPosition
-        self.winReward = 10000
-        self.crashReward = -1000
-        self.reward = -10
-        self.rewardDesginVal = 100
+        # self.winReward = 10000
+        # self.crashReward = -1000
+        # self.reward = -100
+        # self.rewardDesginVal = 100
+        self.winReward= 1
+        self.crashReward = -1
+        self.reward = -1
+        self.rewardDesginVal = 0
         
         # print  ("!!!!!ENV CHECK!!!!!")
         # print  (f"{self.m},{self.n}, ({self.init_state}), {self.orientation}, ({self.initiial_markers_locations}), ({self.initial_wall_locations}), (({self.terminalStates})")

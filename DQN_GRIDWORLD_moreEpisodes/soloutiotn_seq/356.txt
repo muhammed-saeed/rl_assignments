@@ -1,0 +1,488 @@
+The solution occured at 60 episode 
+left left left finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 138 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 214 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 542 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 698 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 748 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1064 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1067 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1217 episode 
+left left left finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1361 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1366 episode 
+left left left finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1368 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1488 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1578 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2232 episode 
+left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left right left left left left left left left left left left left left left finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2320 episode 
+left left left left left left left left left left left left left left left left left left left left left left left finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2335 episode 
+left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left right left left left left left left left left left left left left left left left left left left left left left finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2337 episode 
+left left left left left left left left left left left left left left left left left left left finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2351 episode 
+left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2359 episode 
+left left left finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2443 episode 
+left left left left left left left left left left left finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2445 episode 
+left left left left left left left left left left left left left left left left left right left right left right left right left right left left left right left finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2485 episode 
+left left left left left left left finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2486 episode 
+left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2683 episode 
+left left left finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2755 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2763 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2764 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2789 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2790 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2792 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2793 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2794 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2810 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2811 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2812 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2813 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2814 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2821 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2822 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2828 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2831 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2832 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2836 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2837 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2840 episode 
+right left right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2843 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2846 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2847 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2854 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2855 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2863 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2864 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2865 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2866 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2870 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2872 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2873 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2877 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2878 episode 
+right right left finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2897 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2898 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2907 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2915 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2925 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2926 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2927 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2928 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2929 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2930 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2931 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2933 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2934 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2935 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2937 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2938 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2939 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2940 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2942 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2943 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2946 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2947 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2960 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2963 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2965 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2968 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2969 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2970 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2971 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2972 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2973 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2974 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2975 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2976 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2977 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2978 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2979 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2980 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2984 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2985 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2986 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2987 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3034 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3035 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3036 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3037 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3038 episode 
+right left right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3039 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3040 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3041 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3043 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3044 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3080 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3182 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3212 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3218 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3328 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3499 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3636 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3833 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3891 episode 
+right finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3992 episode 
+left left left finish
+Optimum Solution is ['turnRight', 'finish']
+-------------- -------------- ---------- -------- 

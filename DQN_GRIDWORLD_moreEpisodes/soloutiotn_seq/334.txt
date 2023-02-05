@@ -1,0 +1,4 @@
+The solution occured at 3357 episode 
+pickMarker left move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 

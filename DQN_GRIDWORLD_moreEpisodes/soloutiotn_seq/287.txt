@@ -1,0 +1,4 @@
+The solution occured at 2943 episode 
+putMarker right right finish
+Optimum Solution is ['turnRight', 'putMarker', 'turnRight', 'finish']
+-------------- -------------- ---------- -------- 

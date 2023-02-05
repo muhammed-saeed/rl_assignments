@@ -20,8 +20,8 @@ device = torch.device("cuda:2" if torch.cuda.is_available() else "cpu")
 
 
 mode = "train"
-train_path = "/home/muhammed-saeed/Documents/rl_assignments/Reinforce_policy_gradient_gridworld/task/task"
-train_target_path = "/home/muhammed-saeed/Documents/rl_assignments/Reinforce_policy_gradient_gridworld/task/solution"
+train_path = "/home/CE/musaeed/project/datasets/data_medium/train/task"
+train_target_path = "/home/CE/musaeed/project/datasets/data_medium/train/seq"
 actions = ['move', 'left', 'right', 'finish', 'pickMarker', 'putMarker']
 
 # Define a function to get batches of data
@@ -45,10 +45,13 @@ class Policy(nn.Module):
 
         self.saved_log_probs = []
         self.rewards = []
+        self.device = torch.device("cuda:2" if torch.cuda.is_available() else "cpu")
+        self.to(self.device)
 
     def forward(self, x):
         # x.requires_grads = True
         # x.requires_grad = True
+        x = torch.tensor(x).to(self.device)
         x = self.affine1(x)
         x = self.dropout(x)
         x = F.relu(x)
@@ -61,14 +64,14 @@ class Policy(nn.Module):
 
 
 state_size = 32
-numEpochs = 100
-batch_size = 25
+numEpochs = 10
+batch_size = 64
 policy = Policy(input_size=state_size, output_size=6)
 
 # Define loss function and optimizer
 criterion = nn.CrossEntropyLoss()
-optimizer = torch.optim.Adam(policy.parameters(), lr=0.001)
-training_data = get_memory()
+optimizer = torch.optim.Adam(policy.parameters(), lr=0.00001)
+training_data = get_memory("train", train_path, train_target_path)
 
 new_training_data = [row[:2] for row in training_data]
 print(new_training_data[0])
@@ -85,18 +88,21 @@ batch = get_batch(batch_size, new_training_data)
 print(batch)
 print(new_training_data[0][0].flatten())
 
-for epoch in range(5):
+for epoch in range(numEpochs):
     loss_sum = 0
     i = 0
-    for inputs, labelss in (training_data[:50]):
+    print(f'we are in epoch {epoch}')
+    for inputs, labelss in (training_data):
         i += 1
         # loss = 0
         inputs = torch.from_numpy(inputs).float()
+        inputs = inputs.to(policy.device)
         # print(labelss)
         labels = np.zeros(6)
         labels[int(labelss)] = 1
         # labels = one_hot(6, labelss)
         labels = torch.from_numpy(labels)
+        labels = labels.to(policy.device)
 
         # note [labels] since the output is a tensor
         optimizer.zero_grad()
@@ -104,18 +110,20 @@ for epoch in range(5):
         action =torch.argmax(outputs)
         # print(f"prdicted action {action} selected actions {labelss}")
         # print(f"Selected action {outputs} and target {labels.reshape(1,-1)}")
-        loss = criterion(outputs, labels.reshape(1,-1))
+        loss = criterion(outputs, labels.reshape(1,-1)).to(policy.device)
         # print(f"We are working on Epoch {epoch} and loss is {loss}")
         loss_sum += loss
-        losses.append(loss.detach().numpy())
+        loss_sum = loss_sum.to(policy.device)
+        losses.append(loss.detach().cpu().numpy())
+        
         if (i)%batch_size ==0:
-            print(f"loss is {loss_sum}")
+            # print(f"loss is {loss_sum}")
             
             loss.backward()
             optimizer.step()
-
+    print(f"The final Error in the epoch is {loss_sum}")
 torch.save(policy.state_dict(
-), "/home/muhammed-saeed/Documents/rl_assignments/Reinforce_policy_gradient_gridworld/LearnFromDomenstrations/checkpoints/policy.pt")
+), "/home/CE/musaeed/Reinforce_policy_gradient_gridworld/LearnFromDomenstrations/checkpoints/policy.pt")
 
 
 # Plot the loss over time
@@ -127,5 +135,6 @@ plt.plot(rolling_mean, label='Rolling Mean (window size {})'.format(n))
 plt.plot(losses)
 plt.xlabel("Training iteration")
 plt.ylabel("Loss")
+plt.savefig("/home/CE/musaeed/Reinforce_policy_gradient_gridworld/LearnFromDomenstrations/loss_plot.png")
+plt.close()
 
-plt.show()

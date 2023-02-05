@@ -1,0 +1,8 @@
+The solution occured at 459 episode 
+left right left left left left left left left left left right right move right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right right right right right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left finish
+Optimum Solution is ['turnRight', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2713 episode 
+right move right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right finish
+Optimum Solution is ['turnRight', 'move', 'finish']
+-------------- -------------- ---------- -------- 

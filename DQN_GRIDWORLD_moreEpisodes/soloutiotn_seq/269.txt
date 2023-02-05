@@ -1,0 +1,8 @@
+The solution occured at 2950 episode 
+right left right left right left right left right left right left right left right left move putMarker right finish
+Optimum Solution is ['move', 'putMarker', 'turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3491 episode 
+right left right left right left right left right left right left right left right left move putMarker right finish
+Optimum Solution is ['move', 'putMarker', 'turnRight', 'finish']
+-------------- -------------- ---------- -------- 

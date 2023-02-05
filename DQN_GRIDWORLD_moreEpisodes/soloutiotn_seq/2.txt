@@ -1,0 +1,300 @@
+The solution occured at 243 episode 
+move right right putMarker right right right pickMarker right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 311 episode 
+move right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 416 episode 
+left right left right left right left right left right left right left right move left right left right left right left right left right left right left right left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 477 episode 
+move left right left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 532 episode 
+move left right left right left right left right left right left right left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 755 episode 
+left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right move left right left right left right left right left right left right left right left right left right left right left right left right left right left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1279 episode 
+move left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1282 episode 
+move left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1291 episode 
+move left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1296 episode 
+move left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1297 episode 
+move left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1301 episode 
+move left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1304 episode 
+move left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1981 episode 
+left left left right left right left right left left move left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2058 episode 
+move left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2095 episode 
+left left left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left right left left move left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2130 episode 
+move left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2317 episode 
+move left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2360 episode 
+move left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2387 episode 
+move left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2388 episode 
+move left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2392 episode 
+move left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2393 episode 
+move left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2399 episode 
+move left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2400 episode 
+move left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2446 episode 
+move left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2594 episode 
+move left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2595 episode 
+move left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2596 episode 
+move left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2602 episode 
+move left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2603 episode 
+move left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2608 episode 
+move left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2613 episode 
+move left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2645 episode 
+move left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2651 episode 
+move left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2860 episode 
+move left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2861 episode 
+move left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2865 episode 
+move left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2866 episode 
+move left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2869 episode 
+move left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2870 episode 
+move left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2881 episode 
+move left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2883 episode 
+move left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2884 episode 
+move left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2890 episode 
+move left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2898 episode 
+move left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2899 episode 
+move left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2900 episode 
+move left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2910 episode 
+move left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2914 episode 
+move left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2915 episode 
+move left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2916 episode 
+move left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2920 episode 
+move left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2921 episode 
+move left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2922 episode 
+move left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2928 episode 
+move left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2964 episode 
+move left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2965 episode 
+move left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2981 episode 
+move left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2982 episode 
+move left right left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2985 episode 
+move left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2992 episode 
+move left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2994 episode 
+move left right left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2995 episode 
+move left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3005 episode 
+move left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3006 episode 
+move left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3044 episode 
+move left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3424 episode 
+move left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3517 episode 
+move left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3536 episode 
+move left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3729 episode 
+move left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3763 episode 
+move left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3813 episode 
+move left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3850 episode 
+move left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3953 episode 
+move left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 

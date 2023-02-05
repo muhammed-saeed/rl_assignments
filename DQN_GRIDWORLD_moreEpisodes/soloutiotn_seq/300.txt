@@ -1,0 +1,4 @@
+The solution occured at 722 episode 
+move putMarker right finish
+Optimum Solution is ['move', 'putMarker', 'turnRight', 'finish']
+-------------- -------------- ---------- -------- 

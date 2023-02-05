@@ -1,0 +1,8 @@
+The solution occured at 3718 episode 
+left right left right left right left right left right left right left right left right left right left right left right left right left right pickMarker left right left right left right left right left right left right left right left right left right left move right left finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3911 episode 
+left left left left left right left right left right pickMarker left left left left left left left left right left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left right left left left left left left left left left left left left right left right left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left move finish
+Optimum Solution is ['turnLeft', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 

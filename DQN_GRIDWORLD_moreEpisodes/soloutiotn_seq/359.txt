@@ -1,0 +1,4 @@
+The solution occured at 3996 episode 
+move move left left left left left left left left left left move right right right right right right pickMarker right right right right move finish
+Optimum Solution is ['move', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 

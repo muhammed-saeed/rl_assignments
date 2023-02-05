@@ -1,0 +1,4 @@
+The solution occured at 2804 episode 
+move left left left left left left left left putMarker left left left left left left left finish
+Optimum Solution is ['move', 'putMarker', 'turnRight', 'finish']
+-------------- -------------- ---------- -------- 

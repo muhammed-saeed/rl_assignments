@@ -1,0 +1,4 @@
+The solution occured at 1744 episode 
+move right right right right right right right right right right right right right right right right putMarker right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right move right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right right finish
+Optimum Solution is ['move', 'putMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 

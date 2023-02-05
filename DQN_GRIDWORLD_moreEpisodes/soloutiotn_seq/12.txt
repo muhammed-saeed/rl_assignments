@@ -1,0 +1,8 @@
+The solution occured at 1080 episode 
+putMarker left left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1413 episode 
+putMarker left left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 

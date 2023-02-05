@@ -1,0 +1,1 @@
+['turnRight', 'move', 'finish']

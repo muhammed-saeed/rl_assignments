@@ -1,0 +1,4 @@
+The solution occured at 50 episode 
+move right pickMarker left move finish
+Optimum Solution is ['move', 'pickMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 

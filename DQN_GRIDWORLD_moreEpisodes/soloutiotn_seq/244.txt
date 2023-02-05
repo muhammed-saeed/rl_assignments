@@ -1,0 +1,8 @@
+The solution occured at 3879 episode 
+left right left right left left left putMarker left left right left right left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3903 episode 
+left right left right left right left left left left left left left left left left left left left left left left left left left left left left right left left left left left left left left putMarker right left right left right left right left right left right left right left right left right left right left right left right left right left left finish
+Optimum Solution is ['turnLeft', 'putMarker', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 

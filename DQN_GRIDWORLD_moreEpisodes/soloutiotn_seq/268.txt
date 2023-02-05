@@ -1,0 +1,4 @@
+The solution occured at 1240 episode 
+right right right right right right right right right right right right right right right right right right right right right right right right right right putMarker right right right right right move right right right right right right right right right right right right finish
+Optimum Solution is ['turnLeft', 'putMarker', 'move', 'finish']
+-------------- -------------- ---------- -------- 

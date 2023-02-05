@@ -1,0 +1,4 @@
+The solution occured at 3910 episode 
+left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left left move left left left left left finish
+Optimum Solution is ['move', 'turnLeft', 'finish']
+-------------- -------------- ---------- -------- 

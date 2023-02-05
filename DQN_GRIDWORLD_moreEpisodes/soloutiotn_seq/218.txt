@@ -1,0 +1,84 @@
+The solution occured at 1554 episode 
+move right putMarker finish
+Optimum Solution is ['move', 'putMarker', 'turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1722 episode 
+move putMarker right finish
+Optimum Solution is ['move', 'putMarker', 'turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 1916 episode 
+right right left right left right left right left right left right left left move right putMarker finish
+Optimum Solution is ['move', 'putMarker', 'turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2154 episode 
+move right putMarker finish
+Optimum Solution is ['move', 'putMarker', 'turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2171 episode 
+move putMarker right finish
+Optimum Solution is ['move', 'putMarker', 'turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2302 episode 
+move right putMarker finish
+Optimum Solution is ['move', 'putMarker', 'turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2504 episode 
+right left move putMarker right finish
+Optimum Solution is ['move', 'putMarker', 'turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2708 episode 
+move right putMarker finish
+Optimum Solution is ['move', 'putMarker', 'turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2751 episode 
+move right putMarker finish
+Optimum Solution is ['move', 'putMarker', 'turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 2757 episode 
+move right putMarker finish
+Optimum Solution is ['move', 'putMarker', 'turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3035 episode 
+move putMarker right finish
+Optimum Solution is ['move', 'putMarker', 'turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3101 episode 
+move putMarker right finish
+Optimum Solution is ['move', 'putMarker', 'turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3144 episode 
+move right putMarker finish
+Optimum Solution is ['move', 'putMarker', 'turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3180 episode 
+move right putMarker finish
+Optimum Solution is ['move', 'putMarker', 'turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3254 episode 
+move right putMarker finish
+Optimum Solution is ['move', 'putMarker', 'turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3348 episode 
+move right putMarker finish
+Optimum Solution is ['move', 'putMarker', 'turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3636 episode 
+move right putMarker finish
+Optimum Solution is ['move', 'putMarker', 'turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3717 episode 
+move right right left putMarker finish
+Optimum Solution is ['move', 'putMarker', 'turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3860 episode 
+move putMarker right finish
+Optimum Solution is ['move', 'putMarker', 'turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3925 episode 
+move putMarker right finish
+Optimum Solution is ['move', 'putMarker', 'turnRight', 'finish']
+-------------- -------------- ---------- -------- 
+The solution occured at 3954 episode 
+move putMarker right finish
+Optimum Solution is ['move', 'putMarker', 'turnRight', 'finish']
+-------------- -------------- ---------- -------- 
