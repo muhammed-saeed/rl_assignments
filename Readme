@@ -4,3 +4,4 @@ The Env has the dimension of the board as input and then uses those dimensions t
 For finish the Environment check whether the agent has reaches the goal state or not, if reaches then gives him positive reward "goal reward"
 If the agent selected actions PickUp or Put then the environment will check if the agent hand is empty or not and then changes the state accordingly to the selected action
 before each action the environment checks the amount of horizon remaning for the agent before selecting any further actions
+coo
